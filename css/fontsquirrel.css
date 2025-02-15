@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'mountains_of_christmasregular';
+    src: url('../resources/MountainsofChristmas-webfont.woff');
+    src: url('../resources/MountainsofChristmas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../resources/MountainsofChristmas-webfont.woff2') format('woff2'),
+         url('../resources/MountainsofChristmas-webfont.woff') format('woff'),
+         url('../resources/MountainsofChristmas-webfont.ttf') format('truetype'),
+         url('../resources/MountainsofChristmas-webfont.svg#mountains_of_christmasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'lobster';
+    src: url('../resources/Merriweather-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
