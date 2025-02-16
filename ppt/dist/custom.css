@@ -145,6 +145,16 @@ canvas{
 table{
 	font-size:90%;
 }
+.reveal b {
+  font-weight: bold;
+  color: #f9cf8e;
+  
+}
+
+.reveal i, em {
+  font-style: italic;
+  color: #a6c7fa;
+}
 h6 {
 	outline: 1px solid #f9cf8e;
 	background: rgba(0, 150, 136, 0.2);
