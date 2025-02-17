@@ -145,6 +145,11 @@ canvas{
 table{
 	font-size:90%;
 }
+.reveal strong{
+  font-weight: bold;
+  color: #f9cf8e;
+  
+}
 .reveal b {
   font-weight: bold;
   color: #f9cf8e;
