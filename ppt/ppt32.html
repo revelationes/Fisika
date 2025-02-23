@@ -188,6 +188,14 @@ Keterangan:
 - *h*	= tinggi benda
 - *h'*	= tinggi bayangan
 ---
+#### Kuat Lensa
+###### `$$P=\frac{1}{f}$$`
+Keterangan:
+- *P*	= kuat lensa (dioptri)
+- *f*	= fokus lensa (dalam meter)
+Jika fokus lensa dalam cm, persamaan di atas menjadi:
+###### `$$P=\frac{100}{f}$$`
+---
 ### Alat Optik
 #### Mata dan Kaca Mata
 <img src="../resources/images/opt09.png" height="100%">
@@ -204,16 +212,29 @@ Keterangan:
 ##### Rabun Dekat (Hipermetropi)
 - Penderita rabun dekat memiliki kesulitan melihat objek yang berjarak dekat, tetapi tidak mengalami kesulitan untuk melihat benda jauh.
 - Ini disebabkan oleh kemampuan lensa yang tidak lagi dapat berakomodasi dengan baik, sehingga bayangan benda jarak dekat terbentuk di belakang retina.
+- Penderita rabun dekat memiliki *titik dekat (**punctum proximum**) lebih dari 25 cm*. Sementara mata normal memiliki titik dekat 25 cm. 
 - Dibantu dengan kaca mata berlensa cembung.
 ---
 <img src="../resources/images/opt10.png" height="100%">
 ---
+- Untuk membuat benda di *x* memiliki bayangan di titik dekat penderita, dibutuhkan lensa cembung dengan fokus:
+###### `$$\frac{1}{f}=\frac{1}{S}+\frac{1}{S'}=\frac{1}{x}+\frac{1}{-PP}$$`
+###### `$$\frac{1}{f}=\frac{1}{x}-\frac{1}{PP}$$`
+Kuat lensa:
+###### `$$P=\frac{100}{f}=\frac{100}{x}-\frac{100}{PP}$$`
 ##### Rabun Jauh (Miopi)
 - Penderita rabun jauh memiliki kesulitan melihat objek yang berjarak jauh, tetapi tidak mengalami kesulitan untuk melihat benda dekat.
 - Ini disebabkan oleh kemampuan lensa yang tidak lagi dapat berakomodasi dengan baik, sehingga bayangan benda jarak jauh terbentuk di depan retina.
+- Penderita rabun jauh memiliki *titik jauh (**punctum remotum**) kurang dari ∞*. Sementara mata normal memiliki titik jauh ∞. 
 - Dibantu dengan kaca mata berlensa cekung.
 ---
 <img src="../resources/images/opt11.png" height="100%">
+---
+- Untuk membuat benda yang berada di ∞ mempunyai bayangan di titik jauh penderita, dibutuhkan lensa cekung dengan fokus:
+###### `$$\frac{1}{f}=\frac{1}{S}+\frac{1}{S'}=\frac{1}{∞}+\frac{1}{-PR}$$`
+###### `$$\frac{1}{f}=-\frac{1}{PR}$$`
+Kuat lensa 
+###### `$$P=\frac{100}{f}=-\frac{100}{PR}$$`
 ---
 <img src="../resources/images/opt12.png" height="100%">
 ---
@@ -230,18 +251,79 @@ Keterangan:
 ---
 ###### `$$m = \frac{\theta}{\theta_0}$$`
 - Perbesaran angular maksimal ketika bayangan berada pada titik dekat mata, 25 cm,
-`$$\frac{1}{f}=\frac{1}{S}+\frac{1}{S'}$$`
-`$$\frac{1}{f}=\frac{1}{S}+\frac{1}{-25 cm}$$`
----
+`$$\frac{1}{f}=\frac{1}{S}+\frac{1}{S'}=\frac{1}{S}+\frac{1}{-25 cm}$$`
 ###### `$$S=\frac{25f}{25+f}$$`
+---
 - Untuk sudut kecil, berlaku `$\tan{\theta_0}≈\theta_0≈\frac{h}{25}$` dan `$\tan{\theta}≈\theta≈\frac{h}{S}$`
  `$$m_{max}=\frac{\theta}{\theta_0}=\frac{h/S}{h/25}=\frac{25}{S}=\frac{25}{\frac{25f}{25+f}}$$`
 ###### `$$m_{max}=1+\frac{25 cm}{f}$$`
+(mata tak berakomodasi)
 ---
 - Perbesaran angular minimal ketika bayangan berada pada tak hingga, ∞,
 `$$\frac{1}{f}=\frac{1}{S}+\frac{1}{∞}=\frac{1}{S}$$`
 ###### `$$S=f$$`
 ###### `$$m_{min}=\frac{\theta}{\theta_0}=\frac{h/f}{h/25}=\frac{25}{f}$$`
+(mata berakomodasi maksimum)
+---
+#### Mikroskop
+- Lup atau kaca pembesar memiliki Perbesaran yang terbatas. Perbesaran yang lebih besar dapat diperoleh dengan mengombinasikan dua lensa atau lebih. 
+- Mikroskop adalah salah satu alat optik yang menggunakan lebih dari satu lensa. 
+- Secara sederhana, diagramnya dapat digambarkan sebagai berikut:
+---
+<img src="../resources/images/opt14.png" height="100%">
+---
+- Lensa obyektif memiliki fokus kecil (kurang dari 1 cm). Lensa okuler memiliki fokus sedikit lebih besar.
+- Kedua lensa terpisah jarak sebesar *L*, yang lebih besar dari *f<sub>ok</sub>* maupun *f<sub>ob</sub>*. Sedemikian sehingga `$L=S'_{ob}+S_{ok}$`
+- Benda ditempatkan sedikit di luar *f<sub>ob</sub>*, dan membentuk bayangan **nyata, terbalik dan diperbesar**. 
+- Bayangan lensa obyektif menjadi benda untuk lensa okuler.
+- Lensa okuler membentuk bayangan **maya, terbalik dan diperbesar**.
+---
+- Lensa obyektif memiliki perbesaran:
+###### `$$m_{ob}=-\frac{S'_{ob}}{S_{ob}}$$`
+- Lensa okuler memiliki perbesaran:
+  - Tanpa akomodasi (`$S'_{ok}=∞$`)
+`$$S_{ok}=f_{ok}$$`
+`$$L=S'_{ob}+f_{ok}$$`
+###### `$$m_{ok}=\frac{25\space cm}{f_{ok}}$$`
+---
+  - Akomodasi maksimum (`$S'_{ok}=25\space cm$`)
+`$$\frac{1}{f}=\frac{1}{S_{ok}}+\frac{1}{25\space cm}$$`
+`$$L=S'_{ob}+S_{ok}$$`
+###### `$$m_{ok}=\frac{25\space cm}{f_{ok}}+1$$`
+- Perbesaran total
+###### `$$m_{total}=m_{ob}+m_{ok}$$`
+---
+Keterangan:
+- *f<sub>ok</sub>*	= fokus lensa okuler
+- *f<sub>ob</sub>* 	= fokus lensa obyektif
+- *L*	= panjang mikroskop
+- *m* 	= perbesaran 
+---
+#### Teropong Bintang
+- Teropong bintang juga terdiri dari dua lensa, *obyektif* dan *okuler*, dengan *f<sub>ok</sub>* jauh lebih kecil dari *f<sub>ob</sub>*.
+- Teropong bintang tidak menggunakan lensa pembalik ataupun cermin.
+---
+Perbesaran sudut teropong bintang
+- Tanpa akomodasi 
+###### `$$m_{}=\frac{f_{ob}}{f_{ok}}$$`
+###### `$$L=f_{ob}+f_{ok}$$`
+---
+- Akomodasi maksimum
+###### `$$m_{}=-\frac{f_{ob}}{S_{ok}}$$`
+###### `$$L=f_{ob}+S_{ok}$$`
+---
+#### Teropong Bumi/Medan
+- Teropong bumi terdiri dari tiga lensa cembung, *obyektif* dan *okuler*, dan satu lensa pembalik.
+
+---
+Perbesaran sudut teropong buni
+- Tanpa akomodasi 
+###### `$$m_{}=\frac{f_{ob}}{f_{ok}}$$`
+###### `$$L=f_{ob}+4f_{p}+f_{ok}$$`
+---
+- Akomodasi maksimum
+###### `$$m_{}=-\frac{f_{ob}}{S_{ok}}$$`
+###### `$$L=f_{ob}+4f_{p}+S_{ok}$$`
 ---
 </textarea>
 </section>
