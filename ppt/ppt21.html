@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Teori Kinetik Gas</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<link rel="stylesheet" href="dist/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-auto-animate>
+				<textarea data-template>
+# Teori Kinetik Gas
+---
+### Mol, Massa, Massa Molar 
+- Apa yang dimaksud dengan keadaan STP (*standard temperature pressure*) atau keadaan 
+normal atau keadaan standard?
+- Keadaan standard atau STP adalah keadaan dimana tekanan gas p = 1 atm = 1,013 × 105 Pa 
+dan suhu gas 0 °C atau 273 Kelvin. 
+- Pada keadaan standard, 1 mol gas menempati volume sebesar 22.400 cm<sup>3</sup> sedangkan jumlah 
+atom dalam 1 mol sama dengan : 6,02 × 10<sup>23</sup> yang disebut bilangan Avogadro (N<sub>A</sub>). 
+---
+- Jadi pada keadaan standard jumlah atom dalam tiap-tiap cm<sup>3</sup> adalah:  
+###### `$$\frac{6,02 × 10^{23}}{22.400}=2,68 × 10^{19} atom/cm^3$$`
+- Banyaknya mol suatu gas adalah hasil bagi antara jumlah atom dalam gas itu dengan bilangan Avogadro. 
+###### `$$n=\frac{N}{N_A}$$`
+---
+keterangan:   
+- n = jumlah mol gas (mol)
+- N = jumlah atom 
+- N<sub>A</sub> = bilangan Avogadro 
+- Artinya: dalam satu mol zat/gas terdapat sebanyak  6,02 × 10<sup>23</sup> buah partikel atau molekul.
+
+Hubungan antara mol dan massa:
+###### `$$n=\frac{m}{M}$$`
+---
+keterangan:   
+- n = jumlah mol gas (mol)
+- m = massa zat (gr)
+- M = Massa molar/massa setiap 1 mol zat (gram/mol)
+---
+### Persamaan Gas Ideal
+###### `$$\frac{P_1V_1}{T_1}=konstan$$`
+yang dapat dituliskan sebagai
+###### `$$PV=NkT$$` 
+atau
+###### `$$PV=nRT$$`
+---
+keterangan:
+- P = tekanan gas pada suhu tetap (Pa)  
+- V = Volume gas pada tekanan tetap (m<sup>3</sup>)  
+- T = suhu mutlak gas pada volume tetap (K)  
+- N = jumlah atom 
+- k = konstanta Boltzman (1,38 × 10<sup>-23</sup> joule/K)
+- n = jumlah mol gas (mol)
+- R = konstanta gas (8,314 joule/mol.K)
+---
+### Karakteristik Gas Ideal
+1. Gas ideal terdiri atas partikel-partikel (atom-atom ataupun molekul-molekul ) dalam 
+jumlah yang besar sekali dan jarak antar molekul lebih besar daripada ukuran masing 
+masing gas  
+2. Ukuran partikel sangat kecil sehingga dapat diabaikan. 
+3. Partikel-partikel tersebut senantiasa bergerak lurus secara acak/sembarang dan 
+tetap berlaku Hukum Newton tentang gerak.
+---
+4. Tumbukan antara partikel ataupun antara partikel dengan dinding terjadi secara 
+lenting sempurna (energi kinetik tetap), partikel dianggap sebagai bola yang keras. 
+5. Gaya antar partikel diabaikan kecuali saat tumbukan yang berlangsung sangat singkat. 
+6. Gas dipertimbangkan sebagai titik materi sehingga semua molekul adalah identik.
+---
+### Energi Kinetik
+<img src="../resources/images/td01.png" width="75%">
+---
+- Andaikan sebuah kubus dengan panjang sisi *L*, diisi dengan gas ideal sebanyak *N* molekul. Molekul gas bergerak dengan kecepatan *v*. 
+- Pandang satu molekul gas yang bermassa *m*. Kecepatannya dalam arah sumbu x adalah *v<sub>x</sub>*.
+- Momentum mula-mula molekul adalah **`$p_x=mv_x$`**. Jika molekul menumbuk dinding, momentumnya akan menjadi **`$p_x'=-mv_x$`**, sehingga perubahan momentumnya
+adalah **`$\Delta p_x=p_x'-p_x=-2mv_x$`**.
+---
+- Waktu antara tumbukan di tempat yang sama adalah **`$\Delta t=\frac{2L}{v_x}$`**.
+- Gaya rata-rata yang terjadi pada dinding kanan untuk satu molekul:
+`$$\overline{F_x}=\frac{\Delta p_x}{\Delta t}=\frac{-2mv_x}{\frac{2L}{v_x}}$$`
+###### `$$\overline{F_x}=\frac{mv^2_x}{L}$$`
+---
+- Karena terdapat N molekul gas, gaya rata-rata  pada dinding kanan menjadi 
+`$$\overline{F_x}=N\frac{mv^2_x}{L}$$`
+- dan karena menurut anggapan gas ideal, `$\overline {v^2_x}=\overline {v^2_y}=\overline {v^2_z}$`, sementara `$\overline {v^2}=\overline {v^2_x}+\overline {v^2_y}+\overline {v^2_z}$`, maka 
+**`$$\overline {v^2}=3\overline {v^2_x}$$`**
+---
+- Persamaan di atas menjadi `$$\overline{F_x}=N\frac{mv^2}{3L}$$`
+- Luas penampang tiap sisi adalah **`$A=L^2$`**.
+- Tekanan pada tiap sisi, **`$P=\frac{F}{A}=\frac{N\frac{mv^2}{3L}}{L^2}$`**.
+###### `$$PV=\frac{Nmv^2}{3}$$`
+---
+- Energi kinetik rata-rata setiap molekul **`$E_k=\frac{1}{2}mv^2$`**, sehingga didapatkan hubungan
+###### `$$PV=\frac{2}{3}NE_k$$`
+- Dari persamaan `$PV=NkT$`, diperoleh
+###### `$$E_k=\frac{2}{3}kT$$`
+inilah **energi kinetik rata-rata per molekul**
+---
+### Kecepatan Molekul
+- Kecepatan molekul dapat dicari dari persamaan berikut:
+`$$\begin{equation}E_k=\frac{2}{3}kT\end{equation}$$`
+`$$\begin{equation}E_k=\frac{1}{2}mv^2\end{equation}$$`
+###### `$$v_{rms}=\sqrt{\frac{3kT}{m}}$$`
+---
+### Usaha oleh Gas Ideal
+<img src="../resources/images/td02.png" height="600px">
+---
+- Sebuah bejana dengan penutup piston di atasnya, dipanaskan sehingga memuai dan piston terangkat ke atas sejauh *dS*.
+Usaha yang dilakukan adalah **`$dW=F.dS=PA.dS$`**. Karena **`$A.dS=dV$`** maka **`$dW=P.dV$`** atau:
+###### `$$W=\int^{v_2}_{v_1} P.dV$$`
+---
+Beberapa kemungkinan yang ada:
+##### 1. Pemuaian isobaris  
+- Karena *P* tetap, `$W=\int^{v_2}_{v_1} P.dV$` menjadi **`$W=P\int^{v_2}_{v_1} dV$`** saja. Atau, **`$W=P(V_2-V_1)=P\Delta V$`** 
+
+<img src="../resources/images/td03.png" height="300px">
+---
+##### 2. Pemuaian isotermal
+- Dari persamaan gas ideal, kita tahu bahwa `$PV=nRT$` atau `$P=\frac{nRT}{V}$`. Usahanya menjadi: **`$W=\int^{v_2}_{v_1} \frac{nRT}{V}.dV=nRT\int^{v_2}_{v_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \frac{V_2}{V_1}$`**.
+
+<img src="../resources/images/td04.png" height="300px">
+---
+##### 3. Pemuaian adiabatis
+- Pemuaian adiabatis adalah proses pemuaian di mana gas dipanaskan dengan cepat sehingga volume bertambah dengan sangat cepat dan tidak sempat ada pemindahan panas dari gas ke dinding.
+Dalam proses ini, bila volume naik, tekanan akan cepat turun. Berlaku **`$PV^{\gamma}=konstan$`**, dengan γ = indeks adiabatis, untuk gas monoatomik bernilai 7/5 dan untuk gas diatomik bernilai 5/3.
+---
+- Usahanya **`$W=\int^{v_2}_{v_1} P.dV=\int^{v_2}_{v_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$`**.
+
+<img src="../resources/images/td05.png" height="300px">
+---
+</textarea>
+</section>
+		</div>
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+		<script type="text/javascript" src="dist/reveal.js"></script>
+		<script type="text/javascript" src="plugin/notes/notes.js"></script>
+		<script type="text/javascript" src="plugin/markdown/markdown.js"></script>
+		<script type="text/javascript" src="plugin/math/math.js"></script>
+		<script type="text/javascript" src="js/canvas.js"></script>
+		<script type="text/javascript" src="plugin/highlight/highlight.js"></script>
+		<script type="text/javascript" >
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+
+	</body>
+</html>
