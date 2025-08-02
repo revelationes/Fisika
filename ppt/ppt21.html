@@ -117,24 +117,27 @@ inilah **energi kinetik rata-rata per molekul**
 ---
 - Sebuah bejana dengan penutup piston di atasnya, dipanaskan sehingga memuai dan piston terangkat ke atas sejauh *dS*.
 Usaha yang dilakukan adalah **`$dW=F.dS=PA.dS$`**. Karena **`$A.dS=dV$`** maka **`$dW=P.dV$`** atau:
-###### `$$W=\int^{v_2}_{v_1} P.dV$$`
+###### `$$W=\int^{V_2}_{V_1} P.dV$$`
 ---
 Beberapa kemungkinan yang ada:
-##### 1. Pemuaian isobaris  
-- Karena *P* tetap, `$W=\int^{v_2}_{v_1} P.dV$` menjadi **`$W=P\int^{v_2}_{v_1} dV$`** saja. Atau, **`$W=P(V_2-V_1)=P\Delta V$`** 
+##### 1. Pemuaian isokhorik
+- Karena *`$dV=0$`*, `$W=\int^{V_2}_{V_1} P.dV$` menjadi **`$W=P\int^{V_2}_{V_1} 0$`** saja. Atau, **`$W=0$`**
+---
+##### 2. Pemuaian isobaris 
+- Karena *P* tetap, `$W=\int^{V_2}_{V_1} P.dV$` menjadi **`$W=P\int^{V_2}_{V_1} dV$`** saja. Atau, **`$W=P(V_2-V_1)=P\Delta V$`** 
 
 <img src="../resources/images/td03.png" height="300px">
 ---
-##### 2. Pemuaian isotermal
-- Dari persamaan gas ideal, kita tahu bahwa `$PV=nRT$` atau `$P=\frac{nRT}{V}$`. Usahanya menjadi: **`$W=\int^{v_2}_{v_1} \frac{nRT}{V}.dV=nRT\int^{v_2}_{v_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \frac{V_2}{V_1}$`**.
+##### 3. Pemuaian isotermal
+- Dari persamaan gas ideal, kita tahu bahwa `$PV=nRT$` atau `$P=\frac{nRT}{V}$`. Usahanya menjadi: **`$W=\int^{V_2}_{V_1} \frac{nRT}{V}.dV=nRT\int^{V_2}_{V_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \frac{V_2}{V_1}$`**.
 
 <img src="../resources/images/td04.png" height="300px">
 ---
-##### 3. Pemuaian adiabatis
-- Pemuaian adiabatis adalah proses pemuaian di mana gas dipanaskan dengan cepat sehingga volume bertambah dengan sangat cepat dan tidak sempat ada pemindahan panas dari gas ke dinding.
+##### 4. Pemuaian adiabatis
+- Pemuaian adiabatis adalah proses pemuaian di mana gas dipanaskan dengan cepat sehingga volume bertambah dengan sangat cepat dan tidak sempat ada pemindahan panas dari gas ke dinding, atau dari sistem ke lingkungan.
 Dalam proses ini, bila volume naik, tekanan akan cepat turun. Berlaku **`$PV^{\gamma}=konstan$`**, dengan γ = indeks adiabatis, untuk gas monoatomik bernilai 5/3 dan untuk gas diatomik bernilai 7/5.
 ---
-- Usahanya **`$W=\int^{v_2}_{v_1} P.dV=\int^{v_2}_{v_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$`**.
+- Usahanya **`$W=\int^{V_2}_{V_1} P.dV=\int^{V_2}_{V_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$`**.
 
 <img src="../resources/images/td05.png" height="300px">
 ---
@@ -149,8 +152,18 @@ keterangan:
 - W = Panas/Usaha yang dikerjakan sistem (J)
 - U = Energi dalam (J)
 ---
+Beberapa kemungkinan yang ada:
+1. Pemuaian isokhorik  
+**`$W=0$`**, sehingga *`$\Delta Q=\Delta U$`*
+2. Pemuaian isobaris  
+**`$W\not = 0$`**, sehingga *`$\Delta Q=W+\Delta U$`*
+3. Pemuaian isotermal  
+**`$\Delta U= 0$`**, sehingga *`$\Delta Q=W$`*
+4. Pemuaian adiabatis  
+**`$Q= 0$`**, sehingga *`$W=-\Delta U$`*
+---
 #### Prinsip Ekuipartisi
-1. Gas monoatomik
+##### 1. Gas monoatomik  
 - Gas monoatomik dapat bergerak secara translasi ke arah *X*, *Y* dan *Z*. Kecepatannya masing-masing *v<sub>x</sub>*, *v<sub>y</sub>* dan *v<sub>z</sub>*. Energi kinetiknya
 masing-masing adalah **`$\frac 1 2 mv_x^2$`**, **`$\frac 1 2 mv_y^2$`** dan **`$\frac 1 2 mv_z^2$`**. 
 - Gerak rotasi dan vibrasi pada gas monoatomik dapat diabaikan karena ukuran atom yang dianggap sangat kecil. Karena itu, molekul gas monoatomik dikatakan memiliki **3** derajat kebebasan
@@ -162,7 +175,7 @@ Secara umum,
 ###### `$$U=\frac 3 2 kT=\frac f 2 kT$$` 
 dengan **f** adalah derajat kebebasan.
 ---
-2. Gas diatomik
+##### 2. Gas diatomik
 Gas diatomik dapat bergerak secara:
 - **Translasi** ke arah *X*, *Y* dan *Z*. Kecepatannya masing-masing *v<sub>x</sub>*, *v<sub>y</sub>* dan *v<sub>z</sub>*. Energi kinetiknya
 masing-masing adalah **`$\frac 1 2 mv_x^2$`**, **`$\frac 1 2 mv_y^2$`** dan **`$\frac 1 2 mv_z^2$`**. 
@@ -186,7 +199,7 @@ dengan **f** adalah derajat kebebasan.
 - Menurut Clausius, tidak mungkin panas mengalir dari reservoir dingin ke reservoir panas, tanpa adanya usah dari luar.
 - Dalam setiap siklus, entropi akan semakin besar atau tetap sama. 
 ---
-Siklus Carnot
+##### Siklus Carnot
 
 <img src="../resources/images/td06.png" height="500px">
 ---
@@ -199,7 +212,7 @@ antara besar usaha yang dilakukan sistem (**W**) terhadap energi kalor yang dise
 ###### `$$\eta=\frac W {Q_1} \times 100\%$$`
 Oleh karena usaha `$W=Q_1–Q_2$`, maka 
 ###### `$$\eta=\Big(1-\frac {Q_2} {Q_1}\Big) \times 100\%$$`
-###### `$$\eta=\Big(1-\frac {T_2} {T_1}\Big) \times 100\%$$`	
+###### `$$\eta=\Big(1-\frac {T_2} {T_1}\Big) \times 100\%$$`
 ---
 keterangan:
 - η = efisiensi
@@ -209,7 +222,7 @@ keterangan:
 - T<sub>1</sub> = Suhu pada reservoir panas
 - T<sub>2</sub> = Suhu pada reservoir dingin
 ---
-Refrigerator
+##### Refrigerator
 - Koefisien Performansi:
 ###### `$$K_P=\frac {Q_2}{W}=\frac {Q_2}{Q_1-Q_2}=\frac {T_2}{T_1-T_2}%$$`
 keterangan:
@@ -218,8 +231,7 @@ keterangan:
 - Q<sub>1</sub> = Kalor yang diberikan pada reservoir panas
 - Q<sub>2</sub> = Kalor yang diserap pada reservoir dingin
 - T<sub>1</sub> = Suhu pada reservoir panas
-- T<sub>2</sub> = Suhu pada reservoir dingin					
-					
+- T<sub>2</sub> = Suhu pada reservoir dingin		
 </textarea>
 </section>
 		</div>
