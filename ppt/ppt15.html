@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Getaran dan Gelombang</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css" id="theme">
+		<link rel="stylesheet" href="dist/custom.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-auto-animate>
+				<textarea data-template>
+## Gerak Harmonis Sederhana
+---
+- *Gerak Harmonik/Gerak Periodik*: Gerak bolak-balik di sekitar titik kesetimbangan, atau gerak yang berulang dalam selang waktu yang sama.
+- Contoh: pohon tertiup angin, perahu diombang-ambing ombak, bandul, ayunan, pegas, dll.
+- Di alam, umumnya yang ada adalah gerak harmonik teredam, yang akhirnya akan berhenti, entah karena gesekan atau energi berubah menjadi bentuk lain.
+---
+<img src="../resources/images/gh01.png" height="640px">
+---
+<img src="../resources/images/gh02.png" height="640px">
+---
+### Konsep-konsep dalam GHS
+- **Titik kesetimbangan**: titik diam di mana resultan gaya yang bekerja sama dengan nol.
+- **Simpangan** (*x* atau *y*): Perpindahan yang ditempuh benda diukur dari titik kesetimbangan.
+- **Amplitudo** (*A*): Simpangan terjauh (maksimal).
+- **Periode** (*T*): Waktu untuk menempuh satu getaran/gelombang penuh (s).
+- **Frekuensi** (*f* atau *`$\nu$`*): jumlah getaran/gelombang per detik (Hz). 
+---
+- **Gaya Pemulih**: Gaya yang membuat benda bergerak harmonis atau gaya yang selalu membawa benda ke titik kesetimbangannya.
+---
+### Karakteristik GHS
+##### 1. Hubungan Periode dan Frekuensi 
+###### `$$f=\frac 1 T$$`
+Keterangan:
+- *f* = Frekuensi (Hz)
+- *T* = Periode (s)
+---
+##### 2. Simpangan dan Amplitudo
+- Simpangan bernilai positif bila benda di kanan atau atas dan negatif bila di kiri atau bawah. 
+- Amplitudo selalu bernilai positif.
+---
+##### 3. Kecepatan dan Percepatan
+- Kecepatan dan percepatan bernilai positif bila ke arah kanan atau atas dan negatif bila ke arah kiri atau bawah. 
+- Kecepatan bernilai maksimal saat benda berada di titik kesetimbangan, dan nol saat benda di simpangan terjauh.
+- Percepatan bernilai nol saat benda berada di titik kesetimbangan, dan maksimal saat benda di simpangan terjauh.
+---
+##### 4. Gaya Pemulih, Energi Kinetik dan Energi Potensial
+- Gaya Pemulih bernilai positif bila ke arah kanan atau atas dan negatif bila ke arah kiri atau bawah. Arahnya selalu sama dengan percepatan dan berlawanan dengan arah kecepatan benda.
+- Saat benda di titik kesetimbangan, Energi Kinetik maksimal dan Energi Potensial nol.
+- Saat benda di simpangan terjauh, Energi Kinetik nol dan Energi Potensial maksimal.
+---
+### Persamaan Simpangan
+##### 1. Sistem Pegas
+- Salah satu gerak harmonik sederhana yang sudah kita kenal adalah pergerakan benda yang dilekatkan pada sebuah pegas. Dalam keadaan setimbang, tidak ada gaya yang bekerja. Namun, ketika pegas diberi gaya (entah dengan didorong atau ditarik untuk pegas
+horizontal, dan diberi beban untuk pegas vertikal), pegas dan benda akan berpindah dari keadaan setimbangnya.
+---
+- Ketika benda bergerak sejauh 𝑥 dari keadaan setimbang, pegas akan mengerjakan gaya yang besarnya *`$-kx$`*, sebagaimana dinyatakan oleh Hukum Hooke: 
+###### `$$F_x=−kx$$`
+Dengan 𝑘 = konstanta pegas. 
+- Tanda negatif menunjukkan bahwa gaya tersebut adalah gaya pemulih, yang berlawanan arah dengan perpindahan dari titik kesetimbangan. Dengan mengingat Hukum II Newton, maka besar percepatannya: 
+---
+###### `$$a_x=\frac F m=-\frac{kx}{m}$$`
+- Dapat dilihat bahwa percepatan benda berbanding lurus dengan perpindahan, tapi berlawanan arah dengannya. Karena itu dapat dikatakan bahwa: 
+Dalam gerak harmonik sederhana, percepatan dan total gaya yang bekerja, *berbanding lurus tapi berlawanan arah* dengan perpindahan benda dari titik kesetimbangan.
+---
+- *`$F=−kx$`* bukanlah satu-satunya persamaan gaya pemulih. Untuk sistem gerak harmonik sederhana yang lain, harus dipakai persamaan lain. 
+Misalnya, untuk bandul (pendulum) sederhana, dipakai: *`$F=−mg\sin\theta$`*
+- Persamaan simpangan diturunkan dari definisi percepatan sebagai turunan kedua dari perpindahan.
+---
+`$$a_x=\frac{d^2x}{dt^2}$$`
+`$$-\frac{kx}{m}=\frac{d^2x}{dt^2}$$`
+###### `$$\frac{d^2x}{dt^2}+\frac{kx}{m}=0$$`
+---
+- Persamaan di atas adalah persamaan diferensial orde kedua, yang memiliki penyelesaian *`$x(t)=A\sin(\omega t+\theta_0)$`* atau *`$x(t)=A\cos(\omega t+\theta_0)$`*. Kedua persamaan dapat dipakai, 
+karena *`$\cos(\omega t+\theta_0)=\sin(\omega t+\theta_0+\frac{\pi}{2})$`*. Jadi dengan menambahkan atau mengurangkan 𝜃<sub>0</sub> dengan 𝜋/2, kedua persamaan itu dapat digunakan.
+</textarea>
+</section>
+		</div>
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+		<script type="text/javascript" src="dist/reveal.js"></script>
+		<script type="text/javascript" src="plugin/notes/notes.js"></script>
+		<script type="text/javascript" src="plugin/markdown/markdown.js"></script>
+		<script type="text/javascript" src="plugin/math/math.js"></script>
+		<script type="text/javascript" src="js/canvas.js"></script>
+		<script type="text/javascript" src="plugin/highlight/highlight.js"></script>
+		<script type="text/javascript" >
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+
+	</body>
+</html>
