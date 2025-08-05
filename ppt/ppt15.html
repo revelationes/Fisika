@@ -39,11 +39,13 @@
 - **Gaya Pemulih**: Gaya yang membuat benda bergerak harmonis atau gaya yang selalu membawa benda ke titik kesetimbangannya.
 ---
 ### Karakteristik GHS
-##### 1. Hubungan Periode dan Frekuensi 
+##### 1. Hubungan Periode, Frekuensi dan Kecepatan Sudut
 ###### `$$f=\frac 1 T$$`
+###### `$$\omega=2\pi f=\frac {2\pi} T $$`
 Keterangan:
 - *f* = Frekuensi (Hz)
 - *T* = Periode (s)
+- *𝜔* = Kecepatan sudut atau Frekuensi sudut (rad/s)
 ---
 ##### 2. Simpangan dan Amplitudo
 - Simpangan bernilai positif bila benda di kanan atau atas dan negatif bila di kiri atau bawah. 
@@ -83,6 +85,38 @@ Misalnya, untuk bandul (pendulum) sederhana, dipakai: *`$F=−mg\sin\theta$`*
 ---
 - Persamaan di atas adalah persamaan diferensial orde kedua, yang memiliki penyelesaian *`$x(t)=A\sin(\omega t+\theta_0)$`* atau *`$x(t)=A\cos(\omega t+\theta_0)$`*. Kedua persamaan dapat dipakai, 
 karena *`$\cos(\omega t+\theta_0)=\sin(\omega t+\theta_0+\frac{\pi}{2})$`*. Jadi dengan menambahkan atau mengurangkan 𝜃<sub>0</sub> dengan 𝜋/2, kedua persamaan itu dapat digunakan.
+---
+##### Kecepatan dan Percepatan
+- Kecepatan adalah turunan pertama dari perpindahan atau simpangan, sehingga:
+`$$v_x=\frac{dx}{dt}=\frac{d}{dt}A\sin(\omega t+\theta_0)$$` atau `$$v_x=\frac{dx}{dt}=\frac{d}{dt}A\cos(\omega t+\theta_0)$$`
+---
+###### `$$v_x=\omega A\cos(\omega t+\theta_0)$$` 
+atau 
+###### `$$v_x=-\omega A\sin(\omega t+\theta_0)$$`
+---
+- Percepatan adalah turunan pertama dari kecepatan, sehingga:
+`$$a_x=\frac{dv}{dt}=\frac{d}{dt}\omega A\cos(\omega t+\theta_0)$$` atau `$$a_x=\frac{dv}{dt}=\frac{d}{dt}-\omega A\sin(\omega t+\theta_0)$$`
+---
+###### `$$a_x=-\omega^2 A\sin(\omega t+\theta_0)=-\omega^2x$$` 
+atau 
+###### `$$a_x=-\omega^2 A\cos(\omega t+\theta_0)=-\omega^2x$$`
+---
+##### Frekuensi dan Frekuensi Sudut
+- Dari persamaan *`$F_x=−kx$`* dan *`$a_x=-\omega^2x$`*, dapat diperoleh:
+`$$a_x=\frac{-kx}m=-\omega^2x$$`
+`$$\omega^2=\frac{k}m$$`
+###### `$$\omega=\sqrt{\frac k m}$$`
+---
+##### Energi Kinetik dan Energi Potensial
+- Dalam gerak harmonik sederhana, energi kinetik dan energi potensialnya selalu berubah sebagai fungsi waktu. Namun jumlah keduanya (energi mekanik), *`$E_M=E_K+E_P$`* selalu tetap. 
+`$$dE_P=-F.dl$$`
+`$$E_P=\int^{l}_{0} F.dl$$`
+---
+###### `$$E_P=\frac 1 2 kx^2=\frac 1 2 kA^2\cos^2(\omega t+\theta_0)$$`
+###### `$$E_K=\frac 1 2 mv^2=\frac 1 2 m\omega^2A^2\sin^2(\omega t+\theta_0)$$`
+###### `$$E_K=\frac 1 2 kA^2\sin^2(\omega t+\theta_0)$$`
+---
+###### `$$\begin{split}E_M&=E_K+E_P \\ &=\frac 1 2 kA^2\cos^2(\omega t+\theta_0)+\frac 1 2 kA^2\sin^2(\omega t+\theta_0) \\ &=\frac 1 2 kA^2\end{split}$$`
 </textarea>
 </section>
 		</div>
