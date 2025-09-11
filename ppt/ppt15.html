@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -252,7 +252,7 @@ dengan (n = 1,2,3,4,….). Dengan demikian jarak simpul ke titik pantul bebas ad
 ---
 #### Letak perut
 - Tempat-tempat yang menyatakan perut mempunyai harga amplitudo yang maksimum, jadi: 
-`$$A_C=2A\cos 2\pi\Big(\frac{x}{\lambda}\Big)=\pm 1$$`
+`$$A_C=2A\cos 2\pi\Big(\frac{x}{\lambda}\Big)=\pm 2A$$`
 `$$\cos 2\pi\Big(\frac{x}{\lambda}\Big)=\pm 1$$`
 `$$2\pi\Big(\frac{x}{\lambda}\Big)=(n-1)\pi$$`
 ---
@@ -297,7 +297,7 @@ dengan (n = 1,2,3,4,….). Dengan demikian jarak simpul ke titik pantul terikat 
 ---
 #### Letak perut
 - Tempat-tempat yang menyatakan perut mempunyai harga amplitudo yang maksimum, jadi: 
-`$$A_C=2A\sin 2\pi\Big(\frac{x}{\lambda}\Big)=\pm 1$$`
+`$$A_C=2A\sin 2\pi\Big(\frac{x}{\lambda}\Big)=\pm 2A$$`
 `$$\sin 2\pi\Big(\frac{x}{\lambda}\Big)=\pm 1$$`
 `$$2\pi\Big(\frac{x}{\lambda}\Big)=\Big(\frac{2n-1}{2}\Big)\pi$$`
 ---
@@ -338,7 +338,7 @@ Cepat Rambat Gelombang Bunyi
 - Di antaranya adalah: kelembaman (inertia), suhu, dan massa jenis. 
 ---
 Cepat rambat bunyi pada beberapa medium 
-| Medium | Kecepatan rambat bunyi (m/s) |
+| **Medium** | **Kecepatan rambat bunyi (m/s)** |
 |---|---|
 | Udara (0 °C) | 331 |
 | Udara (100 °C) | 386 |
@@ -350,18 +350,130 @@ Cepat rambat bunyi pada beberapa medium
 #### Cepat rambat bunyi pada zat padat 
 - Pada benda padat, cepat rambat bunyi dihitung dengan akar perbandingan modulus elastistas (*E*) terhadap massa jenis (*ρ*) bahan tersebut, menggunakan 
 persamaan berikut.
-###### `$$v=\sqrt{\frac{B}{\rho}}$$`
+###### `$$v=\sqrt{\frac{E}{\rho}}$$`
 Dengan : 
-- *B* = modulus elastisitas (N/m<sup>2</sup>),
+- *E* = modulus elastisitas (N/m<sup>2</sup>),
 - *ρ* = massa jenis bahan (kg/m<sup>3</sup>).
 ---
 #### Cepat rambat bunyi pada benda cair 
 - Pada benda cair, cepat rambat bunyi dipengaruhi oleh modulus Bulk (B) dan massa jenis (ρ) benda yang ditunjukkan dengan persamaan:
-###### `$$v=\sqrt{\frac{E}{\rho}}$$`
+###### `$$v=\sqrt{\frac{B}{\rho}}$$`
 Dengan : 
-- *E* = modulus bulk = ukuran elastisitas bahan pada satuan volume(N/m<sup>2</sup>),
+- *B* = modulus bulk = ukuran elastisitas bahan pada satuan volume(N/m<sup>2</sup>),
 - *ρ* = massa jenis zat cair (kg/m<sup>3</sup>).
-
+---
+#### Cepat rambat bunyi pada gas 
+- Pada gas, kecepatan molekul dipengaruhi oleh suhu, semakin cepat molekul bergerak maka bunyi akan semakin cepat untuk dirambatkan. Adapun modulus Bulk pada udara akan bergantung pada tekanan dan keadaan adibatik 
+yang ditunjukkan dengan persamaan berikut.
+###### `$$B=\gamma P$$`
+Dengan : 
+- *γ* = konstanta Laplace
+- *p* = tekanan (N/m<sup>2</sup>)
+---
+- Dari persamaan gas ideal, kita tahu bahwa
+###### `$$PV=nRT$$` 
+atau
+`$$P=\frac{mRT}{MV}=\frac{\rho RT}{M}$$`
+sehingga
+---
+###### `$$v=\sqrt{\frac{B}{\rho}}=\sqrt{\frac{\gamma P}{\rho}}=\sqrt{\frac{\gamma RT}{M}}$$`
+Dengan : 
+- *R* = tetapan gas dengan nilai 8.31 J/mol.K
+- *M* = massa molar gas (kg/mol)
+- *T* = suhu (K)
+---
+### Sumber Bunyi
+#### Sumber bunyi dawai
+- Pada waktu kita memetik dawai/senar, kita akan menghasilkan gelombang stasioner dengan ujung terikat yang merupakan hasil superposisi gelombang.
+- Nada dasar adalah nada dengan panjang gelombang 1/2 λ dan nada atas pertama adalah nada dengan panjang gelombang 1 λ. Pola ini akan terus naik dengan beda 1/2 λ.
+---
+- Besarnya ferkuensi nada ke-n (*`$f_n$`*) pada dawai dapat dinyatakan dengan persamaan berikut.
+###### `$$f_n=\frac{v}{\lambda_n}=\frac{n}{2 L}v$$`
+Dengan : 
+- *f* = frekuensi (Hz),
+- *v* = cepat rambat gelombang bunyi (m/s),
+- *λ<sub>n</sub>* = panjang gelombang bunyi (m),
+- *L* = panjang dawai (m),
+- *n* = 1,2,3…
+---
+- Adapun cepat rambat bunyi (*v*) pada dawai tergantung kepada tegangan dawai (*F*), massa dawai (*m*) dan panjang dawai (*L*), yang secara matematis dapat dinyatakan dengan persamaan berikut.
+###### `$$v=\sqrt{\frac{F}{A\rho}}=\sqrt{\frac{FL}{m}}$$`
+---
+#### Sumber bunyi pipa organa
+- Seruling, terompet dan alat musik tiup lain memanfaatkan kolom udara yang ditiup sehingga udara yang bergetar akan menghasilkan suara yang teratur. 
+Kolom tempat udara bergetar disebut pipa organa. 
+- Terdapat dua jenis pipa organa, yaitu pipa organa terbuka dan pipa organa tertutup.
+---
+##### Pipa organa terbuka
+- Pipa organa terbuka merupakan sebuah pipa dengan kolom udara tanpa penutup pada kedua ujungnya.
+- Sama halnya dengan dawai, frekuensi pada pipa organa dimulai dengan panjang gelombang 1/2 λ dan terus naik dengan beda 1/2 λ, sehingga 
+penentuan frekuensi nada ke-n dapat ditentukan dengan persamaan yang digunakan pada dawai.
+---
+##### Pipa organa tertutup
+- Pada pipa organa tertutup, salah satu ujung dari kolom udara pada pipa berada dalam posisi tertutup.
+- Frekuensi tiap tingkatan nada dapat ditunjukkan dengan persamaan:
+---
+###### `$$f_n=\frac{2n-1}{4 L}v$$`
+Dengan : 
+- *f* = frekuensi (Hz),
+- *v* = cepat rambat gelombang bunyi (m/s),
+- *λ<sub>n</sub>* = panjang gelombang bunyi (m),
+- *L* = panjang pipa organa (m),
+- *n* = 1,2,3…
+---
+### Efek Doppler
+- Efek Doppler terjadi karena panjang gelombang sumber bunyi akan berubah secara relatif ketika mendekat atau menjauhi pendengar.
+- Secara umum persamaan efek Doppler dapat dituliskan sebagai berikut:
+---
+###### `$$f_p=\frac{v\pm v_p}{v\pm v_s}f_s$$`
+Dengan : 
+- *v<sub>p</sub>* = kecepatan gerak pengamat (m/s),
+- *v<sub>s</sub>* = kecepatan gerak sumber (m/s),
+- *f<sub>p</sub>* = frekuensi sumber bunyi (Hz),
+- *f<sub>s</sub>* = frekuensi yang didengar pengamat (Hz)
+---
+- Kecepatan pengamat *v<sub>p</sub>* akan bertanda (+) apabila mendekati sumber dan akan bertanda (-) apabila menjauhi sumber, sedangkan *v<sub>s</sub>* menunjukkan 
+kecepatan gerak sumber, vS akan bertanda (+) apabila menjauhi pengamat dan bertanda (-) apabila mendekati pengamat.
+---
+### Resonansi 
+- Gelas dan kaca dapat pecah hanya karena gelombang suara. Hal ini disebabkan frekuensi suara tersebut beresonansi dengan frekuensi alami gelas. 
+- Saat material gelas bergetar, susunan bahannya menjadi tidak stabil dan akhirnya pecah. 
+---
+- Resonansi adalah proses ikut bergetarnya suatu benda karena frekuensi alaminya sama dengan frekuensi dari suatu sumber bunyi. 
+- Resonansi sering ditemukan dalam fenomena sehari-hari seperti ikut bergetarnya jendela saat terjadi halilintar. 
+- Dalam alat musik seperti gitar terdapat kotak resonansi di mana udara dalam kotak resonansi ikut bergetar saat dawai dipetik.
+---
+### Pelayangan Bunyi 
+- Bunyi peluit sering kali terdengar melengking tinggi dan lalu melemah. Bunyi melengking yang kita dengar sebenarnya tidak berasal hanya dari satu frekuensi saja, tetapi dari berbagai frekuensi dan seringkali terdengar suaranya pelan kemudian melengking.
+- Fenomena ini disebut sebagai pelayangan bunyi. Pelayangan bunyi dapat dijelaskan melalui prinsip superposisi gelombang.
+---
+- Kombinasi dari dua gelombang ini disebut dengan interferensi. Saat mendengar suara yang keras, berarti kedua gelombang memiliki beda fase *`$nλ$`*. Keadaan ini disebut dengan interferensi konstruktif, sedangkan bunyi 
+yang terdengar lemah dikarenakan kedua gelombang memiliki beda fase *`$\frac{nλ} 2$`*. 
+---
+- Adapun persamaan untuk menentukan layangan bunyi adalah:
+###### `$$f_n=|f_2 − f_1|$$`
+Dengan :
+- *f<sub>n</sub>* = frekuensi layangan bunyi (Hz)
+- *f<sub>1</sub>/f<sub>2</sub>* = frekuensi benda yang berinterferensi (Hz)
+---
+### Intensitas dan Taraf Intensitas Bunyi
+- Telinga manusia memiliki batas/ambang pendengaran yang berkisar 10-12 watt/m<sup>2</sup>. Jika kurang dari batas tersebut itu telinga tidak dapat mendengar bunyi dari sumber bunyi. 
+- Ukuran kekuatan dari bunyi dinyatakan dengan istilah Taraf Intensitas Bunyi. 
+---
+- Taraf intensitas bunyi merupakan logaritma perbandingan antara intensitas yang diukur dengan intensitas ambang pendengaran, yang secara matematis dapat dinyatakan dengan persamaan sebagai berikut.
+###### `$$TI=10\log{\frac{I}{I_0}}$$`
+- Taraf intensitas memiliki satuan desiBel (dB)
+---
+Taraf Intensitas bunyi beserta sumbernya
+| **Taraf Intensitas** | **Sumber** |
+|---|---|
+| 0 dB | Ambang pendengaran manusia |
+| 10-20 dB | Bisikan Kecil |
+| 30-40 dB | Perpustakaan |
+| 50-70 dB | Percakapan sehari-hari |
+| 70-80 dB | Lalu lintas yang ramai |
+| 90 dB | Alat pengebor beton |
+| > 90 dB | Mesin jet |
 </textarea>
 </section>
 		</div>
