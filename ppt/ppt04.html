@@ -15,11 +15,19 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
+		<div id="schauderhaft-footer" class="footer">
+			<span class="element" id="tgl">#cool-talk</span>
+			<span class="element"></span>
+			<span class="element"></span>
+		</div>
 		<div class="reveal">
 			<div class="slides">
 				<section data-markdown data-auto-animate>
 				<textarea data-template>
 # Vektor
+- Pengertian dan Notasi Vektor
+- Komponen Vektor
+- Operasi Vektor (Penjumlahan dan Perkalian)
 ---
 ### Vektor
 <div class="container">
@@ -230,6 +238,20 @@ Sifat-sifat perkalian silang:
 		<script type="text/javascript" src="plugin/math/math.js"></script>
 		<script type="text/javascript" src="js/canvas.js"></script>
 		<script type="text/javascript" src="plugin/highlight/highlight.js"></script>
+		<script type="text/javascript">
+			window.addEventListener("load", function() {
+				revealDiv = document.querySelector("body div.reveal")
+				footer = document.getElementById("schauderhaft-footer");
+				revealDiv.appendChild(footer);
+			} );
+			window.addEventListener("load", function() {
+				date = new Date();
+				var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+				var days = ["Minggu","Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+				var tanggal = days[date.getDay()] + ", "+ date.getDate() +" "+ months[date.getMonth()] +" "+ date.getFullYear();
+				document.getElementById("tgl").innerHTML = tanggal;
+			} );
+		</script>
 		<script type="text/javascript" >
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
