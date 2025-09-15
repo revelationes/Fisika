@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/night.css">
 		<link rel="stylesheet" href="dist/custom.css">
 
 		<!-- Theme used for syntax highlighted code -->
@@ -30,7 +30,7 @@
 ### Mol, Massa, Massa Molar 
 - Apa yang dimaksud dengan keadaan STP (*standard temperature pressure*) atau keadaan 
 normal atau keadaan standard?
-- Keadaan standard atau STP adalah keadaan dimana tekanan gas p = 1 atm = 1,013 × 10<sup>5</sup> Pa 
+- Keadaan standard atau STP adalah keadaan dimana tekanan gas p = 1 atm = 1,013 × 105 Pa 
 dan suhu gas 0 °C atau 273 Kelvin. 
 - Pada keadaan standard, 1 mol gas menempati volume sebesar 22.400 cm<sup>3</sup> sedangkan jumlah 
 atom dalam 1 mol sama dengan : 6,02 × 10<sup>23</sup> yang disebut bilangan Avogadro (N<sub>A</sub>). 
@@ -109,12 +109,12 @@ adalah **`$\Delta p_x=p_x'-p_x=-2mv_x$`**.
 - Energi kinetik rata-rata setiap molekul **`$E_k=\frac{1}{2}mv^2$`**, sehingga didapatkan hubungan
 ###### `$$PV=\frac{2}{3}NE_k$$`
 - Dari persamaan `$PV=NkT$`, diperoleh
-###### `$$E_k=\frac{3}{2}kT$$`
+###### `$$E_k=\frac{2}{3}kT$$`
 inilah **energi kinetik rata-rata per molekul**
 ---
 ### Kecepatan Molekul
 - Kecepatan molekul dapat dicari dari persamaan berikut:
-`$$\begin{equation}E_k=\frac{3}{2}kT\end{equation}$$`
+`$$\begin{equation}E_k=\frac{2}{3}kT\end{equation}$$`
 `$$\begin{equation}E_k=\frac{1}{2}mv^2\end{equation}$$`
 ###### `$$v_{rms}=\sqrt{\frac{3kT}{m}}$$`
 ---
@@ -135,15 +135,27 @@ Beberapa kemungkinan yang ada:
 <img src="../resources/images/td03.png" height="300px">
 ---
 ##### 3. Pemuaian isotermal
-- Dari persamaan gas ideal, kita tahu bahwa `$PV=nRT$` atau `$P=\frac{nRT}{V}$`. Usahanya menjadi: **`$W=\int^{V_2}_{V_1} \frac{nRT}{V}.dV=nRT\int^{V_2}_{V_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \frac{V_2}{V_1}$`**.
+- Dari persamaan gas ideal, kita tahu bahwa `$PV=nRT$` atau `$P=\frac{nRT}{V}$`. Usahanya menjadi: **`$W=\int^{V_2}_{V_1} \frac{nRT}{V}.dV=nRT\int^{V_2}_{V_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \big(\frac{V_2}{V_1}\big)$`**.
 
 <img src="../resources/images/td04.png" height="300px">
 ---
 ##### 4. Pemuaian adiabatis
 - Pemuaian adiabatis adalah proses pemuaian di mana gas dipanaskan dengan cepat sehingga volume bertambah dengan sangat cepat dan tidak sempat ada pemindahan panas dari gas ke dinding, atau dari sistem ke lingkungan.
-Dalam proses ini, bila volume naik, tekanan akan cepat turun. Berlaku **`$PV^{\gamma}=konstan$`**, dengan γ = indeks adiabatis, untuk gas monoatomik bernilai 5/3 dan untuk gas diatomik bernilai 7/5.
+Dalam proses ini, bila volume naik, tekanan akan cepat turun. Berlaku **`$PV^{\gamma}=konstan$`**, dengan *γ = indeks adiabatis atau konstanta Laplace*, untuk gas monoatomik bernilai 5/3 dan untuk gas diatomik bernilai 7/5.
+---
+- Indeks adiabatis *γ* didefinisikan sebagai 
+###### `$$\gamma=\frac{C_P}{C_V}$$`
+dengan:
+- *C<sub>P</sub>* = Kalor jenis benda pada tekanan tetap. 
+- *C<sub>V</sub>* = Kalor jenis benda pada volume tetap.
+Untuk gas monoatomik, *`$\gamma=\frac 5 3$`*, untuk gas diatomik *`$\gamma=\frac 7 5$`*
 ---
 - Usahanya **`$W=\int^{V_2}_{V_1} P.dV=\int^{V_2}_{V_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$`**.
+`$$W=\frac{CV^{1-\gamma}_2-CV^{1-\gamma}_1}{1-\gamma}$$`
+`$$W=\frac{P_2V_2^{\gamma}V^{1-\gamma}_2-P_1V_1^{\gamma}V^{1-\gamma}_1}{1-\gamma}$$`
+`$$W=\frac{P_2V_2-P_1V_1}{1-\gamma}$$`
+---
+`$$W=\frac{P_1V_1-P_2V_2}{\gamma-1}$$`
 
 <img src="../resources/images/td05.png" height="300px">
 ---
@@ -154,9 +166,9 @@ Dalam proses ini, bila volume naik, tekanan akan cepat turun. Berlaku **`$PV^{\g
 ---
 ###### `$$\Delta Q=W+\Delta U$$`
 keterangan:
-- Q = Panas/Usaha yang diberikan terhadap sistem (J)
-- W = Panas/Usaha yang dikerjakan sistem (J)
-- U = Energi dalam (J)
+- *𐤃Q* = Panas/Usaha yang diberikan terhadap sistem (J)
+- *W* = Panas/Usaha yang dikerjakan sistem (J)
+- *𐤃U* = Perubahan Energi dalam (J)
 ---
 Beberapa kemungkinan yang ada:
 1. Pemuaian isokhorik  
@@ -176,7 +188,7 @@ masing-masing adalah **`$\frac 1 2 mv_x^2$`**, **`$\frac 1 2 mv_y^2$`** dan **`$
 ---
 - Energi dalam gas monoatomik adalah total dari energi kinetiknya.
 `$$U=\frac 1 2 mv_x^2+\frac 1 2 mv_y^2+\frac 1 2 mv_z^2=\frac 3 2 mv_x^2$$`
-`$$U=\frac 3 {2.3} mv^2=\frac 1 2 mv^2=\frac 3 2 kT$$`
+`$$U=\frac 3 {2.3} mv_x^2=\frac 1 2 mv^2=\frac 3 2 kT$$`
 Secara umum, 
 ###### `$$U=\frac 3 2 kT=\frac f 2 kT$$` 
 dengan **f** adalah derajat kebebasan.
@@ -203,6 +215,14 @@ dengan **f** adalah derajat kebebasan.
 - Prinsip ekuipartisi menyatakan bahwa energi dalam gas dapat dipecah-pecah menjadi energi dalam per molekul, *`$U=\frac f 2 kT$`*. Karena itu, untuk sejumlah *N* molekul, 
 total energi dalamnya adalah:
 ###### `$$U=\frac f 2 NkT=\frac f 2 nRT$$`
+---
+Jika dirangkum
+| **Proses** | **`$W$`** | **`$\Delta U$`** | **`$\Delta Q$`** |
+|---|---|---|---|
+| Isokhorik | `$0$` | *`$\frac f 2 nRT$`* | `$\Delta U$` |
+| Isobaris | `$P\Delta V$` | *`$\frac f 2 nRT$`* | `$W+\Delta U$` |
+| Isotermal | `$nRT \ln \big(\frac{V_2}{V_1}\big)$` | *`$0$`* | `$W$` |
+| Adiabatis | `$\frac{P_1V_1-P_2V_2}{\gamma-1}$` | *`$\frac f 2 nRT$`* | 0 |
 ---
 ### Hukum II Termodinamika
 - Menurut Kelvin-Planck, tidak mungkin membuat mesin yang bekerja dalam suatu siklus dan menghasilkan seluruh kalor yang diserapnya menjadi usaha.
@@ -242,7 +262,7 @@ keterangan:
 - Q<sub>1</sub> = Kalor yang diberikan pada reservoir panas
 - Q<sub>2</sub> = Kalor yang diserap pada reservoir dingin
 - T<sub>1</sub> = Suhu pada reservoir panas
-- T<sub>2</sub> = Suhu pada reservoir dingin		
+- T<sub>2</sub> = Suhu pada reservoir dingin	
 </textarea>
 </section>
 		</div>
