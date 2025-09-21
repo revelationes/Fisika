@@ -132,15 +132,15 @@ Usaha yang dilakukan adalah **$dW=F.dS=PA.dS$**. Karena **$A.dS=dV$** maka **$dW
 ---
 Beberapa kemungkinan yang ada:
 ##### 1. Pemuaian isokhorik
-- Karena *$dV=0$*, $W=\int^{V_2}_{V_1} P.dV$ menjadi **$W=P\int^{V_2}_{V_1} 0$** saja. Atau, **$W=0$**
+- Karena *$dV=0$*, $W=\int_{V_1}^{V_2} P.dV$ menjadi **$W=P\int^{V_2}_{V_1} 0$** saja. Atau, **$W=0$**
 ---
 ##### 2. Pemuaian isobaris 
-- Karena *P* tetap, $W=\int^{V_2}_{V_1} P.dV$ menjadi **$W=P\int^{V_2}_{V_1} dV$** saja. Atau, **$W=P(V_2-V_1)=P\Delta V$** 
+- Karena *P* tetap, $W=\int_{V_1}^{V_2} P.dV$ menjadi **$W=P\int^{V_2}_{V_1} dV$** saja. Atau, **$W=P(V_2-V_1)=P\Delta V$** 
 
 <img src="../resources/images/td03.png" height="300px">
 ---
 ##### 3. Pemuaian isotermal
-- Dari persamaan gas ideal, kita tahu bahwa $PV=nRT$ atau $P=\frac{nRT}{V}$. Usahanya menjadi: **$W=\int^{V_2}_{V_1} \frac{nRT}{V}.dV=nRT\int^{V_2}_{V_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \big(\frac{V_2}{V_1}\big)$**.
+- Dari persamaan gas ideal, kita tahu bahwa $PV=nRT$ atau $P=\frac{nRT}{V}$. Usahanya menjadi: **$W=\int_{V_1}^{V_2} \frac{nRT}{V}.dV=nRT\int^{V_2}_{V_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \big(\frac{V_2}{V_1}\big)$**.
 
 <img src="../resources/images/td04.png" height="300px">
 ---
@@ -155,7 +155,7 @@ dengan:
 - *C<sub>V</sub>* = Kalor jenis benda pada volume tetap.
 Untuk gas monoatomik, *$\gamma=\frac 5 3$*, untuk gas diatomik *$\gamma=\frac 7 5$*
 ---
-- Usahanya **$W=\int^{V_2}_{V_1} P.dV=\int^{V_2}_{V_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$**.
+- Usahanya **$W=\int_{V_1}^{V_2} P.dV=\int^{V_2}_{V_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$**.
 $$W=\frac{CV^{1-\gamma}_2-CV^{1-\gamma}_1}{1-\gamma}$$
 $$W=\frac{P_2V_2^{\gamma}V^{1-\gamma}_2-P_1V_1^{\gamma}V^{1-\gamma}_1}{1-\gamma}$$
 $$W=\frac{P_2V_2-P_1V_1}{1-\gamma}$$
