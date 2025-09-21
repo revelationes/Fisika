@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Rangkaian Listrik Arus Searah</title>
+		<title>Kemagnetan</title>
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
@@ -24,249 +24,155 @@
 			<div class="slides">
 				<section data-markdown data-auto-animate>
 				<textarea data-template>
-# Listrik Dinamis
+# Kemagnetan
+- Medan Magnet di Sekitar Kawat Berarus
+- Hukum Biot Savart, Hukum Ampere
+- Flux Magnet
+- Gaya Lorentz (Gaya Magnetik)
+- Induksi Elektromagnetik
 ---
-- Arus Listrik, Hukum Ohm dan Hukum Kirchoff
-- Rangkaian Seri dan Paralel Resistor
-- Gaya Gerak Listrik (GGL) dan Tegangan Jepit
-- Energi dan Daya Listrik
-- Kapasitor dan Dielektrik
-- Rangkaian Seri dan Paralel Kapasitor
-- Energi Listrik dalam Kapasitor
+### Medan Magnet di Sekitar Kawat Berarus
+- Orang pertama yang menemukan gejala kemagnetan adalah Hans Christian Oersted (1770 – 1851). Oersted menemukan suatu gejala bahwa jika sebuah magnet jarum ditempatkan di dekat kawat berarus listrik maka magnet jarum akan menyimpang. Untuk memahami yang ditemukan Oersted mari kita lakukan percobaan sebagai berikut:
 ---
-### Listrik Dinamis:
-- Listrik dinamis mempelajari tentang muatan-muatan listrik bergerak, yang menyebabkan munculnya arus listrik. 
-- Contoh penerapan listrik dinamis banyak dijumpai dalam kehidupan sehari-hari. 
-- Alat-alat elektronik yang biasa kita gunakan, misalnya radio, televisi, komputer, laptop, dll. merupakan penerapan dari listrik dinamis.
+#### Medan Magnet di Sekitar Kawat Berarus 
+<a href="https://javalab.org/en/oersteds_experiment_en/"><img src="../resources/images/mg01.png" height="100%"></a>
 ---
-### Arus Listrik 
-<a class="tooltip"><b>Arus listrik </b><span class="tooltiptext-t-4">Ketika konduktor dihubungkan dengan sumber listrik, muatan di dalamnya mengalami gaya listrik</span></a> adalah **muatan listrik positif** yang melalui kawat penghantar (konduktor) dari potensial listrik **tinggi** ke potensial listrik **rendah** dalam rangkaian **tertutup**.
-- Arah arus listrik **searah dengan aliran muatan listrik positif** (arus konvensional), berlawanan dengan arah aliran muatan listrik negatif (elektron). 
+- Jika tidak ada arus, kompas hanya dipengaruhi oleh medan magnet bumi.
+- Setelah arus dialirkan, kompas akan menyimpang dari kedudukan semula. 
+- Gejala ini dapat kita analisa sebagai berikut: kompas adalah sebuah magnet dan yang dapat menggerakkan magnet adalah medan magnet. 
+- Medan magnat yang menggerakan magnet jarum tersebut tidak lain adalah medan magnet yang ditimbulkan kawat berarus listrik. 
+- Ketika arah arus dibalik ternyata simpangan jarum kompas juga pada arah sebaliknya.
 ---
-### Arus Listrik 
-- **Potensial listrik** disebut juga tegangan listrik. Arus listrik bisa mengalir jika ada beda potensial listrik pada rangkaian tersebut. Beda potensial dihasilkan dari sumber tegangan listrik, misal baterai. Sumber tegangan listrik mempunyai dua kutub, yaitu kutub positif (+) dan kutub negatif (-). Arus listrik mengalir dari potensial listrik tinggi ke potensial listrik rendah.
-- **Rangkaian tertutup** = suatu rangkaian yang jalannya dimulai dari suatu titik dan akhirnya kembali lagi ke titik tersebut tanpa terputus.
+- Dari uraian di atas dapat disimpulkan, bahwa **di sekitar kawat berarus listrik ada medan magnet**. 
+- Medan magnet yang ditimbulkan oleh arus listrik dapat juga disebut **medan elektromagnet**. 
+- Medan magnet dapat dilukiskan dengan garis-garis gaya magnet. Pola garis gaya magnet dapat ditunjukkan dengan percobaan sederhana yaitu dengan serbuk besi yang ditaburkan di atas kertas dan penghantar berbagai bentuk yang dialiri arus. 
 ---
-### Arus Listrik 
-Besarnya arus listrik disebut dengan **kuat arus listrik**, yang didefinisikan sebagai **banyaknya muatan listrik** yang mengalir melalui suatu penampang **tiap detik**.
-###### $$I=\frac Q t$$
-- *I* = kuat arus listrik (A)			
-- *Q* = muatan listrik (C) 		
-- *t* = waktu (s)
+#### Arah Induksi Magnetik
+Untuk mempermudah kita gunakan aturan genggaman tangan kanan sebagai berikut:
+<img src="../resources/images/mg02.png" height="100%">
 ---
-### Hukum Ohm
-*arus listrik yang mengalir melalui sebuah penghantar berbanding lurus dengan beda potensial (V)*
-$$V\backsim I$$
-###### $$V=IR$$
+- Arah medan magnet *B* ditentukan dengan kaidah sekrup putar kanan atau tangan kanan.
+- Jika tangan kanan menggenggam kawat berarus listrik dengan arah ibu jari sama dengan arah arus maka arah lipatan jari-jari sama dengan arah garis gaya magnet. 
+- Jika arah maju sekrup menyatakan arah arus,maka arah putar kanan sekrup sama dengan arah garis gaya magnet.
+---
+- Arah induksi magnet di suatu titik merupakan garis singgung garis gaya magnet di titik tersebut (garis yang tegak lurus jari-jari). 
+- Sering kali digunakan tanda (•) untuk menandai arah keluar bidang dan (⨂) untuk arah masuk bidang. 
+---
+### Hukum Biot Savart 
+<img src="../resources/images/mg03.png" height="100%">
+---
+#### Hukum Biot Savart 
+*Jika terdapat sebuah titik **P** berjarak **a** dari sebuah kawat berarus listrik **I**, kawat berarus itu terdiri atas bagian-bagian kecil kawat berarus yang disebut elemen arus (**dL**). Tiap elemen arus ini akan menimbulkan induksi magnet kecil (**dB**) yang disebabkan oleh elemen arus **dL**,sebanding dengan sinus sudut antara **r** dan **dL**, dan berbanding terbalik dengan kuadrat jarak **P** ke elemen arus **dL**. Dengan demikian didapatkan perumusan sebagai berikut:*
+---
+###### $$dB=\frac{kIdL \sin\alpha}{r^2}$$
 Keterangan:
-- *V* = beda potensial/tegangan listrik (Volt) 
-- *R* = hambatan (Ohm atau Ω)
+- *I* = kuat arus pada kawat (A) 
+- *dL* = elemen panjang kawat (m)
+- *α* = sudut antara elemen arus dL dengan garis hubung P ke elemen kawat dL 
+- *r* = jarak antara P dengan dL (m)
+- *k* = faktor pembanding (10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>)
+- *dB* = Medan magnet di P yang disebabkan oleh elemen kawat dL (T) 
 ---
-### Hambatan Listrik
-- Setiap bahan, baik itu logam maupun non logam mempunyai hambatan tertentu. Perbedaan hambatan pada masing-masing bahan disebut dengan **hambatan jenis**.
-- Hambatan atau resistansi berguna untuk mengatur besarnya kuat arus listrik yang mengalir melalui suatu rangkaian listrik.
-- Alat yang digunakan sebagai hambatan listrik pada suatu rangkaian adalah resistor, dengan simbol <img src="../resources/images/re01.png" height="25px" style="margin:0"> atau <img src="../resources/images/re02.png" height="25px" style="margin:0"> 
+#### Hukum Biot Savart 
+- Untuk menghilangkan faktor k pada rumus di atas, boleh dipakai konstanta baru μ<sub>0</sub> (permeabilitas ruang hampa)
+$$k=\frac{\mu_0}{4\pi}$$
+μ<sub>0</sub> = 4π × 10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>
+sehingga
+###### $$dB=\frac{\mu_0 IdL \sin\alpha}{4\pi r^2}$$
 ---
-### Hambat Jenis
-- Hambatan suatu penghantar dipengaruhi oleh: hambat jenis penghantar, panjang penghantar, dan luas penampang penghantar.
-###### $$R=\rho \frac L A$$
-- *ρ* = hambat jenis (Ωm)
-- *L* = panjang penghantar (m)
-- *A* = Luas penampang penghantar (m<sup>2</sup>)
+*Medan magnet di sebuah titik **P** yang disebabkan oleh seluruh elemen arus di sepanjang **I** sama dengan jumlah vektor **dB** oleh elemen-elemen arus di sepanjang **I**. Secara matematis, hasil penjumlahan dB oleh masing-masing dL sepanjang **I**, diperoleh dengan integrasi **dB** sepanjang **I**.* 
+$$\begin{split}   B &=\int dB\\ &=\frac{\mu_0}{4\pi}\int \frac{IdL \sin\alpha}{r^2}\end{split}$$
 ---
-### Hukum Kirchoff
-#### Hukum I Kirchoff
-*"jumlah kuat arus yang masuk ke suatu titik cabang sama dengan jumlah kuat arus yang keluar dari titik cabang tersebut"*  
-<img src="../resources/images/HK01.png" height="50%">
+#### Medan magnet dB di titik P di sekitar kawat berarus 
+- Vektor *dB* tegak lurus terhadap *dL* (= arah arus) dan terhadap vektor satuan *r* (arah menuju titik P)
+- Besar *dB* berbanding terbalik dengan kuadrat jarak P ke *dL* (r<sup>2</sup>)
+- Besar *dB* berbanding lurus dengan kuat arus *I* dan besar *dL* 
+- Besar *dB* berbanding lurus terhadap *sin⁡ α*, di mana *α* adalah sudut antara *dL* dan vektor satuan *r*
 ---
-#### Hukum I Kirchoff (Kaidah Arus)
-$$\Sigma I=0$$
-$$\Sigma I_{masuk}-\Sigma I_{keluar}=0$$
-###### $$\Sigma I_{masuk}=\Sigma I_{keluar}$$
-$$I_1+I_2+I_3=I_4+I_5+I_6$$
+#### Medan magnet pada Kawat lurus dengan Panjang Tertentu
+###### $$B_P=\frac{\mu_0 I(\cos\alpha_1+\cos\alpha_2)}{4\pi a}$$
+- *a* = jarak antara P dengan kawat (m)
 ---
-#### Hukum II Kirchoff
-*"pada rangkaian listrik tertutup (loop), jumlah aljabar gaya gerak listrik (Σℰ) dan penurunan tegangan (ΣV atau ΣIR) sama dengan nol"*  
-<img src="../resources/images/HK02.png" height="50%">
+#### Medan magnet pada Kawat lurus dengan Panjang Tak Hingga 
+###### $$B_P=\frac{\mu_0 I}{2\pi a}$$
 ---
-#### Hukum II Kirchoff (Kaidah Tegangan)
-$$\Sigma V=0$$
-$$\Sigma\mathcal{E}-\Sigma IR=0$$
-###### $$\Sigma\mathcal{E}=\Sigma IR$$
-$$V_S=V_1+V_2+V_3+V_4+V_5+V_6+V_7$$
+#### Hukum Ampere
+*"Jumlah medan magnet di sekitar kawat berarus dalam lintasan tertutup sebanding dengan arus yang menyebabkannya"*  
+###### $$\oint \mathbf{B}\cdot \mathrm{d}\mathbf{L}=\mu_0 I$$
 ---
-### Rangkaian Seri Resistor
-- Rangkaian seri adalah rangkaian **tanpa percabangan**. Karenanya hanya ada satu jalur arus. 
+#### Flux Magnet
+###### $$\mathbf{\Phi_B}=\int \mathbf{B}\cdot \mathrm{d}\mathbf{A}$$
+#### Hukum Gauss tentang magnetisme
+*Fluks magnet dalam permukaan tertutup selalu sama dengan 0*
+###### $$\oint \mathrm{d}\mathbf{B}\cdot \mathrm{d}\mathbf{A}=0$$
+---
+#### Gaya Lorentz (Gaya Magnetik)
+*Sebuah kawat berarus atau sebuah muatan yang bergerak dengan kecepatan tetap yang berada dalam medan magnet akan mendapat gaya yang besarnya sebanding dengan **besar arus**, **panjang kawat** dan **besar medan magnet** tersebut. Gaya ini yang dinamakan dengan gaya Lorentz, dan secara matematis dapat dinyatakan:*
+###### $${\displaystyle \mathbf {F_L} =I{\boldsymbol {\ell }}\times \mathbf {B}}$$ 
+###### $$F_L=IBL\sin\alpha$$ 
+---
+#### Gaya Lorentz (Gaya Magnetik)
+###### $${\displaystyle \mathbf {F_L} =q\,\mathbf {v} \times \mathbf {B}}$$
+###### $$F_L=qvB\sin\alpha$$
+Keterangan
+- *F<sub>L</sub>* = Gaya Lorentz (N)
+- *I* = Kuat arus (A)
+- *B* = Medan Magnet (T)
+- *α* = sudut antara *I* dan *B*, atau antara *v* dan *B*
+- *q* = muatan  (C)
+- *v* = kecepatan (m/s)
+---
+#### Arah Gaya Lorentz
+- Arah Gaya Lorentz dapat ditentukan menggunakan aturan telapak tangan kanan, yaitu ibu jari menyatakan arah Gaya Lorentz (*F<sub>L</sub>*), jari telunjuk menyatakan arah arus (*I*) atau arah kecepatan (*v*), jari tengah menyatakan arah medan magnet (*B*)
 
-<img src="../resources/images/ci01.png" height="300px">
-
-$$I=I_1=I_2=I_3$$
+<img src="../resources/images/fl01.png" height="250px"><img src="../resources/images/fl02.png" height="250px">
 ---
-#### Rangkaian Seri Resistor
-
-<img src="../resources/images/ci02.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_1+V_2+V_3$$
-$$V_{DA}=V_{BA}+V_{CB}+V_{DC}$$
+### Induksi Elektromagnetik
+#### Hukum Faraday
+- Ggl induksi pada sebuah rangkaian berbanding lurus terhadap laju perubahan fluks magnet yang melaluinya
+###### $$\displaystyle {\mathcal {E}}=-{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
+untuk sejumlah N lilitan
+###### $$\displaystyle {\mathcal {E}}=-N{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
 ---
-#### Rangkaian Seri Resistor
-$$IR_{DA}=IR_{BA}+IR_{CB}+IR_{DC}$$
-$$R_{DA}=R_{BA}+R_{CB}+R_{DC}$$
-###### $$R_{S}=R_{1}+R_{2}+R_{3}$$
-- *R<sub>S</sub>* = Hambatan pengganti seri
+#### Hukum Lenz
+- Arah (polaritas) GGL induksi sedemikian sehingga cenderung menghasilkan arus yang menimbulkan fluks magnet *berlawanan* dengan perubahan fluks magnet dalam rangkaian 
 ---
-### Rangkaian Paralel Resistor
-- Rangkaian paralel adalah rangkaian **dengan percabangan**. Dalam rangkaian di bawah akan terdapat 4 jalur arus.
-
-<img src="../resources/images/ci03.png" height="300px">
-
-$$I=I_1+I_2+I_3$$
+- Jika GGL disebabkan oleh gerakan suatu penghantar dalam medan magnet, arah arus induksinya adalah sedemikian rupa sehingga arah medan magnet pada penghantar berlawanan dengan arah geraknya. Jadi gerakan penghantar dilawan.
+- Jika GGL disebabkan oleh perubahan fluks yang melalui suatu rangkaian tertutup, arus menimbulkan medan magnet yang *berlawanan* dengan medan asal, jika fluksnya bertambah; dan *searah* dengan medan asal, jika fluksnya berkurang.
 ---
-#### Rangkaian Paralel Resistor
-
-<img src="../resources/images/ci04.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_{BA}$$
-$$V_{BA}=V_{1}=V_{2}=V_{3}$$
+#### Transformator
+$$\displaystyle {\mathcal {E}_P}=-N_P{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
+$$\displaystyle {\mathcal {E}_S}=-N_S{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
+###### $$\displaystyle {\frac{{\mathcal {E}_P}}{{\mathcal {E}_S}}=\frac{N_P}{N_S}}$$
 ---
-#### Rangkaian Paralel Resistor
-$$I=I_1+I_2+I_3$$
-$$\frac {V_S}{R_P}=\frac {V_1}{R_1}+\frac {V_2}{R_2}+\frac {V_3}{R_3}$$
-###### $$\frac {1}{R_P}=\frac {1}{R_1}+\frac {1}{R_2}+\frac {1}{R_3}$$
-- *R<sub>P</sub>* = Hambatan pengganti paralel
+Jika tidak ada energi yang hilang (transformator ideal)
+$$\mathcal {E}_S I_S t=\mathcal {E}_P I_P t$$
+$$I_S=\frac{\mathcal {E}_P}{\mathcal {E}_S}I_P=\frac{N_P}{N_S}I_P$$
+###### $$I_P:I_S=N_S:N_P$$
 ---
-#### Penggunaan Hukum Kirchoff dalam penyelesaian soal menggunakan loop
-
-<img src="../resources/images/ci05.png" height="300px">
+#### Efisiensi Transformator (Transformator tidak Ideal)
+- Efisiensi transformator didefinisikan sebagai daya keluaran dibagi dengan daya masukan
+$$\eta=\frac{P_S}{P_P}$$
+sehingga perbandingan arus untuk trafo tidak ideal
+###### $$\frac{I_P}{I_S}=\frac{N_S}{N_P}\frac{1}{\eta}$$
 ---
-<img src="../resources/images/ci05.png" height="300px">
-
-- Tentukan arah loop terlebih dahulu. Pada dasarnya, pemilihan arah loop bebas. Untuk lebih mudahnya, diusahakan arah loop searah dengan arah arus.
+#### Generator dan Motor
+- Generator mengubah energi kinetik (mekanik) menjadi energi listrik, motor sebaliknya.
+- Jika sebuah generator dengan *N* lilitan dan luasan *A* berputar dalam medan magnet *B* dengan kecepatan sudut *ω*, fluks magnetik akan mengikuti persamaan
+###### $$\Phi _{B}=BA\cos{\omega t}$$
 ---
-- Jika pada suatu cabang, arah loop searah dengan arah arus maka kuat arus bertanda positif, sedangkan jika ara loop berlawanan arah dengan arah arus maka kuat arus bertanda negatif.
-- Jika saat mengikuti arah loop, dijumpai dahulu kutub positif sumber tegangan maka GGL bertanda positif. Sebaliknya, jika dijumpai kutub negatif sumber tegangan maka GGL bertanda negatif.
+$$\displaystyle {\mathcal {E}}=-N{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
+###### $$\displaystyle {\mathcal {E}}=-NBA{\frac {\mathrm {d}}{\mathrm {d} t}}\cos{\omega t}=NBA\omega\sin{\omega t}$$
+$$\displaystyle {\mathcal {E}_{maks}}=NBA\omega$$
 ---
-$$\Sigma\mathcal{E}=\Sigma IR$$
-$$-\mathcal{E}_1+\mathcal{E}_2=IR$$
+<img src="../resources/images/ie01.png" height="400px">
 ---
-Langkah-langkah dalam menyelesaikan rangkaian dua loop atau lebih:
-1. Gambarlah rangkaian listrik majemuk tersebut.
-2. Tetapkan arah kuat arus untuk setiap cabang,
-3. Tulislah persamaan-persamaan arus untuk tiap titik cabang menggunakan Hukum I Kirchoff
-1. Tetapkan loop beserta arahnya pada setiap rangkaian tertutup.
+<img src="../resources/images/ie02.png" height="400px">
 ---
-5. Tulislah persamaan-persamaan untuk setiap loop menggunakan Hukum II Kirchoff
-6. Hitung besaran-besaran yang ditanyakan menggunakan persamaan-persamaan pada langkah 5.
----
-### Gaya Gerak Listrik (GGL) dan Tegangan Jepit
-- **GGL** (*ε*) adalah beda potensial antara kedua kutub baterai, sebelum baterai mengalirkan arus listrik (*I=0*).
-- **Tegangan jepit** (*V<sub>jepit</sub>*) adalah beda potensial antara kedua kutub baterai ketika baterai mengalirkan arus listrik (*I≠0*)
----
-- Ketika baterai dengan GGL (ε) mengalirkan arus listrik pada rangkaian maka terjadi penurunan tegangan di dalam baterai yang nilainya *Ir*. Penurunan tegangan ini disebabkan oleh hambatan dalam *r* pada baterai tersebut. 
-- Persamaan Tegangan Jepit:
-###### $$V_{jepit}=\mathcal{E}-Ir=IR$$
----
-Contoh:
-Sebuah batu baterai AAA sebelum digunakan, jika diukur menggunakan voltmeter, tegangan antara kutub positif (+) dan kutub negatif (-) adalah 1,5 volt, maka nilai inilah yang disebut ggl (ε).
-Pada saat baterai sedang digunakan untuk menyalakan lampu, jika diukur menggunakan voltmeter, ternyata tegangan antara kutub positif (+) dan kutub negatif (-) adalah 1,2 volt, nilai inilah yang disebut tegangan jepit.
-Dari persamaan di atas, dapat ditentukan kuat arus listrik yang mengalir dalam rangkaian tertutup sederhana, yaitu:
----
-$$V_{jepit}=\mathcal{E}-Ir=IR$$
-$$\mathcal{E}=Ir+IR=I(R+r)$$
-Sehingga
-###### $$I=\frac{\mathcal{E}}{R+r}$$ 
-###### $$I=\frac{V_{jepit}}{R}$$
----
-- *V<sub>jepit</sub>* = tegangan jepit (V)
-- *ℰ* = GGL baterai (V)
-- *R* = hambatan luar (ohm)
-- *r* = hambatan dalam (ohm)
----
-### Energi dan Daya Listrik
-#### Energi Listrik
-- **Energi listrik** adalah energi yang disebabkan oleh muatan listrik yang mengalir karena adanya beda potensial dalam suatu rangkaian listrik tertutup.
-- Besarnya energi listrik (W) yang mengalir pada sebuah penghantar dapat dirumuskan sebagai berikut:
-###### $$W=VIt=I^2Rt=\frac{V^2}{R}t$$
----
-- *W* = energi listrik (Joule)
-- *V* = beda potensial/GGL/tegangan (volt)
-- *I* = arus listrik (Ampere)
-- *t* = waktu (s)
----
-#### Daya Listrik
-- **Daya listrik** adalah besarnya energi tiap satuan waktu.
-###### $$P=\frac{W}{t}=VI=I^2R=\frac{V^2}{R}$$
-- *P* = energi listrik (Watt)
-- 1 watt = 1 Volt Ampere = 1 Joule/sekon
----
-### Kapasitor dan Dielektrik
-- **Kapasitor** adalah salah satu komponen elektronika yang berfungsi untuk menyimpan muatan. Simbolnya<img src="../resources/images/ca01.png" height="25px" style="margin:0">
-- Kemampuan kapasitor untuk menyimpan muatan listrik disebut **kapasitas/kapasitans**
-###### $$C=\frac{Q}{V}$$
-- *C* = kapasitans (Farad = coulomb/volt)
----
-#### Kapasitor dan Dielektrik
-- Kapasitor adalah dua keping sejajar yang dipisahkan oleh medium. Maka, sesuai hukum Gauss, perbedaan potensial di antara kedua keping: 
-###### $$V=Ed$$
-- *V* = beda potensial (V)
-- *E* = Kuat medan Listrik (Wb)
-- *d* = jarak antar keping (m)
----
-#### Kapasitor dan Dielektrik
-- Jika rapat muatan di setiap keping adalah 𝜎, maka E dapat ditulis sebagai: 
-$$E=\frac {\sigma}{\varepsilon_0}=\frac {Q}{\varepsilon_0 A}$$
-$$V=Ed$$
-$$\frac{Q}{C}=\frac {Q}{\varepsilon_0 A}d$$
----
-###### $$C=\frac {\varepsilon_0 A}{d}$$
-- *C* = kapasitans (Farad = coulomb/volt)
-- *A* = Luas keping (m<sup>2</sup>)
-- *d* = jarak antar keping (m)
-- *ε<sub>0</sub>* = permitivitas vakum 
----
-### Rangkaian Seri Kapasitor
-<img src="../resources/images/ci06.png" height="300px">
-
-$$I=I_1=I_2=I_3$$
-$$Q=Q_1=Q_2=Q_3$$
----
-#### Rangkaian Seri Kapasitor
-<img src="../resources/images/ci06.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_1+V_2+V_3$$
-$$V_{DA}=V_{BA}+V_{CB}+V_{DC}$$
----
-#### Rangkaian Seri Kapasitor
-$$\frac{Q_T}{C_S}=\frac{Q_1}{C_1}+\frac{Q_2}{C_2}+\frac{Q_3}{C_3}$$
-
-###### $$\frac{1}{C_S}=\frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}$$
-- *C<sub>S</sub>* = Kapasitor pengganti seri
----
-### Rangkaian Paralel Kapasitor
-<img src="../resources/images/ci07.png" height="300px">
-
-$$I=I_1+I_2+I_3$$
-$$Q=Q_1+Q_2+Q_3$$
----
-#### Rangkaian Paralel Kapasitor
-<img src="../resources/images/ci07.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_{BA}$$
-$$V_{BA}=V_{1}=V_{2}=V_{3}$$
----
-#### Rangkaian Paralel Kapasitor
-$$Q=Q_1+Q_2+Q_3$$
-$$C_PV_T=C_1V_1+C_2V_2+C_3V_3$$
-###### $$C_P=C_1+C_2+C_3$$
-- *C<sub>P</sub>* = Kapasitor pengganti paralel
----
-### Energi Listrik dalam Kapasitor
-- **Energi listrik** adalah Usaha yang disebabkan oleh muatan listrik yang mengalir karena adanya beda potensial dalam suatu rangkaian listrik tertutup.
-- Besarnya energi listrik (W) yang mengalir pada sebuah kapasitor dapat dirumuskan sebagai berikut:
-###### $$dW=VdQ$$
----
-$$\begin{split}W=\int dW&=\displaystyle\int_{0}^Q VdQ\\&=\displaystyle\int_{0}^Q \frac{Q}{C}dQ\\&=\frac 1 2 \frac{Q^2}C\displaystyle\bigg\vert_{0}^Q \end{split}$$
-###### $$W=\frac 1 2 \frac{Q^2}C=\frac 1 2 V^2C=\frac 1 2 QV$$
+#### Induktansi diri
+- Perubahan kuat arus dalam suatu penghantar menyebabkan perubahan fluks magnet pada penghantar itu. Perubahan fluks magnet menyebabkan induksi elektromagnet (arus induksi). Ini disebut *induktansi diri*.
+###### $$\displaystyle {\mathcal {E}}=-L{\frac {\mathrm {d}I}{\mathrm {d} t}}$$
+- *L* = koefisien induktansi diri (Henry=V.s/A)
 </textarea>
 </section>
 		</div>
