@@ -75,7 +75,7 @@ Sumbu *x* dan *x'* saling berimpitan, dan diasumsikan kerangka *S′* bergerak k
 ###### $$u_x'=\frac{\Delta x'}{\Delta t'}=\frac{x_2'-x_1'}{t_2'-t_1'}$$
 - Jadi, kecepatan P seperti terlihat dari S akan memiliki komponen *u<sub>x</sub>'*, *u<sub>y</sub>'*, dan *u<sub>z</sub>'*. Untuk komponen yang berhubungan dengan komponen kecepatan di *S'*, diperoleh:
 ---
-$$\begin{split}u_x&=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}=\frac{(x_2'+vt_2')-(x_1'+vt_1')}{t_2'-t_1'}\\&=\frac{(x_2'-x_1')+v(t_2'-t_1')}{t_2'-t_1'}\\&=\frac{\Delta x'}{\Delta t'}+v \end{split}$$
+$$\begin{split}u_x&=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}=\frac{(x_2'+vt_2')-(x_1'+vt_1')}{t_2'-t_1'}\cr &=\frac{(x_2'-x_1')+v(t_2'-t_1')}{t_2'-t_1'}\cr &=\frac{\Delta x'}{\Delta t'}+v \end{split}$$
 ###### $$u_x=u_x'+v$$
 ---
 Dapat disimpulkan bahwa:
@@ -149,10 +149,10 @@ Nilai tetapan transformasi *γ*:
 ###### $$\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 ---
 ### Transformasi Lorentz untuk kecepatan
-$$\begin{split}u_x&=\frac{\Delta x}{\Delta t}=\frac{\gamma(\Delta x'+v\Delta t')}{\gamma(\Delta t'+\frac{v\Delta x'}{c^2})}\\&=\frac{\frac{\Delta x'}{\Delta t'}+v}{1+(\frac{v}{c^2})(\frac{\Delta x'}{\Delta t'})}\end{split}$$
+$$\begin{split}u_x&=\frac{\Delta x}{\Delta t}=\frac{\gamma(\Delta x'+v\Delta t')}{\gamma(\Delta t'+\frac{v\Delta x'}{c^2})}\cr &=\frac{\frac{\Delta x'}{\Delta t'}+v}{1+(\frac{v}{c^2})(\frac{\Delta x'}{\Delta t'})}\end{split}$$
 ###### $$u_x=\frac{u_x'+v}{1+\frac{u_x'v}{c^2}}$$
 ---
-$$\begin{split}u_x'&=\frac{\Delta x'}{\Delta t'}=\frac{\gamma(\Delta x-v\Delta t)}{\gamma(\Delta t-\frac{v\Delta x}{c^2})}\\&=\frac{\frac{\Delta x}{\Delta t}-v}{1-(\frac{v}{c^2})(\frac{\Delta x}{\Delta t})}\end{split}$$
+$$\begin{split}u_x'&=\frac{\Delta x'}{\Delta t'}=\frac{\gamma(\Delta x-v\Delta t)}{\gamma(\Delta t-\frac{v\Delta x}{c^2})}\cr &=\frac{\frac{\Delta x}{\Delta t}-v}{1-(\frac{v}{c^2})(\frac{\Delta x}{\Delta t})}\end{split}$$
 ###### $$u_x'=\frac{u_x-v}{1-\frac{u_xv}{c^2}}$$
 ---
 Keterangan:
@@ -236,10 +236,10 @@ Keterangan:
 ###### $$EK =\int^s_0 F\space \mathrm d s$$
 ---
 - Dengan $F=\frac{\mathrm d}{\mathrm d t}(mv)$, persamaan di atas menjadi:
-$$\begin{split}EK &=\int^s_0 \frac{\mathrm d (mv)}{\mathrm d t}\space \mathrm d s=\int^{mv}_0 v\space \mathrm d (mv)\\&=\int^{mv}_0 v\space \mathrm d \bigg( \frac{m_0v}{\sqrt{1-\frac{v^2}{c^2}}}\bigg)\end{split}$$
+$$\begin{split}EK &=\int^s_0 \frac{\mathrm d (mv)}{\mathrm d t}\space \mathrm d s=\int^{mv}_0 v\space \mathrm d (mv)\cr &=\int^{mv}_0 v\space \mathrm d \bigg( \frac{m_0v}{\sqrt{1-\frac{v^2}{c^2}}}\bigg)\end{split}$$
 ---
 - Persamaan di atas dapat diselesaikan dengan identitas turunan $\int x \space\mathrm d y=xy-\int y \space\mathrm d x$, menjadi
-$$\begin{split}EK &=\frac{m_0v^2}{\sqrt{1-\frac{v^2}{c^2}}}-m_0\int^v_0 \frac{v \space\mathrm d v}{\sqrt{1-\frac{v^2}{c^2}}}\\&=\frac{m_0c^2}{\sqrt{1-\frac{v^2}{c^2}}}-m_0c^2\\&=mc^2-m_0c^2\end{split}$$
+$$\begin{split}EK &=\frac{m_0v^2}{\sqrt{1-\frac{v^2}{c^2}}}-m_0\int^v_0 \frac{v \space\mathrm d v}{\sqrt{1-\frac{v^2}{c^2}}}\cr &=\frac{m_0c^2}{\sqrt{1-\frac{v^2}{c^2}}}-m_0c^2\cr &=mc^2-m_0c^2\end{split}$$
 ---
 - Keterangan:
 - *m* = massa relativistik
