@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerak Parabola</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-4 bg-light mt-2 text-center">
+        <h2>Gerak Parabola</h2>
+        <hr>
+        <div class="row">
+            <div class="col">
+                Ketinggian (m):
+                <br>
+                <input type="number" placeholder="Initial height" id="ih" value="0" style="width: 70px" />
+            </div>
+            <div class="col">
+                Kecepatan Awal (m/s):
+                <br>
+                <input type="number" placeholder="Initial velocity" id="iv" value="90" style="width: 70px" />
+            </div>
+            <div class="col">
+                Sudut Elevasi (deg):
+                <br>
+                <input type="number" placeholder="Launch angle" id="ia" value="60" style="width: 70px" />
+            </div>
+            <div class="col">
+                Radius (m):
+                <br>
+                <input type="number" placeholder="Radius" id="ir" value="10" style="width: 70px" />
+            </div>
+            <div class="col">
+                Framerate (fps):
+                <br>
+                <input type="number" placeholder="Radius" id="fr" value="60" style="width: 70px" />
+            </div>
+            <div class="col">
+                Percepatan Gravitasi (m/s<sup>2</sup>):
+                <br>
+                <input type="number" placeholder="Acceleration due to gravity" id="ag" value="9.8" style="width: 70px" />
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">Show path: <input type="checkbox" id="sp" checked="checked" /></div>
+            <div class="col">Show horizontal: <input type="checkbox" id="sh" /></div>
+            <div class="col">Show vertical: <input type="checkbox" id="sv" /></div>
+            <div class="col">Show coordinates: <input type="checkbox" id="sc" /></div>
+            <div class="col">Show axes: <input type="checkbox" id="sa" checked="checked" /></div>
+            <div class="col">Show grid: <input type="checkbox" id="sg" /></div>
+        </div>
+        <hr>
+        <button id="start" type="button">Start</button>
+        <button id="pause_resume" type="button">Pause</button>
+        <button id="reset" type="button">Reset</button>
+        <hr>
+        <canvas id="c" width="1000" height="630" style="border:1px solid #aaa;"></canvas>
+        <hr>
+    </div>
+
+    <script src="js/frm01.js"></script>
+</body>
+
+</html>
