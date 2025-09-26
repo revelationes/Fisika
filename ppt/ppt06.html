@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Listrik Statis</title>
+		<title>Gerak dalam Dua Dimensi</title>
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
@@ -24,12 +24,53 @@
 			<div class="slides">
 				<section data-markdown data-auto-animate>
 				<textarea data-template>
-<div class="r-hstack justify-center">
-	<div class="tooltip" data-id="box1" style="background: #999; width: 200px; height: 200px; margin: 10px; border-radius: 5px;"><img src="../resources/images/c1.png"><span class="tooltiptext-b-8">Medan listrik adalah ruang atau daerah di sekitar suatu muatan listrik, di mana jika ada muatan listrik lainnya dalam ruang ini akan mengalami gaya Coulomb atau gaya elektrostatis (tarik atau tolak). </span></div>
-	<div class="tooltip" data-id="box2" style="background: #999; width: 200px; height: 200px; margin: 10px; border-radius: 5px;"><img src="../resources/images/c2.png"><span class="tooltiptext-t-8">Medan listrik adalah ruang atau daerah di sekitar suatu muatan listrik, di mana jika ada muatan listrik lainnya dalam ruang ini akan mengalami gaya Coulomb atau gaya elektrostatis (tarik atau tolak). </span></div>
-	<div class="tooltip" data-id="box3" style="background: #999; width: 200px; height: 200px; margin: 10px; border-radius: 5px;"><img src="../resources/images/c3.png"><span class="tooltiptext-l-8">Medan listrik adalah ruang atau daerah di sekitar suatu muatan listrik, di mana jika ada muatan listrik lainnya dalam ruang ini akan mengalami gaya Coulomb atau gaya elektrostatis (tarik atau tolak). </span></div>
-	<div class="tooltip" data-id="box4" style="background: #999; width: 200px; height: 200px; margin: 10px; border-radius: 5px;"><img src="../resources/images/c4.png"><span class="tooltiptext-r-8">Medan listrik adalah ruang atau daerah di sekitar suatu muatan listrik, di mana jika ada muatan listrik lainnya dalam ruang ini akan mengalami gaya Coulomb atau gaya elektrostatis (tarik atau tolak). </span></div>
-</div>
+# Gerak dalam Dua Dimensi
+- Gerak Parabola
+- Gerak Melingkar
+---
+## Gerak Parabola
+- Gerak parabola merupakan gerak dalam dua dimensi, yang umumnya disepakati sebagai dimensi *X* (horizontal) dan *Y* (vertikal). Dalam gerak parabola, posisi benda tidak hanya berubah secara horizontal tetapi juga vertikal, dan karenanya dapat 
+diuraikan ke dalam dua dimensi tersebut untuk memudahkan analisis. 
+---
+- Secara vertikal, benda tersebut mengalami gerak vertikal ke atas dan/atau gerak jatuh bebas; sementara secara horizontal, benda tersebut mengalami GLB. 
+- Dalam gerak parabola, pengaruh hambatan udara atau gesekan udara diabaikan, dan percepatan gravitasi bernilai tetap (misal g = 9,8 m/s<sup>2</sup> atau g = 10 m/s<sup>2</sup>).
+---
+### Gerak Setengah Parabola
+- Gerak setengah parabola adalah kombinasi gerak jatuh bebas dan gerak lurus beraturan. 
+- Pada gerak ini, benda berada di ketinggian tertentu dan diberi kecepatan awal sebesar v<sub>0</sub> yang arahnya mendatar. Sehingga, 
+---
+- *$v_x=v_0\rArr$* kecepatan awal arahnya hanya horisontal 
+- *$x=v_xt=v_0t$*
+- *$v_{y0}=0\rArr$* tidak ada kecepatan awal vertikal
+- *$y=h=\frac 1 2 gt^2$*
+- *$v_{yt}=gt=\sqrt{2gh}$*
+---
+### Gerak Parabola Penuh
+- Gerak parabola penuh adalah kombinasi gerak vertikal ke atas dan gerak lurus beraturan. 
+- Benda diberi kecepatan awal sebesar *v<sub>0</sub>* dengan sudut elevasi *α* terhadap bidang datar. 
+- Vektor kecepatan awal itu dapat diuraikan menjadi *$v_{0x}=v_0\cos\alpha$* dan *$v_{0y}=v_0\sin\alpha$*. 
+- Dengan demikian, 
+---
+- *$v_x=v_{0x}=\boxed{v_0\cos\alpha}\rArr$* kecepatan tetap
+- *$x=v_xt=\boxed{v_{0}\cos{\alpha}\ t}$*
+- *$v_{0y}=v_0\sin\alpha\rArr$* kecepatan berubah
+- *$v_{y}=v_{0y}-gt=\boxed{v_0\sin\alpha-gt}$*
+- *$y=h=v_{0y}t-\frac 1 2 gt^2=\boxed{v_{0}\sin{\alpha}\ t-\frac 1 2 gt^2}$*
+---
+- Waktu untuk mencapai tinggi maksimum dan ketinggian maksimum dapat kita ambil dari persamaan dalam GVA, yakni, 
+###### $$t_B=\frac{v_{0y}}{g}=\frac{v_0\sin\alpha}{g}$$
+$$y_B=v_0\sin\alpha\ t_B-\frac 1 2 gt_B^2$$
+$$y_B=v_0\sin\alpha\Big(\frac{v_0\sin\alpha}{g}\Big)-\frac 1 2 g\Big(\frac{v_0\sin\alpha}{g}\Big)^2$$
+---
+$$y_B=\frac{v_0^2\sin^2\alpha}{g}-\frac 1 2 \frac{v_0^2\sin^2\alpha}{g}$$
+###### $$y_B=\frac{v_0^2\sin^2\alpha}{2g}$$
+---
+- Dalam gerak parabola berlaku sifat simetri sehingga gerak B-C adalah cerminan dari gerak A-B. Maka, waktu naik = waktu turun, kelajuan awal = kelajuan akhir, sudut elevasi 
+naik = - sudut elevasi turun, dsb. 
+###### $$t_C=2t_B=2\frac{v_{0y}}{g}=2\frac{v_0\sin\alpha}{g}$$
+---
+$$x_C=v_xt_C=v_{0}\cos{\alpha}\ t_C$$
+###### $$\begin{split}x_C&=v_{0}\cos{\alpha}\ 2\frac{v_0\sin\alpha}{g}=\frac{2v_0^2\sin\alpha\cos\alpha}{g}\cr&=\frac{v_0^2\sin 2\alpha}{g}\end{split}$$
 </textarea>
 </section>
 		</div>
