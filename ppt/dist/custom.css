@@ -2,143 +2,141 @@
  * CUSTOM STYLE
  *********************************************/
 .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
 }
 .tooltip .tooltiptext-b-1, .tooltip .tooltiptext-b-2, .tooltip .tooltiptext-b-3, .tooltip .tooltiptext-b-4, .tooltip .tooltiptext-b-5, .tooltip .tooltiptext-b-6, .tooltip .tooltiptext-b-7, .tooltip .tooltiptext-b-8, .tooltip .tooltiptext-b-9, .tooltip .tooltiptext-b-10, .tooltip .tooltiptext-t-1, .tooltip .tooltiptext-t-2, .tooltip .tooltiptext-t-3, .tooltip .tooltiptext-t-4, .tooltip .tooltiptext-t-5, .tooltip .tooltiptext-t-6, .tooltip .tooltiptext-t-7, .tooltip .tooltiptext-t-8, .tooltip .tooltiptext-t-9, .tooltip .tooltiptext-t-10, .tooltip .tooltiptext-l-1, .tooltip .tooltiptext-l-2, .tooltip .tooltiptext-l-3, .tooltip .tooltiptext-l-4, .tooltip .tooltiptext-l-5, .tooltip .tooltiptext-l-6, .tooltip .tooltiptext-l-7, .tooltip .tooltiptext-l-8, .tooltip .tooltiptext-l-9, .tooltip .tooltiptext-l-10, .tooltip .tooltiptext-r-1, .tooltip .tooltiptext-r-2, .tooltip .tooltiptext-r-3, .tooltip .tooltiptext-r-4, .tooltip .tooltiptext-r-5, .tooltip .tooltiptext-r-6, .tooltip .tooltiptext-r-7, .tooltip .tooltiptext-r-8, .tooltip .tooltiptext-r-9, .tooltip .tooltiptext-r-10 {
-  font-size: 20px;
-  visibility: hidden;
-  background: rgba(95, 13, 16, 0.9);
-  color: #C38A3D;
-  text-align: center;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  border-radius: 6px;
+	font-size: 20px;
+	visibility: hidden;
+	background: rgba(95, 13, 16, 0.9);
+	color: #C38A3D;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	border-radius: 6px;
 }
 .tooltip .tooltiptext-b-1, .tooltip .tooltiptext-b-2, .tooltip .tooltiptext-b-3, .tooltip .tooltiptext-b-4, .tooltip .tooltiptext-b-5, .tooltip .tooltiptext-b-6, .tooltip .tooltiptext-b-7, .tooltip .tooltiptext-b-8, .tooltip .tooltiptext-b-9, .tooltip .tooltiptext-b-10 {
-  top: 110%;
-  left: 50%;
+	top: 110%;
+	left: 50%;
 }
 .tooltip .tooltiptext-t-1, .tooltip .tooltiptext-t-2, .tooltip .tooltiptext-t-3, .tooltip .tooltiptext-t-4, .tooltip .tooltiptext-t-5, .tooltip .tooltiptext-t-6, .tooltip .tooltiptext-t-7, .tooltip .tooltiptext-t-8, .tooltip .tooltiptext-t-9, .tooltip .tooltiptext-t-10 {
-  bottom: 110%;
-  left: 50%;
+	bottom: 110%;
+	left: 50%;
 }
 .tooltip .tooltiptext-l-1, .tooltip .tooltiptext-l-2, .tooltip .tooltiptext-l-3, .tooltip .tooltiptext-l-4, .tooltip .tooltiptext-l-5, .tooltip .tooltiptext-l-6, .tooltip .tooltiptext-l-7, .tooltip .tooltiptext-l-8, .tooltip .tooltiptext-l-9, .tooltip .tooltiptext-l-10 {
-  top: -5px;
-  right: 90%;
+	top: -5px;
+	right: 90%;
 }
 .tooltip .tooltiptext-r-1, .tooltip .tooltiptext-r-2, .tooltip .tooltiptext-r-3, .tooltip .tooltiptext-r-4, .tooltip .tooltiptext-r-5, .tooltip .tooltiptext-r-6, .tooltip .tooltiptext-r-7, .tooltip .tooltiptext-r-8, .tooltip .tooltiptext-r-9, .tooltip .tooltiptext-r-10 {
-  top: -5px;
-  left: 90%;
+	top: -5px;
+	left: 90%;
 }
 .tooltip .tooltiptext-b-1, .tooltip .tooltiptext-t-1 {
-  width: 100px;
-  margin-left: -50px;
+	width: 100px;
+	margin-left: -50px;
 }
 .tooltip .tooltiptext-l-1, .tooltip .tooltiptext-r-1 {
-  width: 100px;
+	width: 100px;
 }
 .tooltip .tooltiptext-b-2, .tooltip .tooltiptext-t-2 {
-  width: 200px;
-  margin-left: -100px;
+	width: 200px;
+	margin-left: -100px;
 }
 .tooltip .tooltiptext-l-2, .tooltip .tooltiptext-r-2 {
-  width: 200px;
+	width: 200px;
 }
 .tooltip .tooltiptext-b-3, .tooltip .tooltiptext-t-3 {
-  width: 300px;
-  margin-left: -150px;
+	width: 300px;
+	margin-left: -150px;
 }
 .tooltip .tooltiptext-l-3, .tooltip .tooltiptext-r-3 {
-  width: 300px;
+	width: 300px;
 }
 .tooltip .tooltiptext-b-4, .tooltip .tooltiptext-t-4 {
-  width: 400px;
-  margin-left: -200px;
+	width: 400px;
+	margin-left: -200px;
 }
 .tooltip .tooltiptext-l-4, .tooltip .tooltiptext-r-4 {
-  width: 400px;
+	width: 400px;
 }
 .tooltip .tooltiptext-b-5, .tooltip .tooltiptext-t-5 {
-  width: 500px;
-  margin-left: -250px;
+	width: 500px;
+	margin-left: -250px;
 }
 .tooltip .tooltiptext-l-5, .tooltip .tooltiptext-r-5 {
-  width: 500px;
+	width: 500px;
 }
 .tooltip .tooltiptext-b-6, .tooltip .tooltiptext-t-6 {
-  width: 600px;
-  margin-left: -300px;
+	width: 600px;
+	margin-left: -300px;
 }
 .tooltip .tooltiptext-l-6, .tooltip .tooltiptext-r-6 {
-  width: 600px;
+	width: 600px;
 }
 .tooltip .tooltiptext-b-7, .tooltip .tooltiptext-t-7 {
-  width: 700px;
-  margin-left: -350px;
+	width: 700px;
+	margin-left: -350px;
 }
 .tooltip .tooltiptext-l-7, .tooltip .tooltiptext-r-7 {
-  width: 700px;
+	width: 700px;
 }
 .tooltip .tooltiptext-b-8, .tooltip .tooltiptext-t-8 {
-  width: 800px;
-  margin-left: -400px;
+	width: 800px;
+	margin-left: -400px;
 }
 .tooltip .tooltiptext-l-8, .tooltip .tooltiptext-r-8 {
-  width: 800px;
+	width: 800px;
 }
 .tooltip .tooltiptext-b-9, .tooltip .tooltiptext-t-9 {
-  width: 900px;
-  margin-left: -450px;
+	width: 900px;
+	margin-left: -450px;
 }
 .tooltip .tooltiptext-l-9, .tooltip .tooltiptext-r-9 {
-  width: 900px;
+	width: 900px;
 }
 .tooltip .tooltiptext-b-10, .tooltip .tooltiptext-t-10 {
-  width: 1000px;
-  margin-left: -500px;
+	width: 1000px;
+	margin-left: -500px;
 }
 .tooltip .tooltiptext-l-10, .tooltip .tooltiptext-r-10 {
-  width: 1000px;
+	width: 1000px;
 }
 .tooltip .tooltiptext-b-1::after, .tooltip .tooltiptext-b-2::after, .tooltip .tooltiptext-b-3::after, .tooltip .tooltiptext-b-4::after, .tooltip .tooltiptext-b-5::after, .tooltip .tooltiptext-b-6::after, .tooltip .tooltiptext-b-7::after, .tooltip .tooltiptext-b-8::after, .tooltip .tooltiptext-b-9::after, .tooltip .tooltiptext-b-10::after, .tooltip .tooltiptext-t-1::after, .tooltip .tooltiptext-t-2::after, .tooltip .tooltiptext-t-3::after, .tooltip .tooltiptext-t-4::after, .tooltip .tooltiptext-t-5::after, .tooltip .tooltiptext-t-6::after, .tooltip .tooltiptext-t-7::after, .tooltip .tooltiptext-t-8::after, .tooltip .tooltiptext-t-9::after, .tooltip .tooltiptext-t-10::after, .tooltip .tooltiptext-l-1::after, .tooltip .tooltiptext-l-2::after, .tooltip .tooltiptext-l-3::after, .tooltip .tooltiptext-l-4::after, .tooltip .tooltiptext-l-5::after, .tooltip .tooltiptext-l-6::after, .tooltip .tooltiptext-l-7::after, .tooltip .tooltiptext-l-8::after, .tooltip .tooltiptext-l-9::after, .tooltip .tooltiptext-l-10::after, .tooltip .tooltiptext-r-1::after, .tooltip .tooltiptext-r-2::after, .tooltip .tooltiptext-r-3::after, .tooltip .tooltiptext-r-4::after, .tooltip .tooltiptext-r-5::after, .tooltip .tooltiptext-r-6::after, .tooltip .tooltiptext-r-7::after, .tooltip .tooltiptext-r-8::after, .tooltip .tooltiptext-r-9::after, .tooltip .tooltiptext-r-10::after {
-  content: "";
-  position: absolute;
-  border-width: 5px;
-  border-style: solid;  
+	content: "";
+	position: absolute;
+	border-width: 5px;
+	border-style: solid; 
 }
 .tooltip .tooltiptext-b-1::after, .tooltip .tooltiptext-b-2::after, .tooltip .tooltiptext-b-3::after, .tooltip .tooltiptext-b-4::after, .tooltip .tooltiptext-b-5::after, .tooltip .tooltiptext-b-6::after, .tooltip .tooltiptext-b-7::after, .tooltip .tooltiptext-b-8::after, .tooltip .tooltiptext-b-9::after, .tooltip .tooltiptext-b-10::after {
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-color: transparent transparent rgba(95, 13, 16, 0.9) transparent;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-color: transparent transparent rgba(95, 13, 16, 0.9) transparent;
 }
 .tooltip .tooltiptext-t-1::after, .tooltip .tooltiptext-t-2::after, .tooltip .tooltiptext-t-3::after, .tooltip .tooltiptext-t-4::after, .tooltip .tooltiptext-t-5::after, .tooltip .tooltiptext-t-6::after, .tooltip .tooltiptext-t-7::after, .tooltip .tooltiptext-t-8::after, .tooltip .tooltiptext-t-9::after, .tooltip .tooltiptext-t-10::after {
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-color: rgba(95, 13, 16, 0.9) transparent transparent transparent;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-color: rgba(95, 13, 16, 0.9) transparent transparent transparent;
 }
 .tooltip .tooltiptext-l-1::after, .tooltip .tooltiptext-l-2::after, .tooltip .tooltiptext-l-3::after, .tooltip .tooltiptext-l-4::after, .tooltip .tooltiptext-l-5::after, .tooltip .tooltiptext-l-6::after, .tooltip .tooltiptext-l-7::after, .tooltip .tooltiptext-l-8::after, .tooltip .tooltiptext-l-9::after, .tooltip .tooltiptext-l-10::after {
-  top: 50%;
-  left: 100%;
-  margin-top: -5px;
-  border-color: transparent transparent transparent rgba(95, 13, 16, 0.9);
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-color: transparent transparent transparent rgba(95, 13, 16, 0.9);
 }
 .tooltip .tooltiptext-r-1::after, .tooltip .tooltiptext-r-2::after, .tooltip .tooltiptext-r-3::after, .tooltip .tooltiptext-r-4::after, .tooltip .tooltiptext-r-5::after, .tooltip .tooltiptext-r-6::after, .tooltip .tooltiptext-r-7::after, .tooltip .tooltiptext-r-8::after, .tooltip .tooltiptext-r-9::after, .tooltip .tooltiptext-r-10::after {
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-color: transparent rgba(95, 13, 16, 0.9) transparent transparent;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-color: transparent rgba(95, 13, 16, 0.9) transparent transparent;
 }
 .tooltip:hover .tooltiptext-b-1, .tooltip:hover .tooltiptext-b-2, .tooltip:hover .tooltiptext-b-3, .tooltip:hover .tooltiptext-b-4, .tooltip:hover .tooltiptext-b-5, .tooltip:hover .tooltiptext-b-6, .tooltip:hover .tooltiptext-b-7, .tooltip:hover .tooltiptext-b-8, .tooltip:hover .tooltiptext-b-9, .tooltip:hover .tooltiptext-b-10, .tooltip:hover .tooltiptext-t-1, .tooltip:hover .tooltiptext-t-2, .tooltip:hover .tooltiptext-t-3, .tooltip:hover .tooltiptext-t-4, .tooltip:hover .tooltiptext-t-5, .tooltip:hover .tooltiptext-t-6, .tooltip:hover .tooltiptext-t-7, .tooltip:hover .tooltiptext-t-8, .tooltip:hover .tooltiptext-t-9, .tooltip:hover .tooltiptext-t-10, .tooltip:hover .tooltiptext-l-1, .tooltip:hover .tooltiptext-l-2, .tooltip:hover .tooltiptext-l-3, .tooltip:hover .tooltiptext-l-4, .tooltip:hover .tooltiptext-l-5, .tooltip:hover .tooltiptext-l-6, .tooltip:hover .tooltiptext-l-7, .tooltip:hover .tooltiptext-l-8, .tooltip:hover .tooltiptext-l-9, .tooltip:hover .tooltiptext-l-10, .tooltip:hover .tooltiptext-r-1, .tooltip:hover .tooltiptext-r-2, .tooltip:hover .tooltiptext-r-3, .tooltip:hover .tooltiptext-r-4, .tooltip:hover .tooltiptext-r-5, .tooltip:hover .tooltiptext-r-6, .tooltip:hover .tooltiptext-r-7, .tooltip:hover .tooltiptext-r-8, .tooltip:hover .tooltiptext-r-9, .tooltip:hover .tooltiptext-r-10 {
-  visibility: visible;
+	visibility: visible;
 }
 canvas{
-	width:500px;
-	height:500px;
 	border:1px solid #000000;
 	background: whitesmoke;
 }
@@ -146,53 +144,53 @@ table{
 	font-size:90%;
 }
 .reveal strong{
-  font-weight: bold;
-  color: #f9cf8e;
-  
+	font-weight: bold;
+	color: #f9cf8e;
 }
 .reveal b {
-  font-weight: bold;
-  color: #f9cf8e;
-
+	font-weight: bold;
+	color: #f9cf8e;
 }
 
 .reveal i, em {
-  font-style: italic;
-  color: #F48234;
+	font-style: italic;
+	color: #F48234;
 }
-h6 {
+.reveal h6 {
 	outline: 1px solid #f9cf8e;
 	background: rgba(0, 150, 136, 0.2);
 }
-h5 {
+.reveal h5 {
 	text-align:left;
 }
 .container{
-    display: flex;
+	display: flex;
 }
 .col{
-    flex: 1;
+	flex: 1;
 }
 .footer {
-   position: absolute;
-   display: table;
-   width: 100%;
-   bottom: 0;
-   color: $color-primary-2;
+	position: absolute;
+	display: table;
+	width: 100%;
+	bottom: 0;
+	color: $color-primary-2;
 }
-    
- .footer span {
-   display: table-cell;
-   padding: 0px 15px 5px;
-   text-align: center;
-   font-family: "Roboto Mono", monospace;
-   font-size: 40%;
+.footer span {
+	display: table-cell;
+	padding: 0px 15px 5px;
+	text-align: center;
+	font-family: "Roboto Mono", monospace;
+	font-size: 40%;
 }
- .footer span:nth-of-type(1) {
-   text-align: left;
+.footer span:nth-of-type(1) {
+	text-align: left;
 }
- .footer span:nth-last-child(1) {
-   text-align: right;
+.footer span:nth-last-child(1) {
+	text-align: right;
+}
+.reveal a {
+	text-decoration: underline;
 }
 			
 
