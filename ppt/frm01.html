@@ -18,22 +18,22 @@
             <div class="col">
                 Ketinggian (m):
                 <br>
-                <input type="number" placeholder="Initial height" id="ih" value="0" style="width: 70px" />
+                <input type="number" placeholder="Initial height" id="ih" value="0"  min="0" max="550" style="width: 70px" />
             </div>
             <div class="col">
                 Kecepatan Awal (m/s):
                 <br>
-                <input type="number" placeholder="Initial velocity" id="iv" value="90" style="width: 70px" />
+                <input type="number" placeholder="Initial velocity" id="iv" value="90"  min="0" max="1000" style="width: 70px" />
             </div>
             <div class="col">
-                Sudut Elevasi (deg):
+                Sudut Elevasi (°):
                 <br>
-                <input type="number" placeholder="Launch angle" id="ia" value="60" style="width: 70px" />
+                <input type="number" placeholder="Launch angle" id="ia" value="60"  min="0" max="90" style="width: 70px" />
             </div>
             <div class="col">
                 Radius (m):
                 <br>
-                <input type="number" placeholder="Radius" id="ir" value="10" style="width: 70px" />
+                <input type="number" placeholder="Radius" id="ir" value="10" min="1" max="20" style="width: 70px" />
             </div>
             <div class="col">
                 Framerate (fps):
@@ -43,7 +43,7 @@
             <div class="col">
                 Percepatan Gravitasi (m/s<sup>2</sup>):
                 <br>
-                <input type="number" placeholder="Acceleration due to gravity" id="ag" value="9.8" style="width: 70px" />
+                <input type="number" placeholder="Acceleration due to gravity" id="ag" value="9.8" min="1" max="10" style="width: 70px" />
             </div>
         </div>
         <hr>
@@ -54,13 +54,14 @@
             <div class="col">Koordinat: <input type="checkbox" id="sc" /></div>
             <div class="col">Sumbu: <input type="checkbox" id="sa" checked="checked" /></div>
             <div class="col">Petak: <input type="checkbox" id="sg" /></div>
+			<div class="col">Kecepatan: <input type="checkbox" id="sd" /></div>
         </div>
         <hr>
         <button id="start" type="button">Start</button>
         <button id="pause_resume" type="button">Pause</button>
         <button id="reset" type="button">Reset</button>
         <hr>
-        <canvas id="c" width="1000" height="630" style="border:1px solid #aaa;"></canvas>
+        <canvas id="c" width="1000" height="630" style="border:1px solid #21215C; background: #EEC6A4"></canvas>
         <hr>
     </div>
 
