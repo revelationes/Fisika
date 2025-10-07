@@ -74,7 +74,8 @@ $$x_C=v_xt_C=v_{0}\cos{\alpha}\ t_C$$
 ---
 <a href="frm01.html" data-preview-link>Simulasi Gerak Parabola</a>
 ---
-## Gerak Melingkar Beraturan
+## Gerak Melingkar
+### Gerak Melingkar Beraturan
 - Gerak melingkar beraturan adalah gerak dalam lintasan berupa lingkaran dengan kelajuan tetap (atau dengan kecepatan sudut tetap). 
 - Gerak melingkar beraturan juga merupakan gerak dalam dua dimensi. Tetapi, karena dalam GMB, posisi benda selalu berjarak sama dari pusat lingkaran (=jari-jari), vektor posisi umumnya dinyatakan bukan dalam notasi *x* dan *y*, melainkan *θ*. 
 ---
@@ -122,13 +123,67 @@ Keterangan:
 - GMB memiliki kecepatan tetap, tetapi mengapa ada percepatan?
 - Kecepatan serta kecepatan sudut dalam GMB memang besarnya tetap. Tetapi arah kecepatan selalu berubah (<a href="frm02.html" data-preview-link>vektor!</a>).
 
+<img src="../resources/images/gmb02.png" width="30%">
+---
 - Percepatan, sebagaimana kita tahu adalah perubahan kecepatan setiap detiknya.
 $$\vec{a}=\frac{\Delta \vec{v}}{\Delta t}=\frac{\omega\Delta \vec{r}}{\Delta t}$$
----
 - Karena *$\frac{\Delta \vec{r}}{\Delta t}=v$*,
-###### $$\vec{a}=\omega\vec{v}=\omega^2\vec{r}=\frac{v^2}{r}$$
+###### $$\vec{a}=\vec{a}_s=\omega\vec{v}=\omega^2\vec{r}=\frac{v^2}{r}$$  
+Keterangan:  
+- *a<sub>s</sub>* = Percepatan sentripetal (m/s<sup>2</sup>)
+---
+### Gerak Melingkar Berubah Beraturan
+- Jika GMB dapat disejajarkan dengan GLB, demikian pula GMBB (Gerak Melingkar Berubah Beraturan) juga dapat disejajarkan dengan GLBB. Benda dikatakan mengalami 
+GMBB jika ada percepatan sudut (*α*) yang nilainya tidak sama dengan nol. Maka selain terdapat kecepatan tangensial, terdapat juga percepatan tangensial (*a<sub>t</sub>*) yang berbeda 
+dengan percepatan sentripetal. 
+---
+- Hubungan percepatan sudut dan percepatan tangensial adalah: 
+###### $$\alpha=\frac{\vec{a}_t}{r}$$  
+Keterangan:  
+- *α* = Percepatan sudut (rad/s<sup>2</sup>)
+- *a<sub>t</sub>* = Percepatan tangensial (m/s<sup>2</sup>)
+---
+- Dengan demikian kita mempunyai tiga hubungan GLB/GLBB dengan GMB/GMBB, yakni 
+###### $$\theta=\frac{\vec{x}}{r}$$  
+###### $$\omega=\frac{\vec{v}}{r}$$  
+###### $$\alpha=\frac{\vec{a}_t}{r}$$  
+---
+Kesejajaran GLB/GLBB dan GMB/GMBB
+| Gerak | jarak/perpindahan | kecepatan | percepatan |
+|---|---|---|---|
+| GLB | *$x=vt$* | **$v=v_0=konstan$** | *$a=0$* |
+| GLBB | *$x=v_0t+\frac 1 2 at^2$* | **$v=v_0+at$** |  *$a\not=0$* |
+| GMB | *$\theta=\omega t$* | **$\omega=\omega_0=konstan$** | *$\alpha=0$* |
+| GMBB | *$\theta=\omega_0t+\frac 1 2 at^2$* | **$\omega=\omega_0+\alpha t$** |  *$\alpha\not=0$* |
+---
+### Hubungan Roda-roda
+- Salah satu penerapan atau aplikasi dari gerak melingkar adalah <a href="frm03.html" data-preview-link>hubungan roda-roda</a>. 
+- Misalnya, cakram padat (*hard-disk*) berputar dengan kecepatan 500 rpm (*rotation per minute*). *$\text{Satu putaran}=360°=2π \text{ rad}$*, sehingga *$500\text{ rpm}=\frac{500×360°}{60 s}= 3000°\text{/s}=\frac{50\pi}{3}\text{ rad/s}$*
+---
+- Kecepatan sudut ini berlaku di permukaan cakram mana pun. Tetapi kecepatan linearnya di setiap titik belum tentu sama. Titik di tepi cakram pasti akan bergerak lebih cepat dari titik 
+di bagian dalam. Hal ini dikarenakan titik yang di sebelah luar menempuh jarak yang lebih panjang. Sementara titik di pusat lingkaran pasti hanya akan diam saja. 
+---
+<img src="../resources/images/gmb03.png" width="30%">
 
-<img src="../resources/images/gmb02.png" width="30%">  
+- Dalam gambar di atas, ketika *A1* bergeser menjadi *A1'*, *A2* juga bergeser menjadi *A2'*. Panjang busur *A2-A2'* pasti lebih panjang daripada *A1-A1'*. Tetapi sudut yang ditempuh keduanya sama, yakni sebesar *θ*. 
+---
+- Inilah arti hubungan *$x=\theta r$* dan *$v=\omega r$*. 
+- Dapat disimpulkan bahwa untuk lingkaran-lingkaran sepusat, kecepatan sudutnya sama. Sedangkan kecepatan linearnya tidak sama, melainkan sebanding dengan perbandingan jari-jarinya.
+###### $$\omega_1=\omega_2$$ 
+###### $$\frac{v_1}{r_1}=\frac{v_2}{r_2}\implies \frac{v_1}{v_2}=\frac{r_1}{r_2} $$ 
+---
+- Contoh untuk roda-roda sepusat adalah gir belakang dan roda belakang pada sepeda. 
+- Selain dihubungkan secara sepusat, roda-roda juga dapat bersinggungan atau dihubungkan dengan sabuk (*belt*). Misalnya, gir depan dan gir belakang yang dihubungkan dengan rantai, 
+atau roda-roda gigi dalam jam mekanik yang saling bersinggungan satu sama lain. 
+---
+<img src="../resources/images/gmb04.png" width="80%">
+
+- Untuk roda-roda yang bersinggungan dan dihubungkan dengan sabuk seperti dalam gambar di atas, ketika titik *A1* bergeser menjadi *A1'*, *A2* juga bergeser menjadi *A2'*. Panjang busur *A2-A2'* sama dengan *A1-A1'*. Tetapi sudut yang ditempuh masing-masing (*θ<sub>1</sub>* dan *θ<sub>2</sub>*) tidaklah sama.
+---
+- Dapat disimpulkan bahwa untuk lingkaran-lingkaran bersinggungan dan dihubungkan menghubungkan sabuk, kecepatan linearnya sama. Sedangkan kecepatan sudutnya tidak sama, melainkan berbanding terbalik dengan perbandingan jari-jarinya. 
+###### $$v_1=v_2$$ 
+###### $$\omega_1 r_1=\omega_2 r_2\implies \frac{\omega_1}{\omega_2}=\frac{r_2}{r_1} $$ 
+</textarea>
 </textarea>
 </section>
 		</div>
