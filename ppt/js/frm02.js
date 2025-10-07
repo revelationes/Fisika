@@ -1,12 +1,6 @@
-/**
- * Parabolic Motion
- *
- * @author Afaan Bilal
- * @link https://afaan.dev/parabolic-motion
- */
-
 const canvas = document.getElementById("c");
 var ctx = canvas.getContext("2d");
+ctx.lineWidth = 2;
 
 let frameRate = 60;
 let intervalMs = Math.floor(1000 / frameRate);
@@ -40,9 +34,10 @@ const sV = document.getElementById("sv");
 const sC = document.getElementById("sc");
 const sA = document.getElementById("sa");
 const sG = document.getElementById("sg");
+const sD = document.getElementById("sd");
 
-let jj = 250; // initssl height
-let vv = 10; // initssl velocity (m/s)
+let jj = 250; // initial height
+let vv = 10; // initial velocity (m/s)
 let ss = 0; // launch angle (degrees)
 
 let sp = true; // show path
@@ -51,6 +46,7 @@ let sv = false; // show vertical
 let sc = false; // show coordinates
 let sa = true; // show axes
 let sg = false; // show grid
+let sd = false; // show vektor v
 
 let a = 0;
 let ang = 0;
@@ -73,6 +69,7 @@ const enableInputs = () => {
     sC.removeAttribute("disabled");
     sA.removeAttribute("disabled");
     sG.removeAttribute("disabled");
+	sD.removeAttribute("disabled");
 };
 
 const disableInputs = () => {
@@ -91,10 +88,12 @@ const disableInputs = () => {
     sC.setAttribute("disabled", "disabled");
     sA.setAttribute("disabled", "disabled");
     sG.setAttribute("disabled", "disabled");
+	sD.setAttribute("disabled", "disabled");
 };
 
 const drawAxes = () => {
-    ctx.beginPath();
+    ctx.strokeStyle = "#21215A";
+	ctx.beginPath();
     ctx.moveTo(canvas.width - 625, yOffset);
     ctx.lineTo(canvas.width - 25, yOffset);
     ctx.stroke();
@@ -108,7 +107,7 @@ const drawAxes = () => {
     }
 
     ctx.beginPath();
-    ctx.moveTo(xOffset, canvas.height - 615);
+    ctx.moveTo(xOffset, canvas.height - 625);
     ctx.lineTo(xOffset, canvas.height - 25);
     ctx.stroke();
 
@@ -116,9 +115,18 @@ const drawAxes = () => {
 };
 
 const drawGrid = () => {
-    ctx.strokeStyle = "#999";
+    ctx.strokeStyle = "#E0754C";
 
-    for (let i = -300; i <= 600; i += 50) {
+    for (let i = 50; i <= 300; i += 50) {
+        ctx.beginPath();
+        ctx.moveTo(xOffset + i, canvas.height - 625);
+        ctx.lineTo(xOffset + i, canvas.height - 25);
+        ctx.stroke();
+		ctx.moveTo(canvas.width - 625, yOffset + i);
+        ctx.lineTo(canvas.width - 25, yOffset + i);
+        ctx.stroke();
+    }
+	for (let i = -50; i >= -300; i -= 50) {
         ctx.beginPath();
         ctx.moveTo(xOffset + i, canvas.height - 625);
         ctx.lineTo(xOffset + i, canvas.height - 25);
@@ -132,14 +140,18 @@ const drawGrid = () => {
 };
 
 const drawCircle = (x, y) => {
-    ctx.moveTo(x, y);
+    ctx.strokeStyle = "#5D2049";
+	ctx.fillStyle = "#5D2049";
+	ctx.moveTo(x, y);
     ctx.beginPath();
     ctx.arc(x, y, radius, 0, 2 * Math.PI);
     ctx.stroke();
 	ctx.fill();
+	ctx.strokeStyle = "#000";
+	ctx.fillStyle = "#000";
 };
 const drawRadius = (x, y) => {
-	ctx.strokeStyle = "green";
+	ctx.strokeStyle = "#A53325";
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(xOffset, yOffset);
@@ -148,7 +160,7 @@ const drawRadius = (x, y) => {
 };
 
 const drawPath = () => {
-    ctx.strokeStyle = "#00f";
+    ctx.strokeStyle = "#273C99";
 
     let px = 0;
     let py = 0;
@@ -187,7 +199,16 @@ const drawHorizontal = (y) => {
     ctx.lineTo(canvas.width, y);
     ctx.stroke();
 };
-
+const drawVec = (x,y) => {
+    ctx.strokeStyle = "#FF0084";
+	ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x - jj/5*Math.sin(ang), y - jj/5*Math.cos(ang));
+    ctx.stroke();
+	canvas_arrow(ctx, x, y, x - jj/5*Math.sin(ang), y - jj/5*Math.cos(ang), 5, "#FF0084")
+	ctx.strokeStyle = "#000";
+	ctx.fillStyle = "#000";
+};
 
 
 const drawCoordinates = (x, y) => {
@@ -213,6 +234,7 @@ const reset = () => {
     sc = sC.checked;
     sa = sA.checked;
     sg = sG.checked;
+	sd = sD.checked;
 
     a = toRad(ss);
 
@@ -252,8 +274,7 @@ const draw = () => {
     sc && drawCoordinates(x, y);
     sa && drawAxes();
     sg && drawGrid();
-
-
+	sd && drawVec(x,y);
 };
 
 const tick = () => { draw(); frame++; };
@@ -275,7 +296,40 @@ btnPause.addEventListener("click", () => {
         btnPause.textContent = "Pause";
     }
 });
+function canvas_arrow(context, fromx, fromy, tox, toy, r, style){
+	context.fillStyle = style;
+	var x_center = tox;
+	var y_center = toy;
+	
+	var angle;
+	var x;
+	var y;
+	
+	context.beginPath();
+	
+	angle = Math.atan2(toy-fromy,tox-fromx)
+	x = r*Math.cos(angle) + x_center;
+	y = r*Math.sin(angle) + y_center;
 
+	context.moveTo(x, y);
+	
+	angle += (1/3)*(2*Math.PI)
+	x = r*Math.cos(angle) + x_center;
+	y = r*Math.sin(angle) + y_center;
+	
+	context.lineTo(x, y);
+	
+	angle += (1/3)*(2*Math.PI)
+	x = r*Math.cos(angle) + x_center;
+	y = r*Math.sin(angle) + y_center;
+	
+	context.lineTo(x, y);
+	
+	context.closePath();
+	
+	context.fill();
+	context.fillStyle = "000";
+}
 btnReset.addEventListener("click", reset);
 
 Array.from(document.getElementsByTagName("input")).forEach((e) => { e.addEventListener("change", reset); });
