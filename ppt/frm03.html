@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungan Roda-roda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-4 bg-light mt-2 text-center">
+        <h2>Hubungan Roda-roda</h2>
+        <hr>
+        <div class="row">
+            <div class="col">
+                Jari-jari 1(m):
+                <br>
+                <input type="number" placeholder="Jari-jari 1" id="jj1" value="200" min="1" max="300" style="width: 70px" />
+            </div>
+            <div class="col">
+                Jari-jari 2(m):
+                <br>
+                <input type="number" placeholder="Jari-jari 2" id="jj2" value="150" min="1" max="300" style="width: 70px" />
+            </div>
+            <div class="col">
+                Jari-jari 3(m):
+                <br>
+                <input type="number" placeholder="Jari-jari 3" id="jj3" value="100" min="1" max="300" style="width: 70px" />
+            </div>
+			<div class="col">
+                Kecepatan sudut (rad/s):
+                <br>
+                <input type="number" placeholder="Kecepatan" id="vv" value="1" min="1" max="20" style="width: 70px" />
+            </div>
+            <div class="col">
+                Framerate (fps):
+                <br>
+                <input type="number" placeholder="Framerate" id="fr" value="60" style="width: 70px" />
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+			<div class="col"><label for="sp">Sepusat</label><input type="radio" name="hubungan" id="sp" checked/></div>
+			<div class="col"><label for="bg">Bersinggungan</label><input type="radio" name="hubungan" id="bg" /></div>
+			<div class="col"><label for="bs">Bersabuk</label><input type="radio" name="hubungan" id="bs" /></div>
+			<div class="col"><label for="sd">Vektor v</label><input type="checkbox" id="sd" /></div>
+        </div>
+        <hr>
+        <button id="start" type="button">Start</button>
+        <button id="pause_resume" type="button">Pause</button>
+        <button id="reset" type="button">Reset</button>
+        <hr>
+        <canvas id="c" width="1000" height="650" style="border:1px solid #21215C; background: #EEC6A4";"></canvas>
+        <hr>
+    </div>
+
+    <script src="js/frm03.js"></script>
+</body>
+
+</html>
