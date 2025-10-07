@@ -7,6 +7,7 @@
 
 const canvas = document.getElementById("c");
 var ctx = canvas.getContext("2d");
+ctx.lineWidth = 2;
 
 let frameRate = 60;
 let intervalMs = Math.floor(1000 / frameRate);
@@ -40,6 +41,7 @@ const sV = document.getElementById("sv");
 const sC = document.getElementById("sc");
 const sA = document.getElementById("sa");
 const sG = document.getElementById("sg");
+const sD = document.getElementById("sd");
 
 let ih = 0; // initial height
 let iv = 0; // initial velocity (m/s)
@@ -51,6 +53,7 @@ let sv = false; // show vertical
 let sc = false; // show coordinates
 let sa = true; // show axes
 let sg = false; // show grid
+let sd = false; // show speed
 
 let a = 0;
 let vCos = 0;
@@ -72,6 +75,7 @@ const enableInputs = () => {
     sC.removeAttribute("disabled");
     sA.removeAttribute("disabled");
     sG.removeAttribute("disabled");
+	sD.removeAttribute("disabled");
 };
 
 const disableInputs = () => {
@@ -90,9 +94,11 @@ const disableInputs = () => {
     sC.setAttribute("disabled", "disabled");
     sA.setAttribute("disabled", "disabled");
     sG.setAttribute("disabled", "disabled");
+	sD.setAttribute("disabled", "disabled");
 };
 
 const drawAxes = () => {
+	ctx.strokeStyle = "#21215A";
     ctx.beginPath();
     ctx.moveTo(xOffset, yOffset);
     ctx.lineTo(canvas.width - xOffset, yOffset);
@@ -115,7 +121,7 @@ const drawAxes = () => {
 };
 
 const drawGrid = () => {
-    ctx.strokeStyle = "#999";
+    ctx.strokeStyle = "#E0754C";
 
     for (let i = 50; i <= 900; i += 50) {
         ctx.beginPath();
@@ -124,7 +130,7 @@ const drawGrid = () => {
         ctx.stroke();
     }
 
-    for (let i = yOffset; i >= canvas.height - yOffset; i -= 50) {
+    for (let i = yOffset - 50; i >= canvas.height - yOffset; i -= 50) {
         ctx.beginPath();
         ctx.moveTo(xOffset, i);
         ctx.lineTo(canvas.width - xOffset, i);
@@ -135,14 +141,19 @@ const drawGrid = () => {
 };
 
 const drawCircle = (x, y) => {
-    ctx.moveTo(x, y);
+    ctx.strokeStyle = "#5D2049";
+	ctx.fillStyle = "#5D2049";
+	ctx.moveTo(x, y);
     ctx.beginPath();
     ctx.arc(x, y, radius, 0, 2 * Math.PI);
     ctx.stroke();
+	ctx.fill();
+	ctx.strokeStyle = "#000";
+	ctx.fillStyle = "#000";
 };
 
 const drawPath = () => {
-    ctx.strokeStyle = "#00f";
+    ctx.strokeStyle = "#273C99";
 
     let px = 0;
     let py = 0;
@@ -181,11 +192,28 @@ const drawHorizontal = (y) => {
     ctx.lineTo(canvas.width, y);
     ctx.stroke();
 };
-
+const drawSpeed = (x,y) => {
+    ctx.strokeStyle = "#FF0084";
+	ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + vCos, y);
+    ctx.stroke();
+	ctx.moveTo(x, y);
+    ctx.lineTo(x, y - vy);
+    ctx.stroke();
+	canvas_arrow(ctx, x, y, x, y - vy, 5,"#FF0084");
+	canvas_arrow(ctx, x, y, x + vCos, y, 5, "#FF0084");
+	ctx.strokeStyle = "#000";
+	ctx.fillStyle = "#000";
+};
 const drawCoordinates = (x, y) => {
-    ctx.fillText("t: " + tCoordinate(frame).toFixed(3) + "s", x + 10, y - 50);
-    ctx.fillText("x: " + (x - xOffset).toFixed(3) + "m", x + 10, y - 40);
-    ctx.fillText("y: " + (yOffset - y).toFixed(3) + "m", x + 10, y - 30);
+    ctx.fillText("t: " + tCoordinate(frame).toFixed(3) + " s", x + 10, y - 50);
+    ctx.fillText("x: " + (x - xOffset).toFixed(3) + " m", x + 10, y - 40);
+    ctx.fillText("y: " + (yOffset - y).toFixed(3) + " m", x + 10, y - 30);
+	ctx.fillStyle = "#f00";
+	ctx.fillText("vx: " + vCos.toFixed(3) + " m/s", x + 10, y - 20);
+	ctx.fillText("vy: " + vy.toFixed(3) + " m/s", x + 10, y - 10);
+	ctx.fillStyle = "#000";
 };
 
 const reset = () => {
@@ -204,6 +232,7 @@ const reset = () => {
     sc = sC.checked;
     sa = sA.checked;
     sg = sG.checked;
+	sd = sD.checked;
 
     a = toRad(ia);
     vCos = iv * Math.cos(a);
@@ -223,6 +252,7 @@ reset();
 const tCoordinate = (frame) => frame * intervalMs / 1000;
 const xCoordinate = (t) => xOffset + vCos * t;
 const yCoordinate = (t) => yOffset - ih - (vSin * t - g * t * t / 2);
+const vyComp = (t) => vSin - g*t;
 
 const draw = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -231,6 +261,7 @@ const draw = () => {
 
     x = xCoordinate(t);
     y = yCoordinate(t);
+	vy = vyComp(t)
 
     drawCircle(x, y);
     sp && drawPath();
@@ -239,6 +270,7 @@ const draw = () => {
     sc && drawCoordinates(x, y);
     sa && drawAxes();
     sg && drawGrid();
+	sd && drawSpeed(x, y);
 
     if (y >= yOffset && frame > 0) {
         frame = 0;
@@ -265,7 +297,40 @@ btnPause.addEventListener("click", () => {
         btnPause.textContent = "Pause";
     }
 });
+function canvas_arrow(context, fromx, fromy, tox, toy, r, style){
+	context.fillStyle = style;
+	var x_center = tox;
+	var y_center = toy;
+	
+	var angle;
+	var x;
+	var y;
+	
+	context.beginPath();
+	
+	angle = Math.atan2(toy-fromy,tox-fromx)
+	x = r*Math.cos(angle) + x_center;
+	y = r*Math.sin(angle) + y_center;
 
+	context.moveTo(x, y);
+	
+	angle += (1/3)*(2*Math.PI)
+	x = r*Math.cos(angle) + x_center;
+	y = r*Math.sin(angle) + y_center;
+	
+	context.lineTo(x, y);
+	
+	angle += (1/3)*(2*Math.PI)
+	x = r*Math.cos(angle) + x_center;
+	y = r*Math.sin(angle) + y_center;
+	
+	context.lineTo(x, y);
+	
+	context.closePath();
+	
+	context.fill();
+	context.fillStyle = "000";
+}
 btnReset.addEventListener("click", reset);
 
 Array.from(document.getElementsByTagName("input")).forEach((e) => { e.addEventListener("change", reset); });
