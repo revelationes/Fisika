@@ -18,22 +18,22 @@
             <div class="col">
                 Jari-jari (m):
                 <br>
-                <input type="number" placeholder="Jari-jari" id="jj" value="250" style="width: 70px" />
+                <input type="number" placeholder="Jari-jari" id="jj" value="250" min="1" max="300" style="width: 70px" />
             </div>
             <div class="col">
                 Kecepatan (m/s):
                 <br>
-                <input type="number" placeholder="Kecepatan" id="vv" value="100" style="width: 70px" />
+                <input type="number" placeholder="Kecepatan" id="vv" value="250" min="1" max="1000" style="width: 70px" />
             </div>
             <div class="col">
                 Sudut Awal (°):
                 <br>
-                <input type="number" placeholder="Sudut Awal" id="ss" value="0" style="width: 70px" />
+                <input type="number" placeholder="Sudut Awal" id="ss" value="0" min="0" max="360" style="width: 70px" />
             </div>
             <div class="col">
                 Radius (m):
                 <br>
-                <input type="number" placeholder="Radius" id="ir" value="10" style="width: 70px" />
+                <input type="number" placeholder="Radius" id="ir" value="10" min="1" max="20" style="width: 70px" />
             </div>
             <div class="col">
                 Framerate (fps):
@@ -54,13 +54,14 @@
             <div class="col">Koordinat: <input type="checkbox" id="sc" /></div>
             <div class="col">Sumbu: <input type="checkbox" id="sa" checked="checked" /></div>
             <div class="col">Petak: <input type="checkbox" id="sg" /></div>
+			<div class="col">Vektor v: <input type="checkbox" id="sd" /></div>
         </div>
         <hr>
         <button id="start" type="button">Start</button>
         <button id="pause_resume" type="button">Pause</button>
         <button id="reset" type="button">Reset</button>
         <hr>
-        <canvas id="c" width="650" height="650" style="border:1px solid #aaa;"></canvas>
+        <canvas id="c" width="650" height="650" style="border:1px solid #21215C; background: #EEC6A4";"></canvas>
         <hr>
     </div>
 
