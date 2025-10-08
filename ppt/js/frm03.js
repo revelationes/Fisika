@@ -1,10 +1,3 @@
-/**
- * Parabolic Motion
- *
- * @author Afaan Bilal
- * @link https://afaan.dev/parabolic-motion
- */
-
 const canvas = document.getElementById("c");
 var ctx = canvas.getContext("2d");
 ctx.lineWidth = 2;
@@ -13,8 +6,8 @@ let frameRate = 60;
 let intervalMs = Math.floor(1000 / frameRate);
 
 const toRad = (angle) => angle * (Math.PI / 180);
-let xOffset = 5;
-let yOffset = 5;
+let xOffset = 20;
+let yOffset = 20;
 let x1Offset = 0;
 let y1Offset = 0;
 let x2Offset = 0;
@@ -22,7 +15,7 @@ let y2Offset = 0;
 let x3Offset = 0;
 let y3Offset = 0;
 const textOffset = 20;
-let radius = 10;
+let radius = 5;
 let ang1 = 0;
 let ang2 = 0;
 let ang3 = 0;
@@ -49,9 +42,9 @@ const bG = document.getElementById("bg");
 const bS = document.getElementById("bs");
 const sD = document.getElementById("sd");
 
-let jj1 = 200; // radius 1
-let jj2 = 150; // radius 2
-let jj3 = 100; // radius 3
+let jj1 = 20; // radius 1
+let jj2 = 15; // radius 2
+let jj3 = 10; // radius 3
 let vv = 1; // initial velocity (m/s)
 
 let sp = true; // Roda sepusat
@@ -100,25 +93,59 @@ const drawCircle1 = (x, y) => {
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
-const drawCircle = (x, y, r,fill) => {
+const drawCog = (x, y,angle, r,fill) => {
+	let sum = r/5;
+	let ang = Math.PI/sum;
+	//angle = angle + 0.5*ang
     ctx.strokeStyle = "#5D2049";
 	ctx.fillStyle = fill;
 	ctx.moveTo(x, y);
     ctx.beginPath();
-    ctx.arc(x, y, r, 0, 2 * Math.PI);
+	for (let i = 0; i <sum; i++) {
+		ctx.arc(x, y, +r+5, (2*i)*ang-angle, (2*i+0.4)*ang-angle);
+		ctx.arc(x, y, +r-5, (2*i+0.6)*ang-angle, (2*i+1.4)*ang-angle);
+		ctx.arc(x, y, +r+5, (2*i+1.6)*ang-angle, (2*i+2)*ang-angle);
+	} 
     ctx.stroke();
+	ctx.fill();
+	ctx.beginPath();
+	ctx.fillStyle = "#EEC6A4";
+	ctx.arc(x, y, 3*sum, 0, 2*Math.PI);
+	ctx.stroke();
 	ctx.fill();
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
-
+const drawRevCog = (x, y,angle, r,fill) => {
+	let sum = r/5;
+	let ang = Math.PI/sum;
+	//angle = angle + 0.5*ang
+    ctx.strokeStyle = "#5D2049";
+	ctx.fillStyle = fill;
+	ctx.moveTo(x, y);
+    ctx.beginPath();
+	for (let i = 0; i <sum; i++) {
+		ctx.arc(x, y, +r-5, (2*i)*ang-angle, (2*i+0.4)*ang-angle);
+		ctx.arc(x, y, +r+5, (2*i+0.6)*ang-angle, (2*i+1.4)*ang-angle);
+		ctx.arc(x, y, +r-5, (2*i+1.6)*ang-angle, (2*i+2)*ang-angle);
+	} 
+    ctx.stroke();
+	ctx.fill();
+	ctx.beginPath();
+	ctx.fillStyle = "#EEC6A4";
+	ctx.arc(x, y, 3*sum, 0, 2*Math.PI);
+	ctx.stroke();
+	ctx.fill();
+	ctx.strokeStyle = "#000";
+	ctx.fillStyle = "#000";
+};
 const drawVec = (x,y,ang) => {
     ctx.strokeStyle = "#FF0084";
 	ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.lineTo(x - jj1/5*Math.sin(ang), y - jj1/5*Math.cos(ang));
+    ctx.lineTo(x - jj1*2*Math.sin(ang), y - jj1*2*Math.cos(ang));
     ctx.stroke();
-	canvas_arrow(ctx, x, y, x - jj1/5*Math.sin(ang), y - jj1/5*Math.cos(ang), 5, "#FF0084")
+	canvas_arrow(ctx, x, y, x - jj1*2*Math.sin(ang), y - jj1*2*Math.cos(ang), 5, "#FF0084")
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
@@ -126,39 +153,38 @@ const drawVec2 = (x,y,ang) => {
     ctx.strokeStyle = "#FF0084";
 	ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.lineTo(x - jj1/5*Math.sin(ang), y + jj1/5*Math.cos(ang));
+    ctx.lineTo(x - jj1*2*Math.sin(ang), y + jj1*2*Math.cos(ang));
     ctx.stroke();
-	canvas_arrow(ctx, x, y, x - jj1/5*Math.sin(ang), y + jj1/5*Math.cos(ang), 5, "#FF0084")
+	canvas_arrow(ctx, x, y, x - jj1*2*Math.sin(ang), y + jj1*2*Math.cos(ang), 5, "#FF0084")
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
 const drawBelt1 = (x1,y1,x2,y2,jj1,jj2) => {
-	let ang1 = Math.asin(0.5 * jj1 / (+ jj1 + + jj2 + + 10));
-	let ang2 = Math.asin(0.5 * jj2 / (+ jj1 + + jj2 + + 10));
-    ctx.strokeStyle = "#5D2049";
+	let ang1 = Math.asin((+ jj1 - jj2) / (+ jj1 + + jj2 + + 20));
+	ctx.lineWidth = 6;
+    ctx.strokeStyle = "#E7700D";
 	ctx.beginPath();
-    ctx.moveTo(x1 + jj1 * Math.sin(ang1), y1 - jj1 * Math.cos(ang1));
-    ctx.lineTo(x2 + jj2 * Math.sin(ang2), y2 - jj2 * Math.cos(ang2));
-    ctx.stroke();
-	ctx.moveTo(x1 + jj1 * Math.sin(ang1), y1 + jj1 * Math.cos(ang1));
-    ctx.lineTo(x2 + jj2 * Math.sin(ang2), y2 + jj2 * Math.cos(ang2));
+    ctx.arc(x2, y2, jj2, 0, 0.5*Math.PI-ang1);
+	ctx.arc(x1, y1, jj1, 0.5*Math.PI-ang1, -0.5*Math.PI+ang1);
+	ctx.arc(x2, y2, jj2, -0.5*Math.PI+ang1, 0);
     ctx.stroke();
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
+	ctx.lineWidth = 2;
 };
 const drawBelt2 = (x1,y1,x2,y2,jj1,jj2) => {
-	let ang1 = Math.asin(0.5 * jj1 / (+ jj1 + + jj2 + + 10));
-	let ang2 = Math.asin(0.5 * jj2 / (+ jj1 + + jj2 + + 10));
-    ctx.strokeStyle = "#5D2049";
+	let ang1 = Math.asin((+ jj1 - jj2) / (+ jj1 + + jj2 + + 10));
+	ctx.lineWidth = 6;
+    ctx.strokeStyle = "#18864B";
 	ctx.beginPath();
-    ctx.moveTo(x1 + jj1 * Math.cos(ang1), y1 + jj1 * Math.sin(ang1));
-    ctx.lineTo(x2 + jj2 * Math.cos(ang2), y2 + jj2 * Math.sin(ang2));
-    ctx.stroke();
-	ctx.moveTo(x1 - jj1 * Math.cos(ang1), y1 + jj1 * Math.sin(ang1));
-    ctx.lineTo(x2 - jj2 * Math.cos(ang2), y2 + jj2 * Math.sin(ang2));
+    ctx.arc(x2, y2, jj2, 0.5*Math.PI, Math.PI-ang1);
+    ctx.arc(x1, y1, jj1, Math.PI-ang1, ang1);
+	ctx.arc(x2, y2, jj2, ang1, 0.5*Math.PI);
+	document.getElementById("demo").innerHTML = Math.PI+ang1;
     ctx.stroke();
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
+	ctx.lineWidth = 2;
 };
 const reset = () => {
     jj1 = jJ1.value;
@@ -167,8 +193,8 @@ const reset = () => {
     vv = vV.value;
     frameRate = fr.value;
 	
-	xOffset = 5;
-	yOffset = 5;
+	xOffset = 20;
+	yOffset = 20;
 	x1Offset = 0;
 	y1Offset = 0;
 	x2Offset = 0;
@@ -195,18 +221,24 @@ reset();
 
 	
 const tCoordinate = (frame) => frame * intervalMs / 1000;
-const x1Coordinate = (t) => + x1Offset + + jj1*Math.cos(vv1*t);
-const y1Coordinate = (t) => + y1Offset - jj1*Math.sin(vv1*t);
+const x1Coordinate = (t) => + x1Offset + + jj1*10*Math.cos(vv1*t);
+const y1Coordinate = (t) => + y1Offset - jj1*10*Math.sin(vv1*t);
 const x2Coordinate = (t) => { 
 	if (bg) {
-		return + x2Offset - jj2*Math.cos(vv2*t);
+		return + x2Offset - jj2*10*Math.cos(vv2*t);
 	} else {
-		return + x2Offset + + jj2*Math.cos(vv2*t);
+		return + x2Offset + + jj2*10*Math.cos(vv2*t);
 	};
 }
-const y2Coordinate = (t) => + y2Offset - jj2*Math.sin(vv2*t);
-const x3Coordinate = (t) => + x3Offset + + jj3*Math.cos(vv3*t);
-const y3Coordinate = (t) => + y3Offset - jj3*Math.sin(vv3*t);
+const y2Coordinate = (t) => { 
+	if (bg) {
+		return + y2Offset + + jj2*10*Math.sin(vv2*t);
+	} else {
+		return + y2Offset - jj2*10*Math.sin(vv2*t);
+	};
+}
+const x3Coordinate = (t) => + x3Offset + + jj3*10*Math.cos(vv3*t);
+const y3Coordinate = (t) => + y3Offset - jj3*10*Math.sin(vv3*t);
 const T1Coordinate = (t) => vv1*t
 const T2Coordinate = (t) => vv2*t
 const T3Coordinate = (t) => vv3*t
@@ -217,32 +249,32 @@ const draw = () => {
     vv1 = vv;
     vv2 = - vv * jj1 / jj2;
 	vv3 = vv * jj1 / jj3;
-	x1Offset = + xOffset + + jj1;
-	y1Offset = + yOffset + + jj1;
-	x2Offset = + xOffset + + 2 * jj1 + + jj2;
-	y2Offset = + yOffset + + jj1;
-	x3Offset = + xOffset + + 2 * jj1 + + jj2;
-	y3Offset = + yOffset + + jj1 + + jj2 + + jj3;
+	x1Offset = + xOffset + + jj1*10;
+	y1Offset = + yOffset + + jj1*10;
+	x2Offset = + xOffset + + 20 * jj1 + + jj2*10;
+	y2Offset = + yOffset + + jj1*10;
+	x3Offset = + xOffset + + 20 * jj1 + + jj2*10;
+	y3Offset = + yOffset + + jj1*10 + + jj2*10 + + jj3*10;
 } else if (bs) {
     vv1 = vv;
     vv2 = vv * jj1 / jj2;
 	vv3 = vv * jj1 / jj3;
-	x1Offset = + xOffset + + jj1;
-	y1Offset = + yOffset + + jj1;
-	x2Offset = + xOffset + + 2 * jj1 + + jj2 + 10;
-	y2Offset = + yOffset + + jj1;
-	x3Offset = + xOffset + + 2 * jj1 + + jj2 + 10;
-	y3Offset = + yOffset + + jj1 + + jj2 + + jj3 + 10;
+	x1Offset = + xOffset + + jj1*10;
+	y1Offset = + yOffset + + jj1*10;
+	x2Offset = + xOffset + + 20 * jj1 + + jj2*10 + 20;
+	y2Offset = + yOffset + + jj1*10;
+	x3Offset = + xOffset + + 20 * jj1 + + jj2*10 + 20;
+	y3Offset = + yOffset + + jj1*10 + + jj2*10 + + jj3*10 + 20;
 } else {
 	vv1 = vv;
     vv2 = vv;
 	vv3 = vv;
-	x1Offset = + xOffset + + jj1;
-	y1Offset = + yOffset + + jj1;
-	x2Offset = + xOffset + + jj1;
-	y2Offset = + yOffset + + jj1;
-	x3Offset = + xOffset + + jj1;
-	y3Offset = + yOffset + + jj1;
+	x1Offset = 500;
+	y1Offset = 325;
+	x2Offset = 500;
+	y2Offset = 325;
+	x3Offset = 500;
+	y3Offset = 325;
 }
     let t = tCoordinate(frame); // t in seconds
 	ang1 = T1Coordinate(t)
@@ -256,14 +288,18 @@ const draw = () => {
     y3 = y3Coordinate(t);
 
     
-	bs && drawBelt1(x1Offset,y1Offset,x2Offset,y2Offset,jj1,jj2);
-	bs && drawBelt2(x2Offset,y2Offset,x3Offset,y3Offset,jj2,jj3);
-	drawCircle(x1Offset, y1Offset, jj1,"#D4AFD0");
-	drawCircle(x2Offset, y2Offset, jj2,"#E8A7B9");
-	drawCircle(x3Offset, y3Offset, jj3,"#EBB8B0");
+	bs && drawBelt1(x1Offset,y1Offset,x2Offset,y2Offset,jj1*10,jj2*10);
+	bs && drawBelt2(x2Offset,y2Offset,x3Offset,y3Offset,jj2*10,jj3*10);
+	drawCog(x1Offset, y1Offset,ang1, jj1*10,"#D4AFD0");
+	(bs || sp) && drawCog(x2Offset, y2Offset,ang2, jj2*10,"#E8A7B9");
+	bg && drawRevCog(x2Offset, y2Offset,ang2, jj2*10,"#E8A7B9");
+	((jj2+jj3) % 2 == 0) && bg && drawRevCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
+	((jj2+jj3) % 2 == 1) && bg && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
+	(bs || sp) && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
 	drawCircle1(x1, y1);
-	drawCircle1(x2, y2);
-	drawCircle1(x3, y3);
+	drawCircle1(x2, y2)
+	drawCircle1(x3, y3)
+
 	
 	sd && drawVec(x1,y1,ang1); 
 	bg && sd && drawVec2(x2,y2,ang2);
