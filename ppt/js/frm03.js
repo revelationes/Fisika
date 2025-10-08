@@ -293,8 +293,8 @@ const draw = () => {
 	drawCog(x1Offset, y1Offset,ang1, jj1*10,"#D4AFD0");
 	(bs || sp) && drawCog(x2Offset, y2Offset,ang2, jj2*10,"#E8A7B9");
 	bg && drawRevCog(x2Offset, y2Offset,ang2, jj2*10,"#E8A7B9");
-	((jj2+jj3) % 2 == 0) && bg && drawRevCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
-	((jj2+jj3) % 2 == 1) && bg && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
+	((+jj2 + + jj3) % 2 == 1) && bg && drawRevCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
+	((+jj2 + + jj3) % 2 == 0) && bg && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
 	(bs || sp) && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
 	drawCircle1(x1, y1);
 	drawCircle1(x2, y2)
