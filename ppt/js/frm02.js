@@ -112,6 +112,8 @@ const drawAxes = () => {
     ctx.stroke();
 
     ctx.fillText("m", xOffset - 2, 20);
+	ctx.font = "10px Times New Roman";
+	ctx.fillText("©Wahyu Dwi Anggoro",550,10);
 };
 
 const drawGrid = () => {
