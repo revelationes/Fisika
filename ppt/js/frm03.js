@@ -66,7 +66,6 @@ const enableInputs = () => {
 	bS.removeAttribute("disabled");
 	sD.removeAttribute("disabled");
 };
-
 const disableInputs = () => {
     btnStart.setAttribute("disabled", "disabled");
     btnPause.removeAttribute("disabled");
@@ -81,7 +80,6 @@ const disableInputs = () => {
 	bS.setAttribute("disabled", "disabled");
 	sD.setAttribute("disabled", "disabled");
 };
-
 const drawCircle1 = (x, y) => {
     ctx.strokeStyle = "#5D2049";
 	ctx.fillStyle = "#5D2049";
@@ -212,13 +210,10 @@ const reset = () => {
     removeInterval();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     frame = 0;
-    enableInputs();
-	
+    enableInputs();	
 };
 
 reset();
-
-
 	
 const tCoordinate = (frame) => frame * intervalMs / 1000;
 const x1Coordinate = (t) => + x1Offset + + jj1*10*Math.cos(vv1*t);
@@ -286,7 +281,6 @@ const draw = () => {
     y2 = y2Coordinate(t);
 	x3 = x3Coordinate(t);
     y3 = y3Coordinate(t);
-
     
 	bs && drawBelt1(x1Offset,y1Offset,x2Offset,y2Offset,jj1*10,jj2*10);
 	bs && drawBelt2(x2Offset,y2Offset,x3Offset,y3Offset,jj2*10,jj3*10);
@@ -299,8 +293,6 @@ const draw = () => {
 	drawCircle1(x1, y1);
 	drawCircle1(x2, y2);
 	drawCircle1(x3, y3);
-	document.getElementById("demo").innerHTML = +jj2 + + jj3;
-
 	
 	sd && drawVec(x1,y1,ang1,jj1,vv1); 
 	bg && sd && drawVec2(x2,y2,ang2,jj2,vv2);
@@ -312,9 +304,7 @@ const tick = () => { draw(); frame++; };
 
 btnStart.addEventListener("click", () => {
     if (intervalHandle) return;
-
     setupInterval();
-
     disableInputs();
 });
 
