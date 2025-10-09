@@ -1,10 +1,3 @@
-/**
- * Parabolic Motion
- *
- * @author Afaan Bilal
- * @link https://afaan.dev/parabolic-motion
- */
-
 const canvas = document.getElementById("c");
 var ctx = canvas.getContext("2d");
 ctx.lineWidth = 2;
@@ -118,6 +111,8 @@ const drawAxes = () => {
     for (let i = yOffset; i >= canvas.height - yOffset; i -= 50) {
         ctx.fillText(yOffset - i, xOffset - textOffset, i + 2);
     }
+	ctx.font = "10px Times New Roman";
+	ctx.fillText("©Wahyu Dwi Anggoro",900,10);
 };
 
 const drawGrid = () => {
