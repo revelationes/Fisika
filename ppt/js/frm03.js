@@ -139,23 +139,23 @@ const drawRevCog = (x, y,angle, r,fill) => {
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
-const drawVec = (x,y,ang) => {
+const drawVec = (x,y,ang,r,v) => {
     ctx.strokeStyle = "#FF0084";
 	ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.lineTo(x - jj1*2*Math.sin(ang), y - jj1*2*Math.cos(ang));
+    ctx.lineTo(x - v*r*4*Math.sin(ang), y - v*r*4*Math.cos(ang));
     ctx.stroke();
-	canvas_arrow(ctx, x, y, x - jj1*2*Math.sin(ang), y - jj1*2*Math.cos(ang), 5, "#FF0084")
+	canvas_arrow(ctx, x, y, x - v*r*4*Math.sin(ang), y - v*r*4*Math.cos(ang), 5, "#FF0084")
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
-const drawVec2 = (x,y,ang) => {
+const drawVec2 = (x,y,ang,r,v) => {
     ctx.strokeStyle = "#FF0084";
 	ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.lineTo(x - jj1*2*Math.sin(ang), y + jj1*2*Math.cos(ang));
+    ctx.lineTo(x + v*r*4*Math.sin(ang), y + v*r*4*Math.cos(ang));
     ctx.stroke();
-	canvas_arrow(ctx, x, y, x - jj1*2*Math.sin(ang), y + jj1*2*Math.cos(ang), 5, "#FF0084")
+	canvas_arrow(ctx, x, y, x + v*r*4*Math.sin(ang), y + v*r*4*Math.cos(ang), 5, "#FF0084")
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
 };
@@ -180,7 +180,7 @@ const drawBelt2 = (x1,y1,x2,y2,jj1,jj2) => {
     ctx.arc(x2, y2, jj2, 0.5*Math.PI, Math.PI-ang1);
     ctx.arc(x1, y1, jj1, Math.PI-ang1, ang1);
 	ctx.arc(x2, y2, jj2, ang1, 0.5*Math.PI);
-	document.getElementById("demo").innerHTML = Math.PI+ang1;
+	
     ctx.stroke();
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#000";
@@ -297,14 +297,15 @@ const draw = () => {
 	((+jj2 + + jj3) % 2 == 0) && bg && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
 	(bs || sp) && drawCog(x3Offset, y3Offset,ang3, jj3*10,"#EBB8B0");
 	drawCircle1(x1, y1);
-	drawCircle1(x2, y2)
-	drawCircle1(x3, y3)
+	drawCircle1(x2, y2);
+	drawCircle1(x3, y3);
+	document.getElementById("demo").innerHTML = +jj2 + + jj3;
 
 	
-	sd && drawVec(x1,y1,ang1); 
-	bg && sd && drawVec2(x2,y2,ang2);
-	(bs || sp) && sd && drawVec(x2,y2,ang2);
-	sd && drawVec(x3,y3,ang3);
+	sd && drawVec(x1,y1,ang1,jj1,vv1); 
+	bg && sd && drawVec2(x2,y2,ang2,jj2,vv2);
+	(bs || sp) && sd && drawVec(x2,y2,ang2,jj2,vv2);
+	sd && drawVec(x3,y3,ang3,jj3,vv3);
 };
 
 const tick = () => { draw(); frame++; };
