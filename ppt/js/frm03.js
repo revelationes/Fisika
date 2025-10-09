@@ -80,6 +80,11 @@ const disableInputs = () => {
 	bS.setAttribute("disabled", "disabled");
 	sD.setAttribute("disabled", "disabled");
 };
+const drawCopyright = () => {
+	ctx.strokeStyle = "#21215A";
+	ctx.font = "10px Times New Roman";
+	ctx.fillText("©Wahyu Dwi Anggoro",900,10);
+};
 const drawCircle1 = (x, y) => {
     ctx.strokeStyle = "#5D2049";
 	ctx.fillStyle = "#5D2049";
@@ -209,6 +214,7 @@ const reset = () => {
 
     removeInterval();
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+	drawCopyright();
     frame = 0;
     enableInputs();	
 };
@@ -281,7 +287,8 @@ const draw = () => {
     y2 = y2Coordinate(t);
 	x3 = x3Coordinate(t);
     y3 = y3Coordinate(t);
-    
+
+	drawCopyright();
 	bs && drawBelt1(x1Offset,y1Offset,x2Offset,y2Offset,jj1*10,jj2*10);
 	bs && drawBelt2(x2Offset,y2Offset,x3Offset,y3Offset,jj2*10,jj3*10);
 	drawCog(x1Offset, y1Offset,ang1, jj1*10,"#D4AFD0");
