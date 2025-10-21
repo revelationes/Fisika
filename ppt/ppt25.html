@@ -24,7 +24,7 @@
 			<div class="slides">
 				<section data-markdown data-auto-animate>
 				<textarea data-template>
-# Kemagnetan
+## Kemagnetan
 - Medan Magnet di Sekitar Kawat Berarus
 - Hukum Biot Savart, Hukum Ampere
 - Flux Magnet
@@ -59,29 +59,34 @@ Untuk mempermudah kita gunakan aturan genggaman tangan kanan sebagai berikut:
 - Sering kali digunakan tanda (•) untuk menandai arah keluar bidang dan (⨂) untuk arah masuk bidang. 
 ---
 ### Hukum Biot Savart 
-<img src="../resources/images/mg03.png" height="100%">
+<a href="https://www.geogebra.org/classic/qzvsxbyb" data-preview-link><img src="../resources/images/mg03.png" height="100%"></a>
+---
+<div id="geogebra01"></div>
 ---
 #### Hukum Biot Savart 
-*Jika terdapat sebuah titik **P** berjarak **a** dari sebuah kawat berarus listrik **I**, kawat berarus itu terdiri atas bagian-bagian kecil kawat berarus yang disebut elemen arus (**dL**). Tiap elemen arus ini akan menimbulkan induksi magnet kecil (**dB**) yang disebabkan oleh elemen arus **dL**,sebanding dengan sinus sudut antara **r** dan **dL**, dan berbanding terbalik dengan kuadrat jarak **P** ke elemen arus **dL**. Dengan demikian didapatkan perumusan sebagai berikut:*
+>*Jika terdapat sebuah titik **P** berjarak **a** dari sebuah kawat berarus listrik **I**, kawat berarus itu terdiri atas bagian-bagian kecil kawat berarus yang disebut elemen arus (**dL**). Tiap elemen arus ini akan menimbulkan induksi magnet kecil (**dB**) yang disebabkan oleh elemen arus **dL**,sebanding dengan sinus sudut antara **r** dan **dL**, dan berbanding terbalik dengan kuadrat jarak **P** ke elemen arus **dL**.* 
 ---
-###### $$dB=\frac{kIdL \sin\alpha}{r^2}$$
+- Dengan demikian didapatkan perumusan sebagai berikut:
+###### $$dB=\frac{k\ I\ dL\ \sin\alpha}{r^2}$$
+---
 Keterangan:
+- *dB* = Medan magnet di P yang disebabkan oleh elemen kawat *dL* (tesla atau T) 
+- *k* = faktor pembanding (10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>)
 - *I* = kuat arus pada kawat (A) 
 - *dL* = elemen panjang kawat (m)
-- *α* = sudut antara elemen arus dL dengan garis hubung P ke elemen kawat dL 
-- *r* = jarak antara P dengan dL (m)
-- *k* = faktor pembanding (10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>)
-- *dB* = Medan magnet di P yang disebabkan oleh elemen kawat dL (T) 
+- *r* = jarak antara P dengan *dL* (m)
+- *α* = sudut antara *I* dengan *r* 
 ---
 #### Hukum Biot Savart 
-- Untuk menghilangkan faktor k pada rumus di atas, boleh dipakai konstanta baru μ<sub>0</sub> (permeabilitas ruang hampa)
+- Untuk menghilangkan faktor *k* pada rumus di atas, boleh dipakai konstanta baru *μ<sub>0</sub>* (permeabilitas ruang hampa)
 $$k=\frac{\mu_0}{4\pi}$$
-μ<sub>0</sub> = 4π × 10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>
+*μ<sub>0</sub>* = 4π × 10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>
 sehingga
-###### $$dB=\frac{\mu_0 IdL \sin\alpha}{4\pi r^2}$$
+###### $$dB=\frac{\mu_0\ I\ dL\ \sin\alpha}{4\pi r^2}$$
 ---
-*Medan magnet di sebuah titik **P** yang disebabkan oleh seluruh elemen arus di sepanjang **I** sama dengan jumlah vektor **dB** oleh elemen-elemen arus di sepanjang **I**. Secara matematis, hasil penjumlahan dB oleh masing-masing dL sepanjang **I**, diperoleh dengan integrasi **dB** sepanjang **I**.* 
-$$\begin{split}   B &=\int dB\cr &=\frac{\mu_0}{4\pi}\int \frac{IdL \sin\alpha}{r^2}\end{split}$$
+>*Medan magnet di sebuah titik **P** yang disebabkan oleh seluruh elemen arus di sepanjang **I** sama dengan jumlah vektor **dB** oleh elemen-elemen arus di sepanjang **I**. Secara matematis, hasil penjumlahan dB oleh masing-masing dL sepanjang **I**, diperoleh dengan integrasi **dB** sepanjang **I**.* 
+---
+$$\begin{split}   B &=\int dB\cr  &=\frac{\mu_0}{4\pi}\int \frac{I\ dL\ \sin\alpha}{r^2}\end{split}$$
 ---
 #### Medan magnet dB di titik P di sekitar kawat berarus 
 - Vektor *dB* tegak lurus terhadap *dL* (= arah arus) dan terhadap vektor satuan *r* (arah menuju titik P)
@@ -89,15 +94,46 @@ $$\begin{split}   B &=\int dB\cr &=\frac{\mu_0}{4\pi}\int \frac{IdL \sin\alpha}{
 - Besar *dB* berbanding lurus dengan kuat arus *I* dan besar *dL* 
 - Besar *dB* berbanding lurus terhadap *sin⁡ α*, di mana *α* adalah sudut antara *dL* dan vektor satuan *r*
 ---
-#### Medan magnet pada Kawat lurus dengan Panjang Tertentu
+- Penyelesaian persamaan di atas didapatkan dengan menganggap *α* sebagai variabel bebas, sehingga variabel lainnya dinyatakan dalam *α*.
+$$\tan\alpha=\frac a L\implies L=\frac a {\tan\alpha}=a\cotg\alpha$$
+$$L'=\frac{dL}{d\alpha}=a\cosec^2\alpha$$
+*$$dL=a\cosec^2\alpha\ d\alpha$$*
+---
+$$\sin\alpha=\frac a r\implies r=\frac a {\sin\alpha}=a\cosec\alpha$$
+*$$r^2=a^2\cosec^2\alpha$$*
+---
+$$B=\frac{\mu_0}{4\pi}\int \frac{I\ dL\ \sin\alpha}{r^2}$$
+$$B=\frac{\mu_0\ I}{4\pi}\int \frac{a\cosec^2\alpha\ \sin\alpha\ d\alpha\ }{a^2\cosec^2\alpha}$$
+$$B=\frac{\mu_0\ I}{4\pi\ a}\int^{\alpha_2}_{\alpha_1} \sin\alpha\ d\alpha$$
+###### $$B_P=\frac{\mu_0\ I}{4\pi\ a}-\cos\alpha\displaystyle\bigg\vert^{\alpha_2}\_{\alpha_1}=\frac{\mu_0\ I}{4\pi\ a}(\cos\alpha_1-\cos\alpha_2)$$
+---
+Keterangan:
+- *B<sub>P</sub>* = Medan magnet di P di sekitar kawat berarus (tesla atau T) 
+- *μ<sub>0</sub>* = permeabilitas vakum (4π × 10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>)
+- *I* = kuat arus pada kawat (A) 
+- *a* = jarak antara P dengan kawat (m)
+- *α<sub>1</sub>* = sudut antara *I* dengan *r<sub>1</sub>* 
+- *α<sub>2</sub>* = sudut antara *I* dengan *r<sub>2</sub>* (ujung yang lain)
+---
+- Persamaan di atas dapat dipakai jika sudut *α<sub>2</sub>* dihitung sebagai berikut:
+<img src="../resources/images/mag03.png" height="100%">
+---
+
+- Sementara persamaan:
+###### $$B_P\frac{\mu_0\ I}{4\pi\ a}(\cos\alpha_1+\cos\alpha_2)$$
+dapat dipakai jika sudut *α<sub>2</sub>* dihitung sebagai:
+<img src="../resources/images/mag02.png" height="50%">
+---
+##### 1. Medan magnet pada Kawat lurus dengan Panjang Tertentu
 ###### $$B_P=\frac{\mu_0 I(\cos\alpha_1+\cos\alpha_2)}{4\pi a}$$
 - *a* = jarak antara P dengan kawat (m)
 ---
-#### Medan magnet pada Kawat lurus dengan Panjang Tak Hingga 
+##### 2. Medan magnet pada Kawat lurus dengan Panjang Tak Hingga 
+- Untuk kawat panjang tak hingga, *α<sub>1</sub>* dan *α<sub>2</sub>* = 90°, sehingga
 ###### $$B_P=\frac{\mu_0 I}{2\pi a}$$
 ---
 #### Hukum Ampere
-*"Jumlah medan magnet di sekitar kawat berarus dalam lintasan tertutup sebanding dengan arus yang menyebabkannya"*  
+>*"Jumlah medan magnet di sekitar kawat berarus dalam lintasan tertutup sebanding dengan arus yang menyebabkannya"*  
 ###### $$\oint \mathbf{B}\cdot \mathrm{d}\mathbf{L}=\mu_0 I$$
 ---
 #### Flux Magnet
@@ -107,7 +143,8 @@ $$\begin{split}   B &=\int dB\cr &=\frac{\mu_0}{4\pi}\int \frac{IdL \sin\alpha}{
 ###### $$\oint \mathrm{d}\mathbf{B}\cdot \mathrm{d}\mathbf{A}=0$$
 ---
 #### Gaya Lorentz (Gaya Magnetik)
-*Sebuah kawat berarus atau sebuah muatan yang bergerak dengan kecepatan tetap yang berada dalam medan magnet akan mendapat gaya yang besarnya sebanding dengan **besar arus**, **panjang kawat** dan **besar medan magnet** tersebut. Gaya ini yang dinamakan dengan gaya Lorentz, dan secara matematis dapat dinyatakan:*
+>*Sebuah kawat berarus atau sebuah muatan yang bergerak dengan kecepatan tetap yang berada dalam medan magnet akan mendapat gaya yang besarnya sebanding dengan **besar arus**, **panjang kawat** dan **besar medan magnet** tersebut. Gaya ini yang dinamakan dengan gaya Lorentz, dan secara matematis dapat dinyatakan:*
+---
 ###### $${\displaystyle \mathbf {F_L} =I{\boldsymbol {\ell }}\times \mathbf {B}}$$ 
 ###### $$F_L=IBL\sin\alpha$$ 
 ---
@@ -177,7 +214,8 @@ $$\displaystyle {\mathcal {E}_{maks}}=NBA\omega$$
 </section>
 		</div>
 		</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js"></script>
+		<script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
@@ -194,6 +232,11 @@ $$\displaystyle {\mathcal {E}_{maks}}=NBA\omega$$
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+			var params = {"material_id": "qzvsxbyb","appName": "classic", "width": 1000, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true };
+			var applet = new GGBApplet(params, true);
+			window.addEventListener("load", function() {
+				applet.inject('geogebra01');
 			});
 		</script>
 
