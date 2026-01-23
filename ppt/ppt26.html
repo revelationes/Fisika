@@ -43,7 +43,7 @@
 - Jika kumparan diputar dengan kecepatan sudut *ω*, akan dihasilkan ggl induksi sebesar: 
 ###### $$\displaystyle {\mathcal {E}}=-NBA{\frac {\mathrm {d}}{\mathrm {d} t}}\cos{\omega t}=NBA\omega\sin{\omega t}$$
 $$\displaystyle {\mathcal {E}_{maks}}=NBA\omega$$
-$$\displaystyle {\mathcal {E}}=\displaystyle {\mathcal {E}_{maks}}\sin{\omega t}$$
+$$\displaystyle {\mathcal {E}}=\displaystyle {\mathcal {E}\_{maks}}\sin{\omega t}$$
 - Persamaan di atas jelas menunjukkan bahwa GGL arus bolak-balik berubah secara sinusoidal. Suatu sifat yang menjadi ciri khas arus bolak-balik.
 ---
 <a href="https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac_all.html"><img src="../resources/images/ac02.png" height="100%"></a>
@@ -86,7 +86,7 @@ $$\displaystyle {\mathcal {E}}=-L{\frac {\mathrm {d}I}{\mathrm {d} t}}$$
 ---
 - Rangkaian ini merupakan rangkaian tertutup, sehingga berlaku **Hukum Kirchoff II**
 $$\Sigma\displaystyle {\mathcal {E}}+\Sigma IR=0$$
-$$IR+\displaystyle {\mathcal {E}}_{sumber}+\displaystyle {\mathcal {E}}_{ind}=0$$
+$$IR+\displaystyle {\mathcal {E}}\_{sumber}+\displaystyle {\mathcal {E}}_{ind}=0$$
 - karena R pada induktor = 0,
 $$I(0)+V+-L{\frac {\mathrm {d}I}{\mathrm {d} t}}=0$$
 ---
@@ -131,10 +131,10 @@ $$\Delta Q=I\Delta t$$
 - karena $\Delta Q=C\Delta V$, maka
 $$C\Delta V=I\Delta t$$
 ---
-$$\mathrm{d}V=\frac 1 C I\, \mathrm{d}t$$
-$$V=\frac 1 C \int I\, \mathrm{d}t$$
-$$V=\frac 1 C \int I_{m}\sin{\omega t}\,\mathrm{d}t$$
-$$V=\frac {I_m}{C} \int \sin{\omega t}\, \mathrm{d}t$$
+$$\mathrm{d}V=\frac 1 C I\ \mathrm{d}t$$
+$$V=\frac 1 C \int I\ \mathrm{d}t$$
+$$V=\frac 1 C \int I_{m}\sin{\omega t}\ \mathrm{d}t$$
+$$V=\frac {I_m}{C} \int \sin{\omega t}\ \mathrm{d}t$$
 ---
 $$V=\frac {I_m}{C}\frac {1}{\omega} (-\cos{\omega t}) $$
 $$V=\frac {1}{\omega C}I_m(-\cos{\omega t}) $$
@@ -177,7 +177,7 @@ $$V_R=V_{Rm}\sin{\omega t}$$
 $$V_L=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
 ---
 - *V* merupakan hasil penjumlahan dari *V<sub>R</sub>* dan *V<sub>L</sub>* 
-###### $$\begin{split}   V &=V_R+V_L\cr &=V_{Rm}\sin{\omega t}+V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big) \end{split}$$
+###### $$\begin{split}   V &=V_R+V_L\cr       &=V_{Rm}\sin{\omega t}+V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big) \end{split}$$
 - Secara grafik, *V* didapatkan dari penjumlahan *V<sub>R</sub>* dan *V<sub>L</sub>* 
 ---
 - Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_R}+\overrightarrow {V_L}}}$
@@ -213,7 +213,7 @@ $$V_R=V_{Rm}\sin{\omega t}$$
 $$V_C=V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
 ---
 - *V* merupakan hasil penjumlahan dari *V<sub>R</sub>* dan *V<sub>C</sub>* 
-###### $$\begin{split}   V &=V_R+V_C\cr &=V_{Rm}\sin{\omega t}+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big) \end{split}$$
+###### $$\begin{split}   V &=V_R+V_C\cr       &=V_{Rm}\sin{\omega t}+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big) \end{split}$$
 - Secara grafik, *V* didapatkan dari penjumlahan *V<sub>R</sub>* dan *V<sub>C</sub>* 
 ---
 - Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_R}+\overrightarrow {V_C}}}$
@@ -250,7 +250,7 @@ $$V_L=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
 $$V_C=V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
 ---
 - *V* merupakan hasil penjumlahan dari *V<sub>L</sub>* dan *V<sub>C</sub>* 
-$$\begin{split}   V &=V_L+V_C\cr &=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)\cr &=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)-V_{Cm}\cos{\omega t}\end{split}$$
+$$\begin{split}   V &=V_L+V_C\cr       &=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)\cr    &=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)-V_{Cm}\cos{\omega t}\end{split}$$
 ---
 $$V=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)-V_{Cm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
 $$V=I_{m}X_L\sin\Big({\omega t+\frac{\pi}{2}}\Big)-I_{m}X_C\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
@@ -290,7 +290,7 @@ $$V_L=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
 $$V_C=V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
 ---
 - *V* merupakan hasil penjumlahan dari *V*,*V<sub>L</sub>* dan *V<sub>C</sub>* 
-$$\begin{split}   V &=V_R+V_L+V_C\cr &=V_{Rm}\sin{\omega t}+V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)\end{split}$$
+$$\begin{split}   V &=V_R+V_L+V_C\cr       &=V_{Rm}\sin{\omega t}+V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)\end{split}$$
 - Secara grafik, *V* didapatkan dari penjumlahan *V*,*V<sub>R</sub>* dan *V<sub>C</sub>* 
 - Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_R}+\overrightarrow {V_L}+\overrightarrow {V_C}}}$
 ---
@@ -322,7 +322,7 @@ dengan *φ* = beda sudut fase tegangan dan arus
 </section>
 		</div>
 		</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
