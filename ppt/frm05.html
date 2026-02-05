@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangkaian R-L-C</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container py-4 bg-light mt-2 text-center">
+        <h2>Rangkaian R-L-C</h2>
+		<p id="demo"></p>
+        <hr>
+        <div class="row">
+            <div class="col">
+                Kuat Arus Maksimum (A):
+                <br>
+                <input type="number" placeholder="Kuat Arus Maksimum" id="iii" value="5" min="1" max="10" style="width: 70px" />
+            </div>
+            <div class="col">
+                Hambatan (Ω):
+                <br>
+                <input type="number" placeholder="Hambatan" id="rrr" value="5" min="0" max="30" style="width: 70px" />
+            </div>
+            <div class="col">
+                Induktansi (mH):
+                <br>
+                <input type="number" placeholder="Induktansi" id="lll" value="200" min="100" max="600" style="width: 70px" />
+            </div>
+			<div class="col">
+                Kapasitas (μF):
+                <br>
+                <input type="number" placeholder="Kapasitas" id="ccc" value="250" min="100" max="600" style="width: 70px" />
+            </div>
+			<div class="col">
+                Kecepatan sudut (rad/s):
+                <br>
+                <input type="number" placeholder="Kecepatan" id="vv" value="200" min="100" max="500" style="width: 70px" />
+            </div>
+            <div class="col">
+                Framerate (fps):
+                <br>
+                <input type="number" placeholder="Framerate" id="fr" value="100" style="width: 70px" />
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+			<div class="col"><label for="rr">Resistor</label><input type="checkbox" name="hubungan" id="rr" checked/></div>
+			<div class="col"><label for="ll">Induktor</label><input type="checkbox" name="hubungan" id="ll" checked/></div>
+			<div class="col"><label for="cc">Kapasitor</label><input type="checkbox" name="hubungan" id="cc" checked/></div>
+        </div>
+        <hr>
+        <button id="start" type="button">Start</button>
+        <button id="pause_resume" type="button">Pause</button>
+        <button id="reset" type="button">Reset</button>
+        <hr>
+        <canvas id="c" width="1200" height="650" style="border:1px solid #21215C; background: #EEC6A4";"></canvas>
+        <hr>
+    </div>
+
+    <script src="js/frm05.js"></script>
+</body>
+
+</html>
