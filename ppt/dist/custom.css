@@ -136,12 +136,15 @@
 .tooltip:hover .tooltiptext-b-1, .tooltip:hover .tooltiptext-b-2, .tooltip:hover .tooltiptext-b-3, .tooltip:hover .tooltiptext-b-4, .tooltip:hover .tooltiptext-b-5, .tooltip:hover .tooltiptext-b-6, .tooltip:hover .tooltiptext-b-7, .tooltip:hover .tooltiptext-b-8, .tooltip:hover .tooltiptext-b-9, .tooltip:hover .tooltiptext-b-10, .tooltip:hover .tooltiptext-t-1, .tooltip:hover .tooltiptext-t-2, .tooltip:hover .tooltiptext-t-3, .tooltip:hover .tooltiptext-t-4, .tooltip:hover .tooltiptext-t-5, .tooltip:hover .tooltiptext-t-6, .tooltip:hover .tooltiptext-t-7, .tooltip:hover .tooltiptext-t-8, .tooltip:hover .tooltiptext-t-9, .tooltip:hover .tooltiptext-t-10, .tooltip:hover .tooltiptext-l-1, .tooltip:hover .tooltiptext-l-2, .tooltip:hover .tooltiptext-l-3, .tooltip:hover .tooltiptext-l-4, .tooltip:hover .tooltiptext-l-5, .tooltip:hover .tooltiptext-l-6, .tooltip:hover .tooltiptext-l-7, .tooltip:hover .tooltiptext-l-8, .tooltip:hover .tooltiptext-l-9, .tooltip:hover .tooltiptext-l-10, .tooltip:hover .tooltiptext-r-1, .tooltip:hover .tooltiptext-r-2, .tooltip:hover .tooltiptext-r-3, .tooltip:hover .tooltiptext-r-4, .tooltip:hover .tooltiptext-r-5, .tooltip:hover .tooltiptext-r-6, .tooltip:hover .tooltiptext-r-7, .tooltip:hover .tooltiptext-r-8, .tooltip:hover .tooltiptext-r-9, .tooltip:hover .tooltiptext-r-10 {
 	visibility: visible;
 }
-canvas{
+/*canvas{
 	border:1px solid #000000;
 	background: whitesmoke;
-}
+}*/
 table{
 	font-size:90%;
+}
+.reveal blockquote {
+  background: rgba(59,55,104, 0.5);
 }
 .reveal strong{
 	font-weight: bold;
@@ -152,7 +155,7 @@ table{
 	color: #f9cf8e;
 }
 
-.reveal i, em {
+.reveal em {
 	font-style: italic;
 	color: #F48234;
 }
@@ -166,12 +169,24 @@ table{
 .reveal h5 {
 	text-align:left;
 }
+.reveal mark {
+	background-color: lightgreen;
+
+}
+.reveal kbd {
+  background: #cacbe6;
+  color: #000000;
+  padding: 1px 2px 1px 2px;
+  border: #fff 1px solid;
+  box-shadow: 1px 1px 3px 0px #fff;
+}
 .container{
 	display: flex;
 }
 .col{
 	flex: 1;
 }
+
 .footer {
 	position: absolute;
 	display: table;
@@ -195,5 +210,40 @@ table{
 .reveal a {
 	text-decoration: underline;
 }
-			
+.slidecontainer {
+  width: 100%;
+}		
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
 
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.pink {
+  background: #04AA6D;
+  color:pink;
+}
