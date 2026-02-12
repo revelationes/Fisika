@@ -156,6 +156,9 @@ table{
 	font-style: italic;
 	color: #F48234;
 }
+.reveal h1 {
+  --r-heading1-size: 3.4em;
+}
 .reveal h6 {
 	outline: 1px solid #f9cf8e;
 	background: rgba(0, 150, 136, 0.2);
