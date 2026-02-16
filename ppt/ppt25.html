@@ -1,282 +1,246 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Kemagnetan</title>
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
-		<link rel="stylesheet" href="dist/custom.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div id="schauderhaft-footer" class="footer">
-			<span class="element" id="tgl">#cool-talk</span>
-			<span class="element"></span>
-			<span class="element"></span>
-		</div>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown data-auto-animate>
-				<textarea data-template>
-## Kemagnetan
-- Medan Magnet di Sekitar Kawat Berarus
-- Hukum Biot Savart, Hukum Ampere
-- Flux Magnet
-- Gaya Lorentz (Gaya Magnetik)
-- Induksi Elektromagnetik
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Radiasi Benda Hitam dan Gejala Kuantum</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+	<link rel="stylesheet" href="dist/custom.css">
+  </head>
+  <div id="schauderhaft-footer" class="footer">
+	<span class="element" id="tgl">#cool-talk</span>
+	<span class="element"></span>
+	<span class="element"></span>
+  </div>
+  <body style="transition: transform 0.8s;">
+	<div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="fade">
+	  <div class="slides">
+		<section data-markdown data-transition="convex">
+		<textarea data-template>
+# Radiasi Benda Hitam dan Gejala Kuantum
 ---
-### Medan Magnet di Sekitar Kawat Berarus
-- Orang pertama yang menemukan gejala kemagnetan adalah Hans Christian Oersted (1770 – 1851). Oersted menemukan suatu gejala bahwa jika sebuah magnet jarum ditempatkan di dekat kawat berarus listrik maka magnet jarum akan menyimpang. Untuk memahami yang ditemukan Oersted mari kita lakukan percobaan sebagai berikut:
+- Radiasi Benda Hitam
+- Efek Fotolistrik
+- Efek Hamburan Compton
 ---
-#### Medan Magnet di Sekitar Kawat Berarus 
-<a href="https://javalab.org/en/oersteds_experiment_en/"><img src="../resources/images/mg01.png" height="100%"></a>
+### Radiasi Benda Hitam
+<img src="../resources/images/rad01.png" height="100%">
 ---
-- Jika tidak ada arus, kompas hanya dipengaruhi oleh medan magnet bumi.
-- Setelah arus dialirkan, kompas akan menyimpang dari kedudukan semula. 
-- Gejala ini dapat kita analisa sebagai berikut: kompas adalah sebuah magnet dan yang dapat menggerakkan magnet adalah medan magnet. 
-- Medan magnat yang menggerakan magnet jarum tersebut tidak lain adalah medan magnet yang ditimbulkan kawat berarus listrik. 
-- Ketika arah arus dibalik ternyata simpangan jarum kompas juga pada arah sebaliknya.
+- Radiasi panas adalah radiasi yang dipancarkan oleh sebuah benda sebagai akibat suhunya. Benda baru terlihat karena meradiasikan panas jika suhunya melebihi 1.000 K. Pada suhu di atas 2.000 K benda berpijar kuning atau keputih-putihan, seperti pijar
+putih dari filamen lampu pijar. Begitu suhu benda terus ditingkatkan, intensitas relatif dari spektrum cahaya yang dipancarkannya berubah. Hal ini menyebabkan pergeseran
+warna-warna spektrum yang diamati, yang dapat digunakan untuk menentukan suhu suatu benda.
 ---
-- Dari uraian di atas dapat disimpulkan, bahwa **di sekitar kawat berarus listrik ada medan magnet**. 
-- Medan magnet yang ditimbulkan oleh arus listrik dapat juga disebut **medan elektromagnet**. 
-- Medan magnet dapat dilukiskan dengan garis-garis gaya magnet. Pola garis gaya magnet dapat ditunjukkan dengan percobaan sederhana yaitu dengan serbuk besi yang ditaburkan di atas kertas dan penghantar berbagai bentuk yang dialiri arus. 
+- Secara umum bentuk terperinci dari spektrum radiasi panas yang dipancarkan oleh suatu benda panas bergantung pada komposisi benda itu. Walaupun demikian,
+hasil eksperimen menunjukkan bahwa ada satu kelas benda panas yang memancarkan spektra panas dengan karakter universal. Benda ini adalah benda hitam atau *black body*.
+- Benda hitam memiliki absorptansi dan emisivitas yang besarnya satu.
 ---
-#### Arah Induksi Magnetik
-Untuk mempermudah kita gunakan aturan genggaman tangan kanan sebagai berikut:
-<img src="../resources/images/mg02.png" height="100%">
+### Radiasi Benda Hitam
+- Radiasi benda hitam adalah radiasi elektromagnetik yang dipancarkan oleh sebuah benda hitam. Radiasi ini menjangkau seluruh daerah panjang gelombang. Distribusi
+energi pada daerah panjang gelombang ini memiliki ciri khusus, yaitu suatu nilai maksimum pada panjang gelombang tertentu. Letak nilai maksimum tergantung
+pada temperatur, yang akan bergeser ke arah panjang gelombang pendek seiring dengan meningkatnya temperatur.
 ---
-- Arah medan magnet *B* ditentukan dengan kaidah sekrup putar kanan atau tangan kanan.
-- Jika tangan kanan menggenggam kawat berarus listrik dengan arah ibu jari sama dengan arah arus maka arah lipatan jari-jari sama dengan arah garis gaya magnet. 
-- Jika arah maju sekrup menyatakan arah arus,maka arah putar kanan sekrup sama dengan arah garis gaya magnet.
+- Pada tahun 1879 seorang ahli fisika dari Austria, Josef Stefan melakukan eksperimen untuk mengetahui karakter universal dari radiasi benda hitam. Ia menemukan bahwa
+daya total per satuan luas yang dipancarkan pada semua frekuensi oleh suatu benda hitam panas (intensitas total) adalah sebanding dengan pangkat empat dari suhu
+mutlaknya. Sehingga dapat dirumuskan:
+###### $$I_{total}=\sigma T^4$$
 ---
-- Arah induksi magnet di suatu titik merupakan garis singgung garis gaya magnet di titik tersebut (garis yang tegak lurus jari-jari). 
-- Sering kali digunakan tanda (•) untuk menandai arah keluar bidang dan (⨂) untuk arah masuk bidang. 
----
-### Hukum Biot Savart 
-<a href="https://www.geogebra.org/classic/qzvsxbyb" data-preview-link><img src="../resources/images/mg03.png" height="100%"></a>
----
-<div id="geogebra01"></div>
----
-#### Hukum Biot Savart 
->*Jika terdapat sebuah titik **P** berjarak **a** dari sebuah kawat berarus listrik **I**, kawat berarus itu terdiri atas bagian-bagian kecil kawat berarus yang disebut elemen arus (**dL**). Tiap elemen arus ini akan menimbulkan induksi magnet kecil (**dB**) yang disebabkan oleh elemen arus **dL**,sebanding dengan sinus sudut antara **r** dan **dL**, dan berbanding terbalik dengan kuadrat jarak **P** ke elemen arus **dL**.* 
----
-- Dengan demikian didapatkan perumusan sebagai berikut:
-###### $$dB=\frac{k\ I\ dL\ \sin\alpha}{r^2}$$
+- Benda panas yang bukan benda hitam, akan memenuhi hukum yang sama, hanya diberi tambahan koefisien emisivitas yang lebih kecil daripada 1, sehingga:
+###### $$\frac P A=e\sigma T^4$$
 ---
 Keterangan:
-- *dB* = Medan magnet di P yang disebabkan oleh elemen kawat *dL* (tesla atau T) 
-- *k* = faktor pembanding (10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>)
-- *I* = kuat arus pada kawat (A) 
-- *dL* = elemen panjang kawat (m)
-- *r* = jarak antara P dengan *dL* (m)
-- *α* = sudut antara *I* dengan *r* 
+- *I* = Intensitas/Daya per satuan luas
+- *P* = Daya (W)
+- *A* = luas permukaan benda (m<sup>2</sup>)
+- *e* = emisivitas 
+- *T* = suhu mutlak (K)
+- *σ* = konstanta Stefan-Boltzmann (5,67 × 10<sup>-8</sup> Wm<sup>-2</sup>K<sup>-4</sup>)
 ---
-#### Hukum Biot Savart 
-- Untuk menghilangkan faktor *k* pada rumus di atas, boleh dipakai konstanta baru *μ<sub>0</sub>* (permeabilitas ruang hampa)
-$$k=\frac{\mu_0}{4\pi}$$
-*μ<sub>0</sub>* = 4π × 10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>
-sehingga
-###### $$dB=\frac{\mu_0\ I\ dL\ \sin\alpha}{4\pi r^2}$$
+### Hukum Pergeseran Wien
+- Untuk sebuah benda hitam, berlaku suatu hubungan antara panjang gelombang (λ) dengan suhu mutlak yang dinyatakan:
+###### $$\lambda_mT=C$$
+Keterangan:
+- *λ<sub>m</sub>* = panjang gelombang maksimum (m)
+- *T* = suhu mutlak (K)
+- *C* = konstanta Pergeseran Wien (2,898 × 10<sup>-3</sup> mK)
 ---
->*Medan magnet di sebuah titik **P** yang disebabkan oleh seluruh elemen arus di sepanjang **I** sama dengan jumlah vektor **dB** oleh elemen-elemen arus di sepanjang **I**. Secara matematis, hasil penjumlahan dB oleh masing-masing dL sepanjang **I**, diperoleh dengan integrasi **dB** sepanjang **I**.* 
+- Dalam Teori klasik, terdapat dua pendekatan/perkiraan yang dipakai untuk menjelaskan fenomena benda hitam. pendekatan pertama berasal dari Teori wien. Teori kedua dicetuskan oleh Rayleigh-Jeans.
+- Aproksimasi Wien
+###### $$u_{(f,T)}=Af^3e^{-\frac{Bf}{T}}$$
+###### $$u_{(\lambda,T)}=c_1\lambda^{-5}e^{-\frac{c_2}{\lambda T}}$$
+- Wien mendapatkan nilai *c<sub>1</sub>* = $8\pi hc$ dan *c<sub>2</sub>* = $\frac{ch}{k}$.
 ---
-$$\begin{split}   B &=\int dB\cr  &=\frac{\mu_0}{4\pi}\int \frac{I\ dL\ \sin\alpha}{r^2}\end{split}$$
+- Teori Wien dapat menjelaskan fenomena radiasi benda hitam untuk panjang gelombang pendek tetapi tidak untuk panjang gelombang panjang.
+- Teori Rayleigh-Jeans
+###### $$u_{(T,\lambda)}=\frac{8\pi kT}{\lambda^4}$$
+- Hasil ini sesuai dengan hasil yang diperoleh secara percobaan untuk panjang gelombang yang panjang, tetapi tidak sama pada panjang gelombang pendek. 
 ---
-#### Medan magnet dB di titik P di sekitar kawat berarus 
-- Vektor *dB* tegak lurus terhadap *dL* (= arah arus) dan terhadap vektor satuan *r* (arah menuju titik P)
-- Besar *dB* berbanding terbalik dengan kuadrat jarak P ke *dL* (r<sup>2</sup>)
-- Besar *dB* berbanding lurus dengan kuat arus *I* dan besar *dL* 
-- Besar *dB* berbanding lurus terhadap *sin⁡ α*, di mana *α* adalah sudut antara *dL* dan vektor satuan *r*
+- Begitu λ mendekati nol, fungsi *P<sub>(λ,T)</sub>* yang ditentukan secara percobaan juga mendekati nol, tetapi fungsi yang dihitung mendekati tak terhingga karena sebanding dengan *λ<sup>−4</sup>*.
+Dengan demikian, yang tak terhingga terkonsentrasi dalam panjang gelombang yang sangat pendek. Hasil ini dikenal sebagai katastrof ultraviolet.
 ---
-- Penyelesaian persamaan di atas didapatkan dengan menganggap *α* sebagai variabel bebas, sehingga variabel lainnya dinyatakan dalam *α*.
-$$\tan\alpha=\frac a L\implies L=\frac a {\tan\alpha}=a\cotg\alpha$$
-$$L'=\frac{dL}{d\alpha}=a\cosec^2\alpha$$
-*$$dL=a\cosec^2\alpha\ d\alpha$$*
+### Hukum Radiasi Planck
+- Pada tahun 1900, fisikawan Jerman, Max Planck, mengumumkan bahwa dengan membuat suatu modifikasi khusus dalam perhitungan klasik dia dapat menjabarkan
+fungsi *P<sub>(λ,T)</sub>* yang sesuai dengan data percobaan pada seluruh panjang gelombang.
 ---
-$$\sin\alpha=\frac a r\implies r=\frac a {\sin\alpha}=a\cosec\alpha$$
-*$$r^2=a^2\cosec^2\alpha$$*
+- Hukum radiasi Planck menunjukkan distribusi (penyebaran) energi yang dipancarkan oleh sebuah benda hitam. Hukum ini memperkenalkan gagasan baru dalam
+ilmu fisika, yaitu bahwa energi merupakan suatu besaran yang dipancarkan oleh sebuah benda dalam bentuk paket-paket kecil terputus-putus, bukan dalam bentuk pancaran
+malar (kontinyu). Paket-paket kecil ini disebut *kuanta* dan hukum ini kemudian menjadi dasar teori kuantum.
 ---
-$$B=\frac{\mu_0}{4\pi}\int \frac{I\ dL\ \sin\alpha}{r^2}$$
-$$B=\frac{\mu_0\ I}{4\pi}\int \frac{a\cosec^2\alpha\ \sin\alpha\ d\alpha\ }{a^2\cosec^2\alpha}$$
-$$B=\frac{\mu_0\ I}{4\pi\ a}\int^{\alpha_2}_{\alpha_1} \sin\alpha\ d\alpha$$
-###### $$B_P=\frac{\mu_0\ I}{4\pi\ a}-\cos\alpha\displaystyle\bigg\vert^{\alpha_2}\_{\alpha_1}=\frac{\mu_0\ I}{4\pi\ a}(\cos\alpha_1-\cos\alpha_2)$$
+- Dalam pemahaman itu, cahaya terdiri atas partikel-partikel yang disebut sebagai foton. Setiap foton memiliki energi sebesar
+###### $$E=hf=\frac{hc}{\lambda}$$
+untuk *n* jumlah foton
+###### $$E=nhf=n\frac{hc}{\lambda}$$
 ---
 Keterangan:
-- *B<sub>P</sub>* = Medan magnet di P di sekitar kawat berarus (tesla atau T) 
-- *μ<sub>0</sub>* = permeabilitas vakum (4π × 10<sup>−7</sup> Wb A<sup>−1</sup>m<sup>−1</sup>)
-- *I* = kuat arus pada kawat (A) 
-- *a* = jarak antara P dengan kawat (m)
-- *α<sub>1</sub>* = sudut antara *I* dengan *r<sub>1</sub>* 
-- *α<sub>2</sub>* = sudut antara *I* dengan *r<sub>2</sub>* (ujung yang lain)
+- *λ* = panjang gelombang (m)
+- *f* = frekuensi (Hz)
+- *E* = Energi foton (J)
+- *h* = konstanta Planck (6,626 × 10<sup>-34</sup> Js)
 ---
-- Persamaan di atas dapat dipakai jika sudut *α<sub>2</sub>* dihitung sebagai berikut:
-<img src="../resources/images/mag03.png" height="100%">
+- Distribusi/sebaran energi foton itu mengikuti distribusi Bose-Einstein, yakni:
+###### $$\langle E \rangle=\frac{1}{e^{\frac{hf}{kT}}-1}$$
+Keterangan:
+- *k* = konstanta Boltzmann (1,38 × 10<sup>-23</sup> J/K)
+- *T* = suhu mutlak (K)
 ---
+- Rapat energi atau intensitasnya, dalam persamaan radiasi Planck, menjadi
+###### $$u_{(f)}=\frac{8\pi h}{c^3}\frac{f^3}{e^{\frac{hf}{kT}}-1}$$
+atau 
+###### $$u_{(\lambda)}=\frac{8\pi hc}{\lambda^5}\frac{1}{e^{\frac{hc}{\lambda kT}}-1}$$
+---
+- Persamaan Radiasi Planck dibatasi oleh dua hal penting berikut ini:
+1. Untuk frekuensi rendah $f\ll\frac{kT}{h}$ dan panjang gelombang yang panjang $\lambda\gg\frac{kT}{h}$, maka akan
+berlaku rumus Rayleigh-Jeans.
+###### $$u_{(T,f)}=8\pi c^{-3}f^2kT$$
+atau
+###### $$u_{(T,\lambda)}=\frac{8\pi kT}{\lambda^4}$$
+---
+2. Pada frekuensi tinggi $f\gg \frac{kT}{h}$, dan pada panjang gelombang yang pendek $\lambda\ll\frac{kT}{h}$, maka akan berlaku rumus Wien:
+###### $$u_{(T,f)}=8\pi hc^{-3}f^3e^{-\frac{hf}{kT}}$$
+atau
+###### $$u_{(T,\lambda)}=8\pi hc\lambda^{-5}e^{-\frac{hc}{\lambda kT}}$$
+---
+### Efek Fotolistrik
+<a href="https://phet.colorado.edu/sims/cheerpj/photoelectric/latest/photoelectric.html?simulation=photoelectric"><img src="../resources/images/qua01.png" height="100%"></a>
+---
+#### Efek Fotolistrik
+- Efek fotolistrik ditemukan oleh Heinrich Hertz pada tahun 1887 dan telah dikaji oleh Phillip Lenard pada tahun 1900.
+- Sebuah bahan logam disinari dengan sinar ultraviolet.
+- Muncul lucutan listrik antar elektroda.
+---
+#### Hasil pengamatan Lenard:
+- Lucutan listrik terjadi sesaat, meski intensitas cahaya lemah. 
+- Terdapat tegangan penghenti. Artinya ketika arah medan listrik dibalik, dengan membalik kutub catu daya, elektron berhenti bergerak. Tegangan penghenti ini nilainya tetap untuk setiap frekuensi cahaya yang digunakan.
+---
+- Tegangan penghenti tidak tergantung intensitas, tapi pada frekuensi (untuk satu jenis bahan yang sama).
+- arus yang teramati sebanding dengan intensitas cahaya yang digunakan
+---
+#### Interpretasi klasik
+- Sebagai gelombang, cahaya memiliki amplitudo, frekuensi, panjang gelombang. 
+- Tenaga gelombang sebanding dengan luas permukaan yang dilewati ($E\propto A^2$)
+---
+#### Fakta:
+1. Pelepasan elektron terjadi seketika. → **tidak sesuai**
+2. Arus sebanding intensitas. → *sesuai*
+3. Untuk satu frekuensi, terdapat tegangan penghenti yang tidak tergantung intensitas. Padahal, tenaga total tergantung intensitas. → **tidak sesuai**
+4. Untuk setiap bahan, terdapat frekuensi ambang. Padahal frekuensi tidak ada kaitannya dengan tenaga. → **tidak sesuai**
+---
+#### Penjelasan Einstein (1905):
+- Einstein meminjam konsep Max Planck, bahwa pada radiasi benda hitam, cahaya dipancarkan oleh benda dalam satuan tenaga yang disebut sebagai *quanta* (terkuantisasi, tercatu, merupakan paket-paket) dengan tenaga sebesar:
+###### $$E=hf=\frac{hc}{\lambda}$$
+---
+- Gelombang elektromagnetik terkuantisasi, terdiri atas paket-paket tersendiri (quanta) yang disebut foton. Tenaga foton tergantung pada frekuensinya. 
+- Setiap foton yang menumbuk 1 elektron akan memberikan seluruh energinya, dan energi itu digunakan oleh elektron untuk melepaskan diri dari ikatan dan bergerak.
+---
+#### Interpretasi quantum:
+1. Pelepasan elektron tergantung pada tenaga foton yang datang. Tidak perlu waktu tunda, jika memang frekuensi sudah di atas frekuensi ambang. → *sesuai*
+2. Arus sebanding intensitas. Intensitas berkaitan dengan jumlah foton. Semakin banyak foton, semakin banyak elektron yang lepas, semakin besar arus. → *sesuai*
+---
+3. Untuk satu frekuensi, terdapat tegangan penghenti yang tidak tergantung intensitas. Tegangan penghenti merupakan tenaga untuk menghentikan gerak elektron, atau melawan
+energi kinetiknya. Energi kinetik elektron berasal dari energi foton dikurangi dengan energi ikat. Karena nilai energi foton dan energi ikat adalah tentu, maka nilai tegangan penghenti juga tentu. → *sesuai*
+---
+4. Untuk setiap bahan, terdapat frekuensi ambang. Tenaga foton dipakai elektron untuk melepaskan diri dari ikatan, dan bergerak. $hf=\phi+Ek$. Sehingga dibutuhkan energi foton yang sama dengan energi ikat elekton, untuk elektron dapat lepas. → *sesuai*
+---
+#### Penemuan Sinar-X
+- Sinar-X dapat dihasilkan dengan tabung Sinar-X atau tabung hampa udara yang menggunakan tegangan tinggi untuk mempercepat elektron. Elektron dilepaskan melalui katoda dan ditembakkan menuju anoda, yang merupakan bahan logam.
+- Logam akan memancarkan radiasi elektromagnetik. Panjang gelombangnya akan sesuai dengan jenis logam yang digunakan dan kecepatan eletron yang menumbuknya.
+- Proses ini merupakan kebalikan dari efek fotolistrik.
+---
+#### Efek Hamburan Compton
+- Fenomena lain yang menunjukkan gejala quantum adalah Efek Hamburan Compton. 
+- Pada tahun 1923, Arthur Holy Compton melakukan percobaan untuk membuktikan teori cahaya sebagai partikel dengan menembakkan sinar-X ke logam tipis berilium. 
+- Hamburan dideteksi melalui detektor. 
+---
+<img src="../resources/images/qua02.png" height="200%">
+---
+- Sinar-X yang menumbuk suatu partikel akan kehilangan sebagian energinya dan kemudian terhambur dengan sudut hamburan sebesar *θ*. 
+- Berdasarkan pengamatan Compton, panjang gelombang sinar-X yang terhambur memiliki panjang gelombang yang lebih besar dari panjang gelombang semula (frekuensinya lebih kecil dari semula).
+- Ini dikarenakan sebagian energinya diserap oleh elektron. 
+---
+Energi foton Sinar-X yang terhambur
+###### $$E=(hf-hf')=hc(\frac{1}{\lambda}-\frac{1}{\lambda'})$$
+di mana $f>f'$ dan $λ'>λ$
+---
+Hubungan antara panjang gelombang dan panjang gelombang hamburan dinyatakan sebagai berikut:
+###### $$\lambda'-\lambda=\frac{h}{m_0c}(1-\cos\theta)$$
+$\frac{h}{m_0c}$ sering juga digantikan dengan $\lambda_c$
+---
+Keterangan:
+- *λ* = panjang gelombang sinar-X sebelum tumbukan (m)
+- *λ'* = panjang gelombang sinar-X setelah tumbukan (m)
+- *m<sub>0</sub>* = massa diam elektron (9,1 × 10<sup>-31</sup> kg)
+- *c* = cepat rambat cahaya (3,0 × 10<sup>8</sup> m/s)
+- *h* = konstanta Planck (6,626 × 10<sup>-34</sup> Js)
+- *θ* = sudut hamburan
+- *λ<sub>c</sub>* = panjang gelombang Compton
+		</textarea>
+		</section>
+	  </div>
+	</div>
 
-- Sementara persamaan:
-###### $$B_P=\frac{\mu_0\ I}{4\pi\ a}(\cos\alpha_1+\cos\alpha_2)$$
-dapat dipakai jika sudut *α<sub>2</sub>* dihitung sebagai:
-<img src="../resources/images/mag02.png" height="50%">
----
-##### 1. Medan magnet pada Kawat lurus dengan Panjang Tertentu
-###### $$B_P=\frac{\mu_0 I(\cos\alpha_1+\cos\alpha_2)}{4\pi a}$$
-- *a* = jarak antara P dengan kawat (m)
----
-##### 2. Medan magnet pada Kawat lurus dengan Panjang Tak Hingga 
-- Untuk kawat panjang tak hingga, *α<sub>1</sub>* dan *α<sub>2</sub>* = 0°, sehingga
-###### $$B_P=\frac{\mu_0 I}{2\pi a}$$
----
-#### Hukum Ampere
->*"Jumlah medan magnet di sekitar kawat berarus dalam lintasan tertutup sebanding dengan arus yang menyebabkannya"*  
-###### $$\oint \mathbf{B}\cdot \mathrm{d}\mathbf{L}=\mu_0 I$$
----
-#### Flux Magnet
-###### $$\mathbf{\Phi_B}=\int \mathbf{B}\cdot \mathrm{d}\mathbf{A}$$
-#### Hukum Gauss tentang magnetisme
-*Fluks magnet dalam permukaan tertutup selalu sama dengan 0*
-###### $$\oint \mathbf{B}\cdot \mathrm{d}\mathbf{A}=0$$
----
-#### Gaya Lorentz (Gaya Magnetik)
->*Sebuah kawat berarus atau sebuah muatan yang bergerak dengan kecepatan tetap yang berada dalam medan magnet akan mendapat gaya yang besarnya sebanding dengan **besar arus**, **panjang kawat** dan **besar medan magnet** tersebut. Gaya ini yang dinamakan dengan gaya Lorentz, dan secara matematis dapat dinyatakan:*
----
-###### $${\displaystyle \mathbf {\vec{F_L}} =\vec{I}\times \mathbf {\vec{B}}\boldsymbol {\ \ell}}$$ 
-###### $$F_L=IBL\sin\alpha$$ 
----
-#### Gaya Lorentz (Gaya Magnetik)
-###### $${\displaystyle \mathbf {\vec{F_L}} =q\ \mathbf {\vec{v}} \times \mathbf {\vec{B}}}$$
-###### $$F_L=qvB\sin\alpha$$
-Keterangan
-- *F<sub>L</sub>* = Gaya Lorentz (N)
-- *I* = Kuat arus (A)
-- *B* = Medan Magnet (T)
-- *α* = sudut antara *I* dan *B*, atau antara *v* dan *B*
-- *q* = muatan  (C)
-- *v* = kecepatan (m/s)
----
-#### Arah Gaya Lorentz
-- Arah Gaya Lorentz dapat ditentukan menggunakan aturan telapak tangan kanan, yaitu ibu jari menyatakan arah Gaya Lorentz (*F<sub>L</sub>*), jari telunjuk menyatakan arah arus (*I*) atau arah kecepatan (*v*), jari tengah menyatakan arah medan magnet (*B*)
-
-<img src="../resources/images/fl01.png" height="250px"><img src="../resources/images/fl02.png" height="250px">
----
-#### Gaya Lorentz antara Dua Kawat Lurus dan Panjang 
-- Telah kita ketahui bahwa disekitar kawat berarus ada medan magnet dan kawat berarus dalam medan magnet mengalami gaya Lorentz. 
-- Bagaimana jika dua kawat berarus listrik saling berdekatan? 
-- Keadaan ini dapat kita analisa sebagai berikut; 
----
-- Misal jarak kawat 1 dan 2 adalah *a* dan besar arusnya  *I<sub>1</sub>* dan *I<sub>2</sub>*. Kawat 1 akan menimbulkan medan magnet *B<sub>1</sub>* dan kawat 2 menimbulkan *B<sub>1</sub>*.
-- Gaya Lorentz yang dialami kedua kawat adalah:
-$${\displaystyle \mathbf {\vec{F_{L1}}} =\vec{I_1}\times \mathbf {\vec{B_2}}\boldsymbol {\ \ell}}$$
-$${\displaystyle \mathbf {\vec{F_{L1}}} =\vec{I_1}\times \frac{\mu_0 \vec{I_2}}{2\pi a} \boldsymbol {\ \ell}}$$
-###### $${\displaystyle \mathbf {\vec{F_{L1}}} =\frac{\mu_0 \vec{I_1}\vec{I_2}}{2\pi a} \boldsymbol {\ \ell}}$$ 
----
-$${\displaystyle \mathbf {\vec{F_{L2}}} =\vec{I_2}\times \mathbf {\vec{B_1}}\boldsymbol {\ \ell}}$$
-$${\displaystyle \mathbf {\vec{F_{L2}}} =\vec{I_2}\times \frac{\mu_0 \vec{I_1}}{2\pi a} \boldsymbol {\ \ell}}$$
-###### $${\displaystyle \mathbf {\vec{F_{L2}}} =\frac{\mu_0 \vec{I_2}\vec{I_1}}{2\pi a} \boldsymbol {\ \ell}}$$ 
-###### $${\displaystyle \mathbf {\vec{F_{L1}}} =\mathbf {\vec{F_{L2}}}=\frac{\mu_0 \vec{I_1}\vec{I_2}}{2\pi a} \boldsymbol {\ \ell}}$$ 
----
-atau gaya Lorentz per satuan panjang dapat dinyatakan:
-###### $${\displaystyle \mathbf {\frac{\vec{F_{L}}}{\boldsymbol{\ \ell}}} =\frac{\mu_0 \vec{I_1}\vec{I_2}}{2\pi a}}$$
----
-#### Gaya Lorentz pada Muatan yang Berada dalam Medan Magnet
-- Sebuah partikel bermassa *m* bermuatan listrik *q* yang bergerak dengan kecepatan *v* di dalam medan magnet dengan induksi magnetik *B* akan mengalami Gaya Lorentz *F<sub>L</sub>* sebesar
-###### $${\displaystyle \mathbf {\vec{F_L}} =q\ \mathbf {\vec{v}} \times \mathbf {\vec{B}}}$$
-###### $$F_L=qvB\sin\alpha$$
----
-- *α* = sudut antara *v* dan *B*.  Bila *α* = 0° atau 180°, maka lintasan muatan berupa garis lurus. 
-- Bila *α* = sudut lancip maka lintasan muatan berupa helix atau spiral.
-- Bila *α* = 90º (v ⊥ B)maka *$F=qvB$*. Karena *F* selalu tegak lurus terhadap *v* maka lintasan partikel bermuatan berupa lingkaran yang jari-jari *r*-nya dapat dihitung: 
----
-$$F_L=F_S$$
-$$qvB=\frac{mv^2}{r}$$
-###### $$r=\frac{mv}{qB}$$
----
-- Frekuensi putarannya dapat dihitung:
-$$f=\frac{\omega}{2\pi}=\frac{\frac v r}{2\pi}$$
-$$f=\frac{v}{2\pi\ r}$$
-$$f=\frac{v}{2\pi\ \frac{mv}{qB}}$$
-###### $$f=\frac{qB}{2\pi\ m}$$
----
-### Induksi Elektromagnetik
-#### Hukum Faraday
-- Ggl induksi pada sebuah rangkaian berbanding lurus terhadap laju perubahan fluks magnet yang melaluinya
-###### $$\displaystyle {\mathcal {E}}=-{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
-untuk sejumlah N lilitan
-###### $$\displaystyle {\mathcal {E}}=-N{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
----
-#### Hukum Lenz
-- Arah (polaritas) GGL induksi sedemikian sehingga cenderung menghasilkan arus yang menimbulkan fluks magnet *berlawanan* dengan perubahan fluks magnet dalam rangkaian 
----
-- Jika GGL disebabkan oleh gerakan suatu penghantar dalam medan magnet, arah arus induksinya adalah sedemikian rupa sehingga arah medan magnet pada penghantar berlawanan dengan arah geraknya. Jadi gerakan penghantar dilawan.
-- Jika GGL disebabkan oleh perubahan fluks yang melalui suatu rangkaian tertutup, arus menimbulkan medan magnet yang *berlawanan* dengan medan asal, jika fluksnya bertambah; dan *searah* dengan medan asal, jika fluksnya berkurang.
----
-#### Transformator
-$$\displaystyle {\mathcal {E}_P}=-N_P{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
-$$\displaystyle {\mathcal {E}_S}=-N_S{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
-###### $$\displaystyle {\frac{{\mathcal {E}_P}}{{\mathcal {E}_S}}=\frac{N_P}{N_S}}$$
----
-Jika tidak ada energi yang hilang (transformator ideal)
-$$\mathcal {E}_S I_S t=\mathcal {E}_P I_P t$$
-$$I_S=\frac{\mathcal {E}_P}{\mathcal {E}_S}I_P=\frac{N_P}{N_S}I_P$$
-###### $$I_P:I_S=N_S:N_P$$
----
-#### Efisiensi Transformator (Transformator tidak Ideal)
-- Efisiensi transformator didefinisikan sebagai daya keluaran dibagi dengan daya masukan
-$$\eta=\frac{P_S}{P_P}$$
-sehingga perbandingan arus untuk trafo tidak ideal
-###### $$\frac{I_P}{I_S}=\frac{N_S}{N_P}\frac{1}{\eta}$$
----
-#### Generator dan Motor
-- Generator mengubah energi kinetik (mekanik) menjadi energi listrik, motor sebaliknya.
-- Jika sebuah generator dengan *N* lilitan dan luasan *A* berputar dalam medan magnet *B* dengan kecepatan sudut *ω*, fluks magnetik akan mengikuti persamaan
-###### $$\Phi _{B}=BA\cos{\omega t}$$
----
-$$\displaystyle {\mathcal {E}}=-N{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
-###### $$\displaystyle {\mathcal {E}}=-NBA{\frac {\mathrm {d}}{\mathrm {d} t}}\cos{\omega t}=NBA\omega\sin{\omega t}$$
-$$\displaystyle {\mathcal {E}_{maks}}=NBA\omega$$
----
-<img src="../resources/images/ie01.png" height="400px">
----
-<img src="../resources/images/ie02.png" height="400px">
----
-#### Induktansi diri
-- Perubahan kuat arus dalam suatu penghantar menyebabkan perubahan fluks magnet pada penghantar itu. Perubahan fluks magnet menyebabkan induksi elektromagnet (arus induksi). Ini disebut *induktansi diri*.
-###### $$\displaystyle {\mathcal {E}}=-L{\frac {\mathrm {d}I}{\mathrm {d} t}}$$
-- *L* = koefisien induktansi diri (Henry=V.s/A)
-</textarea>
-</section>
-		</div>
-		</div>
-		<script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/math/math.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
-		<script type="text/javascript" src="js/canvas.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript" >
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-			});
-			var params = {"material_id": "qzvsxbyb","appName": "classic", "width": 1000, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true };
-			var applet = new GGBApplet(params, true);
-			window.addEventListener("load", function() {
-				applet.inject('geogebra01');
-			});
-		</script>
-
-	</body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/dist/reveal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/notes/notes.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/markdown/markdown.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/math/math.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/highlight.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script >
+	  Reveal.initialize({
+		slideNumber: true,
+		hash: true,
+		katex: {
+		  version: 'latest',
+		  delimiters: [
+		    { left: '$$', right: '$$', display: true },
+			{ left: '$', right: '$', display: false },
+			],
+		  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+		  },
+		chalkboard: {
+		  chalkEffect: 0.5,
+		  background:  [ 'rgba(255,255,255,0)' ,'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/blackboard.png'],
+		  eraser: {src: 'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/sponge.png', radius: 50}
+		},
+		keyboard: {
+		  65: function() { RevealChalkboard.toggleNotesCanvas() }, // Annotate when 'a' is pressed
+		  66: function() { RevealChalkboard.toggleChalkboard() },	 // Toggle board when 'b' is pressed
+		  46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+		  8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide with 'BACKSPACE'
+		  68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
+		  88: function() { RevealChalkboard.colorNext() }, // cycle colors forward when 'x' is pressed
+		  90: function() { RevealChalkboard.colorPrev() }, // cycle colors backward when 'z' is pressed
+		},
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealCustomControls, RevealChalkboard]
+		});
+	</script>
+  </body>
 </html>

@@ -1,297 +1,365 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>Teori Kinetik Gas</title>
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
-		<link rel="stylesheet" href="dist/custom.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div id="schauderhaft-footer" class="footer">
-			<span class="element" id="tgl">#cool-talk</span>
-			<span class="element"></span>
-			<span class="element"></span>
-		</div>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown data-auto-animate>
-				<textarea data-template>
-# Teori Kinetik Gas
-- Mol, Massa, Massa Molar 
-- Persamaan Gas Ideal
-- Energi Kinetik dan Kecepatan Molekul
-- Usaha oleh Gas Ideal
-- Prinsip Ekuipartisi dan Energi Dalam
-- Hukum-hukum Termodinamika
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Listrik Dinamis: Rangkaian Listrik Arus Bolak-balik</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+	<link rel="stylesheet" href="dist/custom.css">
+  </head>
+  <div id="schauderhaft-footer" class="footer">
+	<span class="element" id="tgl">#cool-talk</span>
+	<span class="element"></span>
+	<span class="element"></span>
+  </div>
+  <body style="transition: transform 0.8s;">
+	<div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="fade">
+	  <div class="slides">
+		<section data-markdown data-transition="convex">
+		<textarea data-template>
+## Listrik Dinamis: Rangkaian Listrik Arus Bolak-balik
 ---
-### Mol, Massa, Massa Molar 
-- Apa yang dimaksud dengan keadaan STP (*standard temperature pressure*) atau keadaan 
-normal atau keadaan standard?
-- Keadaan standard atau STP adalah keadaan dimana tekanan gas p = 1 atm = 1,013 × 105 Pa 
-dan suhu gas 0 °C atau 273 Kelvin. 
-- Pada keadaan standard, 1 mol gas menempati volume sebesar 22.400 cm<sup>3</sup> sedangkan jumlah 
-atom dalam 1 mol sama dengan : 6,02 × 10<sup>23</sup> yang disebut bilangan Avogadro (N<sub>A</sub>). 
+- Sumber Tegangan dan Arus Bolak-balik
+- Tegangan dan Arus Efektif
+- Hambatan Murni, Induktor dan Kapasitor dalam Rangkaian Arus AC
+- Rangkaian seri R-L, R-C, L-C dalam Rangkaian Arus AC
+- Rangkaian seri R-L-C dalam Rangkaian Arus AC
 ---
-- Jadi pada keadaan standard jumlah atom dalam tiap-tiap cm<sup>3</sup> adalah:  
-###### $$\frac{6,02 × 10^{23}}{22.400}=2,68 × 10^{19} atom/cm^3$$
-- Banyaknya mol suatu gas adalah hasil bagi antara jumlah atom dalam gas itu dengan bilangan Avogadro. 
-###### $$n=\frac{N}{N_A}$$
+### Sumber Tegangan dan Arus Bolak-balik
+- Pada dasarnya sumber tegangan listrik terdiri dari dua bagian penting yaitu *stator* dan *rotor* (yang bergerak). Dua bagian ini adalah magnet tetap dan kumparan. Ada generator dengan sistem magnet sebagai stator dan kumparan sebagai rotor. Tetapi ada juga generator dengan sistem kumparan sebagai stator dan magnet sebagai rotor. 
 ---
-Keterangan:   
-- *n* = jumlah mol gas (mol)
-- *N* = jumlah atom 
-- *N<sub>A</sub>* = bilangan Avogadro 
-- Artinya: dalam satu mol zat/gas terdapat sebanyak  6,02 × 10<sup>23</sup> buah partikel atau molekul.
-
-Hubungan antara mol dan massa:
-###### $$n=\frac{m}{M}$$
+<img src="../resources/images/ac01.jpg" height="100%">
 ---
-Keterangan:   
-- *n* = jumlah mol gas (mol)
-- *m* = massa zat (gr)
-- *M* = Massa molar/massa setiap 1 mol zat (gram/mol)
+- Menurut Michael Faraday, jika sebuah kumparan melingkupi sejumlah garis gaya magnet dan jumlah garis gaya magnet berubah akan menghasilkan tegangan listrik induksi(ε<sub>ind</sub>). Jika sejumlah lilitan (N) dan jumlah garis gaya (Φ) berubah-ubah, maka: 
+###### $$\displaystyle {\mathcal {E}}=-N{\frac {\mathrm {d} \Phi _{B}}{\mathrm {d} t}}$$
 ---
-### Persamaan Gas Ideal
-###### $$\frac{P_1V_1}{T_1}=konstan$$
-yang dapat dituliskan sebagai
-###### $$PV=NkT$$ 
-atau
-###### $$PV=nRT$$
+- Jika kumparan diputar dengan kecepatan sudut *ω*, akan dihasilkan ggl induksi sebesar: 
+###### $$\displaystyle {\mathcal {E}}=-NBA{\frac {\mathrm {d}}{\mathrm {d} t}}\cos{\omega t}=NBA\omega\sin{\omega t}$$
+$$\displaystyle {\mathcal {E}_{maks}}=NBA\omega$$
+$$\displaystyle {\mathcal {E}}=\displaystyle {\mathcal {E}\_{maks}}\sin{\omega t}$$
+- Persamaan di atas jelas menunjukkan bahwa GGL arus bolak-balik berubah secara sinusoidal. Suatu sifat yang menjadi ciri khas arus bolak-balik.
+---
+<a href="https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac_all.html"><img src="../resources/images/ac02.png" height="100%"></a>
+---
+#### Tegangan dan Arus Efektif
+- Tegangan listrik di rumah kita adalah teganagan bolak-balik yang besarnya 220V. Kalau kita ukur dengan multimeter AC ternyata cocok menunjuk angka 220 V. 
+- Apakah ini tegangan maksimum seperti kita bicarakan di atas? 
+- Tegangan 220 V yang terukur dengan multi meter bukan tegangan maksimum melainkan tegangan efektif. Tegangan efektif adalah tegangan tetap pada tegangan bolak-balik yang memberi efek panas sama bila diganti dengan tegangan searah (DC) untuk waktu yang sama. 
+---
+###### $$V_{ef}=\sqrt{\frac{{V_{maks}}^2}{2}}=\frac{V_{maks}}{\sqrt{2}}$$
+###### $$I_{ef}=\sqrt{\frac{{I_{maks}}^2 }{2}}=\frac{I_{maks}}{\sqrt{2}}$$
+Keterangan:
+- *V<sub>ef</sub>* = Tegangan efektif (V) 
+- *V<sub>maks</sub>* = Tegangan maksimum (V) 
+- *I<sub>ef</sub>* = Arus efektif (A) 
+- *I<sub>maks</sub>* = Arus maksimum (A) 
+---
+#### 1. Hambatan Murni dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac03.png" height="100%">
+---
+- Misalkan Arus yang mengalir
+###### $$I=I_{m}\sin{\omega t}$$
+- dalam rangkaian ini berlaku hukum Ohm
+$$V=IR$$
+$$V=I_{m}R\sin{\omega t}$$
+$$V_{m}=I_{m}R$$
+---
+###### $$V=V_{m}\sin{\omega t}$$
+- Dalam hal ini sudut fase pada *I* dan *V* sama yaitu (ωt)
+---
+<img src="../resources/images/ac10.png" height="100%">
+---
+#### 2. Induktor dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac04.png" height="100%">
+---
+- Misalkan Arus yang mengalir
+$$I=I_{m}\sin{\omega t}$$
+- Menurut Joseph Henry, bila arus pada induktor mengalami perubahan, akan terjadi tegangan induksi: 
+$$\displaystyle {\mathcal {E}}=-L{\frac {\mathrm {d}I}{\mathrm {d} t}}$$
+---
+- Rangkaian ini merupakan rangkaian tertutup, sehingga berlaku **Hukum Kirchoff II**
+$$\Sigma\displaystyle {\mathcal {E}}+\Sigma IR=0$$
+$$IR+\displaystyle {\mathcal {E}}\_{sumber}+\displaystyle {\mathcal {E}}_{ind}=0$$
+- karena R pada induktor = 0,
+$$I(0)+V+-L{\frac {\mathrm {d}I}{\mathrm {d} t}}=0$$
+---
+$$V=L{\frac {\mathrm {d}I}{\mathrm {d} t}}$$
+$$V=L{\frac {\mathrm {d}}{\mathrm {d} t}}I_{m}\sin{\omega t}$$
+$$V=\omega L I_{m}\cos{\omega t}$$
+###### $$V=\omega L I_{m}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+---
+###### $$V=\omega L I_{m}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+Keterangan:
+- *X<sub>L</sub>* = reaktansi induktif (Ω), besarnya = *2πfL* atau *ωL*
+- *ω* = kecepatan sudut (rad/s) 
+- *L* = Induktansi diri (H) 
+- *I<sub>m</sub>* = Arus maksimum (A) pada Induktor 
+---
+Jadi, dapat ditulis pula
+###### $$V=V_{m}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+###### $$V=I_{m}X_L\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+- *V* = tegangan sesaat pada induktor 
+- *V<sub>m</sub>* = tegangan maksimum pada induktor
+---
+- Ternyata sudut fase tegangan lebih besar *$\frac{\pi}{2}$ rad* dari pada sudut fase arus atau boleh dikatakan bahwa pada rangkaian induktor, tegangan mendahului *$\frac{\pi}{2}$ rad* dari pada arus. 
+- Grafik tegangan terhadap arus dapat kita lihat seperti gambar di bawah. 
+- Terlihat pada saat *I = 0*, *V* sudah mencapai maksimum dan jika *I* maksimum, maka *V* sudah mencapai 0 dan seterusnya. 
+---
+<img src="../resources/images/ac11.png" height="100%">
+---
+- Tampak bahwa sudut fase *V* selalu lebih besar *$\frac{\pi}{2}$ rad* dari sudut fase arus. Dalam penulisan bila: 
+$$I=I_{m}\sin{\omega t}$$
+$$V=V_{m}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+- Sebaliknya bila penulisannya  
+$$V=V_{m}\sin{\omega t}$$
+$$I=I_{m}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+---
+#### 3. Kapasitor dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac05.png" height="100%">
+---
+- Misalkan Arus yang mengalir
+$$I=I_{m}\sin{\omega t}$$
+- Selama *Δt* sekon, pada kapasitor terjadi penimbunan muatan sebesar:
+$$\Delta Q=I\Delta t$$
+- karena $\Delta Q=C\Delta V$, maka
+$$C\Delta V=I\Delta t$$
+---
+$$\mathrm{d}V=\frac 1 C I\ \mathrm{d}t$$
+$$V=\frac 1 C \int I\ \mathrm{d}t$$
+$$V=\frac 1 C \int I_{m}\sin{\omega t}\ \mathrm{d}t$$
+$$V=\frac {I_m}{C} \int \sin{\omega t}\ \mathrm{d}t$$
+---
+$$V=\frac {I_m}{C}\frac {1}{\omega} (-\cos{\omega t}) $$
+$$V=\frac {1}{\omega C}I_m(-\cos{\omega t}) $$
+###### $$V=\frac {1}{\omega C} I_{m}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+---
+###### $$V=\frac {1}{\omega C} I_{m}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+Keterangan:
+- *X<sub>C</sub>* = reaktansi kapasitif (Ω), besarnya = *$\frac {1}{2\pi f C}$* atau *$\frac {1}{\omega C}$*
+- *ω* = kecepatan sudut (rad/s) 
+- *C* = kapasitas kapasitor (F)
+- *I<sub>m</sub>* = Arus maksimum (A) pada Kapasitor 
+---
+Jadi, dapat ditulis pula
+###### $$V=V_{m}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+###### $$V=I_{m}X_C\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+- *V* = tegangan sesaat pada Kapasitor 
+- *V<sub>m</sub>* = tegangan maksimum pada Kapasitor
+---
+- Ternyata sudut fase tegangan lebih kecil *$\frac{\pi}{2}$ rad* dari pada sudut fase arus atau boleh dikatakan bahwa pada rangkaian kapasitor, tegangan ketinggalan *$\frac{\pi}{2}$ rad* dari pada arus. 
+- Grafik tegangan terhadap arus dapat kita lihat seperti gambar di bawah. 
+- Terlihat pada saat *V = 0*, *I* sudah mencapai maksimum dan jika *V* maksimum, maka *I* sudah mencapai 0 dan seterusnya. 
+---
+<img src="../resources/images/ac12.png" height="100%">
+---
+- Tampak bahwa sudut fase *V* selalu lebih kecil *$\frac{\pi}{2}$ rad* dari sudut fase arus. Dalam penulisan bila: 
+$$I=I_{m}\sin{\omega t}$$
+$$V=V_{m}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+- Sebaliknya bila penulisannya  
+$$V=V_{m}\sin{\omega t}$$
+$$I=I_{m}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+---
+#### 4. Rangkaian seri R-L dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac06.png" height="100%">
+---
+- Misalkan Arus yang mengalir
+$$I=I_{m}\sin{\omega t}$$
+- *V<sub>R</sub>* dan *I* mempunyai fase yang sama
+$$V_R=V_{Rm}\sin{\omega t}$$
+- *V<sub>L</sub>* dan *I* mempunyai beda fase *$\frac{\pi}{2}$ rad* dengan *V<sub>L</sub>* mendahului *I* 
+$$V_L=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+---
+- *V* merupakan hasil penjumlahan dari *V<sub>R</sub>* dan *V<sub>L</sub>* 
+###### $$\begin{split}   V &=V_R+V_L\cr       &=V_{Rm}\sin{\omega t}+V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big) \end{split}$$
+- Secara grafik, *V* didapatkan dari penjumlahan *V<sub>R</sub>* dan *V<sub>L</sub>* 
+---
+- Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_R}+\overrightarrow {V_L}}}$
+- Besarnya, $V=\sqrt{{V_R}^2+{V_L}^2}$
+- Besar tegangan maksimum adalah: 
+###### $$V_m=\sqrt{{V_{Rm}}^2+{V_{Lm}}^2}$$
+$$I_m Z=\sqrt{{(I_{m}R)}^2+{(I_{m}X_L)}^2}$$
+$$Z=\sqrt{{R}^2+{X_L}^2}$$
+---
+###### $$V=\sqrt{{V_R}^2+{V_L}^2}$$
+###### $$V_m=\sqrt{{V_{Rm}}^2+{V_{Lm}}^2}$$
+###### $$Z=\sqrt{{R}^2+{X_L}^2}$$
+Keterangan:
+- *X<sub>L</sub>* = reaktansi induktif (Ω)
+- *Z* = impedansi / hambatan total dalam rangkaian (Ω) 
+---
+<img src="../resources/images/ac13.png" height="100%">
+---
+Pada grafik sudut fase *V* mendahului sudut fase *I* sebesar *φ* radian
+$$\theta_V=\theta_I+\varphi$$
+$$V=V_{m}\sin({\omega t+\varphi})=I_m Z\sin({\omega t+\varphi})$$
+dengan *φ* = beda sudut fase tegangan dan arus 
+###### $\tan{\varphi}=\frac{X_L}{R}$  ;  $\cos{\varphi}=\frac{R}{Z}$
+---
+#### 5. Rangkaian seri R-C dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac07.png" height="100%">
+---
+- Misalkan Arus yang mengalir
+$$I=I_{m}\sin{\omega t}$$
+- *V<sub>R</sub>* dan *I* mempunyai fase yang sama
+$$V_R=V_{Rm}\sin{\omega t}$$
+- *V<sub>C</sub>* dan *I* mempunyai beda fase *$\frac{\pi}{2}$ rad* dengan *I* mendahului *V<sub>C</sub>*
+$$V_C=V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+---
+- *V* merupakan hasil penjumlahan dari *V<sub>R</sub>* dan *V<sub>C</sub>* 
+###### $$\begin{split}   V &=V_R+V_C\cr       &=V_{Rm}\sin{\omega t}+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big) \end{split}$$
+- Secara grafik, *V* didapatkan dari penjumlahan *V<sub>R</sub>* dan *V<sub>C</sub>* 
+---
+- Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_R}+\overrightarrow {V_C}}}$
+- Besarnya, $V=\sqrt{{V_R}^2+{V_C}^2}$
+- Besar tegangan maksimum adalah: 
+###### $$V_m=\sqrt{{V_{Rm}}^2+{V_{Cm}}^2}$$
+$$I_m Z=\sqrt{{(I_{m}R)}^2+{(I_{m}X_C)}^2}$$
+$$Z=\sqrt{{R}^2+{X_C}^2}$$
+---
+###### $$V=\sqrt{{V_R}^2+{V_C}^2}$$
+###### $$V_m=\sqrt{{V_{Rm}}^2+{V_{Cm}}^2}$$
+###### $$Z=\sqrt{{R}^2+{X_C}^2}$$
+Keterangan:
+- *X<sub>C</sub>* = reaktansi kapasitif (Ω)
+- *Z* = impedansi / hambatan total dalam rangkaian (Ω) 
+---
+<img src="../resources/images/ac14.png" height="100%">
+---
+Pada grafik sudut fase *I* mendahului sudut fase *V* sebesar *φ* radian
+$$\theta_V=\theta_I-\varphi$$
+$$V=V_{m}\sin({\omega t-\varphi})=I_m Z\sin({\omega t-\varphi})$$
+dengan *φ* = beda sudut fase tegangan dan arus 
+###### $\tan{\varphi}=\frac{X_C}{R}$  ;  $\cos{\varphi}=\frac{R}{Z}$
+---
+#### 6. Rangkaian seri L-C dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac08.png" height="100%">
+---
+- Misalkan Arus yang mengalir
+$$I=I_{m}\sin{\omega t}$$
+- *V<sub>L</sub>* dan *I* mempunyai beda fase *$\frac{\pi}{2}$ rad* dengan *V<sub>L</sub>* mendahului *I* 
+$$V_L=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+---
+- *V<sub>C</sub>* dan *I* mempunyai beda fase *$\frac{\pi}{2}$ rad* dengan *I* mendahului *V<sub>C</sub>*
+$$V_C=V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
+---
+- *V* merupakan hasil penjumlahan dari *V<sub>L</sub>* dan *V<sub>C</sub>* 
+$$\begin{split}   V &=V_L+V_C\cr       &=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)\cr    &=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)-V_{Cm}\cos{\omega t}\end{split}$$
+---
+$$V=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)-V_{Cm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+$$V=I_{m}X_L\sin\Big({\omega t+\frac{\pi}{2}}\Big)-I_{m}X_C\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+$$V=(I_{m}X_L-I_{m}X_C)\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+$$V=I_{m}(X_L-I_{m}X_C)\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+###### $$V=I_{m}Z\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
 ---
 Keterangan:
-- *P* = tekanan gas pada suhu tetap (Pa)  
-- *V* = Volume gas pada tekanan tetap (m<sup>3</sup>)  
-- *T* = suhu mutlak gas pada volume tetap (K)  
-- *N* = jumlah atom 
-- *k* = konstanta Boltzman (1,38 × 10<sup>-23</sup> joule/K)
-- *n* = jumlah mol gas (mol)
-- *R* = konstanta gas (8,314 joule/mol.K)
+- *X<sub>L</sub>* = reaktansi induktif (Ω)
+- *X<sub>C</sub>* = reaktansi kapasitif (Ω)
+- *Z* = impedansi / hambatan total dalam rangkaian (Ω) = *X<sub>L</sub>*-*X<sub>C</sub>*
 ---
-### Karakteristik Gas Ideal
-1. Gas ideal terdiri atas partikel-partikel (atom-atom ataupun molekul-molekul ) dalam 
-jumlah yang besar sekali dan jarak antar molekul lebih besar daripada ukuran masing 
-masing gas  
-2. Ukuran partikel sangat kecil sehingga dapat diabaikan. 
-3. Partikel-partikel tersebut senantiasa bergerak lurus secara acak/sembarang dan 
-tetap berlaku Hukum Newton tentang gerak.
+<img src="../resources/images/ac15.png" height="100%">
 ---
-4. Tumbukan antara partikel ataupun antara partikel dengan dinding terjadi secara 
-lenting sempurna (energi kinetik tetap), partikel dianggap sebagai bola yang keras. 
-5. Gaya antar partikel diabaikan kecuali saat tumbukan yang berlangsung sangat singkat. 
-6. Gas dipertimbangkan sebagai titik materi sehingga semua molekul adalah identik.
----
-### Energi Kinetik
-<img src="../resources/images/td01.png" width="75%">
----
-- Andaikan sebuah kubus dengan panjang sisi *L*, diisi dengan gas ideal sebanyak *N* molekul. Molekul gas bergerak dengan kecepatan *v*. 
-- Pandang satu molekul gas yang bermassa *m*. Kecepatannya dalam arah sumbu x adalah *v<sub>x</sub>*.
-- Momentum mula-mula molekul adalah **$p_x=mv_x$**. Jika molekul menumbuk dinding, momentumnya akan menjadi **$p_x'=-mv_x$**, sehingga perubahan momentumnya
-adalah **$\Delta p_x=p_x'-p_x=-2mv_x$**.
----
-- Waktu antara tumbukan di tempat yang sama adalah **$\Delta t=\frac{2L}{v_x}$**.
-- Gaya rata-rata yang terjadi pada dinding kanan untuk satu molekul:
-$$\overline{F_x}=\frac{\Delta p_x}{\Delta t}=\frac{-2mv_x}{\frac{2L}{v_x}}$$
-###### $$\overline{F_x}=\frac{mv^2_x}{L}$$
----
-- Karena terdapat N molekul gas, gaya rata-rata  pada dinding kanan menjadi 
-$$\overline{F_x}=N\frac{mv^2_x}{L}$$
-- dan karena menurut anggapan gas ideal, $\overline {v^2_x}=\overline {v^2_y}=\overline {v^2_z}$, sementara $\overline {v^2}=\overline {v^2_x}+\overline {v^2_y}+\overline {v^2_z}$, maka 
-**$$\overline {v^2}=3\overline {v^2_x}$$**
----
-- Persamaan di atas menjadi $$\overline{F_x}=N\frac{mv^2}{3L}$$
-- Luas penampang tiap sisi adalah **$A=L^2$**.
-- Tekanan pada tiap sisi, **$P=\frac{F}{A}=\frac{N\frac{mv^2}{3L}}{L^2}$**.
-###### $$PV=\frac{Nmv^2}{3}$$
----
-- Energi kinetik rata-rata setiap molekul **$E_k=\frac{1}{2}mv^2$**, sehingga didapatkan hubungan
-###### $$PV=\frac{2}{3}NE_k$$
-- Dari persamaan $PV=NkT$, diperoleh
-###### $$E_k=\frac{2}{3}kT$$
-inilah **energi kinetik rata-rata per molekul**
----
-### Kecepatan Molekul
-- Kecepatan molekul dapat dicari dari persamaan berikut:
-$$\begin{equation}E_k=\frac{2}{3}kT\end{equation}$$
-$$\begin{equation}E_k=\frac{1}{2}mv^2\end{equation}$$
-###### $$v_{rms}=\sqrt{\frac{3kT}{m}}$$
----
-### Usaha oleh Gas Ideal
-<img src="../resources/images/td02.png" height="600px">
----
-- Sebuah bejana dengan penutup piston di atasnya, dipanaskan sehingga memuai dan piston terangkat ke atas sejauh *dS*.
-Usaha yang dilakukan adalah **$dW=F.dS=PA.dS$**. Karena **$A.dS=dV$** maka **$dW=P.dV$** atau:
-###### $$W=\int^{V_2}_{V_1} P.dV$$
----
-Beberapa kemungkinan yang ada:
-##### 1. Pemuaian isokhorik
-- Karena *$dV=0$*, $W=\int_{V_1}^{V_2} P.dV$ menjadi **$W=P\int^{V_2}_{V_1} 0$** saja. Atau, **$W=0$**
----
-##### 2. Pemuaian isobaris 
-- Karena *P* tetap, $W=\int_{V_1}^{V_2} P.dV$ menjadi **$W=P\int^{V_2}_{V_1} dV$** saja. Atau, **$W=P(V_2-V_1)=P\Delta V$** 
+- Secara grafik, *V* didapatkan dari penjumlahan *V<sub>R</sub>* dan *V<sub>C</sub>* 
 
-<img src="../resources/images/td03.png" height="300px">
+- Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_L}+\overrightarrow {V_C}}}$
+- Besarnya, $V=V_L-V_C$
+- Besar tegangan maksimum adalah: 
+###### $$V_m=V_{Lm}-V_{Cm}$$
+$$Z=X_L-X_C$$
 ---
-##### 3. Pemuaian isotermal
-- Dari persamaan gas ideal, kita tahu bahwa $PV=nRT$ atau $P=\frac{nRT}{V}$. Usahanya menjadi: **$W=\int_{V_1}^{V_2} \frac{nRT}{V}.dV=nRT\int^{V_2}_{V_1} \frac{dV}{V}=nRT[\ln V_2-\ln V_1]=nRT \ln \big(\frac{V_2}{V_1}\big)$**.
-
-<img src="../resources/images/td04.png" height="300px">
+- Bila *X<sub>L</sub>* > *X<sub>C</sub>* rangkaian bersifat induktif (*V* sefase dengan *V<sub>L</sub>*) 
+- Bila *X<sub>L</sub>* < *X<sub>C</sub>* rangkaian bersifat kapasitif (*V* sefase dengan *V<sub>C</sub>*) 
 ---
-##### 4. Pemuaian adiabatis
-- Pemuaian adiabatis adalah proses pemuaian di mana gas dipanaskan dengan cepat sehingga volume bertambah dengan sangat cepat dan tidak sempat ada pemindahan panas dari gas ke dinding, atau dari sistem ke lingkungan.
-Dalam proses ini, bila volume naik, tekanan akan cepat turun. Berlaku **$PV^{\gamma}=konstan$**, dengan *γ = indeks adiabatis atau konstanta Laplace*, untuk gas monoatomik bernilai 5/3 dan untuk gas diatomik bernilai 7/5.
+#### 7. Rangkaian seri R-L-C dalam Rangkaian Arus AC (Bolak-balik)
+<img src="../resources/images/ac09.png" height="100%">
 ---
-- Indeks adiabatis *γ* didefinisikan sebagai 
-###### $$\gamma=\frac{C_P}{C_V}$$
-dengan:
-- *C<sub>P</sub>* = Kalor jenis benda pada tekanan tetap. 
-- *C<sub>V</sub>* = Kalor jenis benda pada volume tetap.
-Untuk gas monoatomik, *$\gamma=\frac 5 3$*, untuk gas diatomik *$\gamma=\frac 7 5$*
+- Misalkan Arus yang mengalir
+$$I=I_{m}\sin{\omega t}$$
+- *V<sub>R</sub>* dan *I* mempunyai fase yang sama
+$$V_R=V_{Rm}\sin{\omega t}$$
 ---
-- Usahanya **$W=\int_{V_1}^{V_2} P.dV=\int^{V_2}_{V_1}C.V^{-\gamma}dV=\frac{C}{1-\gamma}[V^{1-\gamma}_2-V^{1-\gamma}_1]$**.
-$$W=\frac{CV^{1-\gamma}_2-CV^{1-\gamma}_1}{1-\gamma}$$
-$$W=\frac{P_2V_2^{\gamma}V^{1-\gamma}_2-P_1V_1^{\gamma}V^{1-\gamma}_1}{1-\gamma}$$
-$$W=\frac{P_2V_2-P_1V_1}{1-\gamma}$$
+- *V<sub>L</sub>* dan *I* mempunyai beda fase *$\frac{\pi}{2}$ rad* dengan *V<sub>L</sub>* mendahului *I* 
+$$V_L=V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)$$
+- *V<sub>C</sub>* dan *I* mempunyai beda fase *$\frac{\pi}{2}$ rad* dengan *I* mendahului *V<sub>C</sub>*
+$$V_C=V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)$$
 ---
-$$W=\frac{P_1V_1-P_2V_2}{\gamma-1}$$
-
-<img src="../resources/images/td05.png" height="300px">
+- *V* merupakan hasil penjumlahan dari *V*,*V<sub>L</sub>* dan *V<sub>C</sub>* 
+$$\begin{split}   V &=V_R+V_L+V_C\cr       &=V_{Rm}\sin{\omega t}+V_{Lm}\sin\Big({\omega t+\frac{\pi}{2}}\Big)+V_{Cm}\sin\Big({\omega t-\frac{\pi}{2}}\Big)\end{split}$$
+- Secara grafik, *V* didapatkan dari penjumlahan *V*,*V<sub>R</sub>* dan *V<sub>C</sub>* 
+- Secara fase vektor (fasor), ${\displaystyle {\overrightarrow {V}=\overrightarrow {V_R}+\overrightarrow {V_L}+\overrightarrow {V_C}}}$
 ---
-### Prinsip Ekuipartisi dan Energi Dalam
-#### Energi Dalam
-- Gas dapat bergerak baik secara translasi, rotasi maupun vibrasi. Karena gerakan itu, gas memiliki energi kinetik. Kumpulan energi itu disebut sebagai energi dalam (**U**).
-- Bila gas diberi tambahan panas sebesar **ΔQ**, panas itu akan dipakai untuk menambah energi dalam **U** dan melakukan usaha **W** (Hukum Termodinamika I).
----
-###### $$\Delta Q=W+\Delta U$$
-Keterangan:
-- *𐤃Q* = Panas/Usaha yang diberikan terhadap sistem (J)
-- *W* = Panas/Usaha yang dikerjakan sistem (J)
-- *𐤃U* = Perubahan Energi dalam (J)
----
-Beberapa kemungkinan yang ada:
-1. Pemuaian isokhorik  
-**$W=0$**, sehingga *$\Delta Q=\Delta U$*
-2. Pemuaian isobaris  
-**$W\not = 0$**, sehingga *$\Delta Q=W+\Delta U$*
-3. Pemuaian isotermal  
-**$\Delta U= 0$**, sehingga *$\Delta Q=W$*
-4. Pemuaian adiabatis  
-**$Q= 0$**, sehingga *$W=-\Delta U$*
----
-#### Prinsip Ekuipartisi
-##### 1. Gas monoatomik  
-- Gas monoatomik dapat bergerak secara translasi ke arah *X*, *Y* dan *Z*. Kecepatannya masing-masing *v<sub>x</sub>*, *v<sub>y</sub>* dan *v<sub>z</sub>*. Energi kinetiknya
-masing-masing adalah **$\frac 1 2 mv_x^2$**, **$\frac 1 2 mv_y^2$** dan **$\frac 1 2 mv_z^2$**. 
-- Gerak rotasi dan vibrasi pada gas monoatomik dapat diabaikan karena ukuran atom yang dianggap sangat kecil. Karena itu, molekul gas monoatomik dikatakan memiliki **3** derajat kebebasan
----
-- Energi dalam gas monoatomik adalah total dari energi kinetiknya.
-$$U=\frac 1 2 mv_x^2+\frac 1 2 mv_y^2+\frac 1 2 mv_z^2=\frac 3 2 mv_x^2$$
-$$U=\frac 3 {2.3} mv_x^2=\frac 1 2 mv^2=\frac 3 2 kT$$
-Secara umum, 
-###### $$U=\frac 3 2 kT=\frac f 2 kT$$ 
-dengan **f** adalah derajat kebebasan.
----
-##### 2. Gas diatomik
-Gas diatomik dapat bergerak secara:
-- **Translasi** ke arah *X*, *Y* dan *Z*. Kecepatannya masing-masing *v<sub>x</sub>*, *v<sub>y</sub>* dan *v<sub>z</sub>*. Energi kinetiknya
-masing-masing adalah **$\frac 1 2 mv_x^2$**, **$\frac 1 2 mv_y^2$** dan **$\frac 1 2 mv_z^2$**. 
-- **Rotasi** terjadi dalam dua arah (*X* dan *Z*) karena momen inersia untuk rotasi dalam sumbu *Y* kecil dan dapat diabaikan. Kecepatan sudutnya masing-masing *ω<sub>x</sub>* dan *ω<sub>z</sub>*.
-Energi kinetiknya masing-masing adalah **$\frac 1 2 I\omega_x^2$** dan **$\frac 1 2 I\omega_z^2$**.
----
-- **Vibrasi** terjadi dalam satu arah (*Y*), karena vibrasi dalam sumbu *X* dan *Z* kecil dan dapat diabaikan. Energi kinetiknya adalah **$E_{vib}=\frac 1 2 ky^2$** dan **$E_{kin}=\frac 1 2 mv_y^2$**.
-- Energi dalam gas diatomik adalah total dari energi kinetiknya.
-$$U=\frac 3 2 mv_x^2+\frac 1 2 I\omega_x^2+\frac 1 2 I\omega_z^2+\frac 1 2 ky^2+\frac 1 2 mv_y^2$$
- dalam perhitungan terkini, ternyata $\frac 1 2 I\omega_x^2=\frac 1 2 kT$ dan $\frac 1 2 ky^2=\frac 1 2 kT$ 
----
-$$U=\frac 7 2 kT$$
-- Karena itu, molekul gas diatomik dikatakan memiliki **7** derajat kebebasan. 
-- Secara umum, 
-###### $$U=\frac 7 2 kT=\frac f 2 kT$$ 
-dengan **f** adalah derajat kebebasan.
----
-#### Energi Dalam untuk Banyak Molekul
-- Prinsip ekuipartisi menyatakan bahwa energi dalam gas dapat dipecah-pecah menjadi energi dalam per molekul, *$U=\frac f 2 kT$*. Karena itu, untuk sejumlah *N* molekul, 
-total energi dalamnya adalah:
-###### $$U=\frac f 2 NkT=\frac f 2 nRT$$
----
-Jika dirangkum
-| **Proses** | **$W$** | **$\Delta U$** | **$\Delta Q$** |
-|---|---|---|---|
-| Isokhorik | $0$ | *$\frac f 2 nR\Delta T$* | $\Delta U$ |
-| Isobaris | $P\Delta V$ | *$\frac f 2 nR\Delta T$* | $W+\Delta U$ |
-| Isotermal | $nRT \ln \big(\frac{V_2}{V_1}\big)$ | *$0$* | $W$ |
-| Adiabatis | $\frac{P_1V_1-P_2V_2}{\gamma-1}$ | *$\frac f 2 nR\Delta T$* | 0 |
----
-### Hukum II Termodinamika
-- Menurut Kelvin-Planck, tidak mungkin membuat mesin yang bekerja dalam suatu siklus dan menghasilkan seluruh kalor yang diserapnya menjadi usaha.
-- Tidak mungkin seluruh panas dari reservoir panas diubah menjadi usaha. Sebagian panas harus diberikan ke reservoir dingin.
-- Menurut Clausius, tidak mungkin panas mengalir dari reservoir dingin ke reservoir panas, tanpa adanya usaha dari luar.
-- Dalam setiap siklus, entropi akan semakin besar atau tetap sama. 
----
-##### Siklus Carnot
-
-<img src="../resources/images/td06.png" height="500px">
----
-- Siklus Carnot: efisiensi maksimal yang bisa diperoleh.
-- Siklus Carnot terdiri atas ekspansi isotermik, dilanjutkan ekspansi adiabatik, kembali kompresi isotermik dan di lanjut 
-kompresi adiabatik untuk kembali seperti semula. Berikut gambar grafik hubungan tekana dengan volume dari siklus Carnot. 
-- Effisiensi maksimum mesin Carnot: Ketika mesin mengubah energi kalor menjadi energi mekanik (usaha), Perbandingan 
-antara besar usaha yang dilakukan sistem (**W**) terhadap energi kalor yang diserapnya (**Q<sub>1</sub>**) disebut sebagai efisiensi mesin.
----
-###### $$\eta=\frac W {Q_1} \times 100\%$$
-Oleh karena usaha $W=Q_1–Q_2$, maka 
-###### $$\eta=\Big(1-\frac {Q_2} {Q_1}\Big) \times 100\%$$
-###### $$\eta=\Big(1-\frac {T_2} {T_1}\Big) \times 100\%$$
+- Besarnya, $V=\sqrt{{V_R}^2+{(V_L-V_C)}^2}$
+- Besar tegangan maksimum adalah: 
+###### $$V_m=\sqrt{{V_{Rm}}^2+{(V_{Lm}-V_{Cm})}^2}$$
+$$I_m Z=\sqrt{{(I_{m}R)}^2+{(I_{m}X_L-I_{m}X_C)}^2}$$
+$$Z=\sqrt{{R}^2+{(X_L-X_C)}^2}$$
 ---
 Keterangan:
-- *η* = efisiensi
-- *W* = Usaha (J)
-- *Q<sub>1</sub>* = Kalor yang diberikan pada reservoir panas
-- *Q<sub>2</sub>* = Kalor yang diserap pada reservoir dingin
-- *T<sub>1</sub>* = Suhu pada reservoir panas
-- *T<sub>2</sub>* = Suhu pada reservoir dingin
+- *X<sub>L</sub>* = reaktansi induktif (Ω)
+- *X<sub>C</sub>* = reaktansi kapasitif (Ω)
+- *Z* = impedansi / hambatan total dalam rangkaian (Ω)
 ---
-##### Refrigerator
-- Koefisien Performansi:
-###### $$K_P=\frac {Q_2}{W}=\frac {Q_2}{Q_1-Q_2}=\frac {T_2}{T_1-T_2}%$$
-Keterangan:
-- *K<sub>P</sub>* = Koefisien Performansi
-- *W* = Usaha (J)
-- *Q<sub>1</sub>* = Kalor yang diberikan pada reservoir panas
-- *Q<sub>2</sub>* = Kalor yang diserap pada reservoir dingin
-- *T<sub>1</sub>* = Suhu pada reservoir panas
-- *T<sub>2</sub>* = Suhu pada reservoir dingin	
-</textarea>
-</section>
-		</div>
-		</div>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/math/math.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
+<a href="frm05.html" data-preview-link><img src="../resources/images/ac15.png" height="100%"></a>
+---
+Pada grafik sudut fase *V* mendahului sudut fase *I* sebesar *φ* radian
+$$\theta_V=\theta_I+\varphi$$
+$$V=V_{m}\sin({\omega t+\varphi})=I_m Z\sin({\omega t+\varphi})$$
+dengan *φ* = beda sudut fase tegangan dan arus 
+###### $\tan{\varphi}=\frac{X_L-X_C}{R}$
+---
+#### Tiga kemungkinan pada  rangkaian RLC:
+- Bila *X<sub>L</sub>* > *X<sub>C</sub>* atau *V<sub>L</sub>* > *V<sub>C</sub>*, rangkaian bersifat induktif. *tan φ* positif demikian juga *φ* positif. Ini berarti tegangan mendahului kuat arus. 
+- Bila *X<sub>L</sub>* < *X<sub>C</sub>* atau *V<sub>L</sub>* < *V<sub>C</sub>*, rangkaian bersifat kapasitif *tan φ* negatif demikian juga *φ* negatif. Ini berarti kuat arus mendahului tegangan. 
+- Bila *X<sub>L</sub>* = *X<sub>C</sub>* atau *V<sub>L</sub>* = *V<sub>C</sub>*, rangkaian bersifat resonansi. *tan φ* nol demikian juga *φ* nol. Ini berarti tegangan dan kuat arus fasenya sama. 
+---
+		</textarea>
+		</section>
+	  </div>
+	</div>
 
-		<script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript" >
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-			});
-		</script>
-
-	</body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/dist/reveal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/notes/notes.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/markdown/markdown.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/math/math.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/highlight.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script >
+	  Reveal.initialize({
+		slideNumber: true,
+		hash: true,
+		katex: {
+		  version: 'latest',
+		  delimiters: [
+		    { left: '$$', right: '$$', display: true },
+			{ left: '$', right: '$', display: false },
+			],
+		  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+		  },
+		chalkboard: {
+		  chalkEffect: 0.5,
+		  background:  [ 'rgba(255,255,255,0)' ,'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/blackboard.png'],
+		  eraser: {src: 'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/sponge.png', radius: 50}
+		},
+		keyboard: {
+		  65: function() { RevealChalkboard.toggleNotesCanvas() }, // Annotate when 'a' is pressed
+		  66: function() { RevealChalkboard.toggleChalkboard() },	 // Toggle board when 'b' is pressed
+		  46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+		  8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide with 'BACKSPACE'
+		  68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
+		  88: function() { RevealChalkboard.colorNext() }, // cycle colors forward when 'x' is pressed
+		  90: function() { RevealChalkboard.colorPrev() }, // cycle colors backward when 'z' is pressed
+		},
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealCustomControls, RevealChalkboard]
+		});
+	</script>
+  </body>
 </html>

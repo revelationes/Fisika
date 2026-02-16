@@ -1,308 +1,293 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Relativitas</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+	<link rel="stylesheet" href="dist/custom.css">
+  </head>
+  <div id="schauderhaft-footer" class="footer">
+	<span class="element" id="tgl">#cool-talk</span>
+	<span class="element"></span>
+	<span class="element"></span>
+  </div>
+  <body style="transition: transform 0.8s;">
+	<div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="fade">
+	  <div class="slides">
+		<section data-markdown data-transition="convex">
+		<textarea data-template>
+# Relativitas
+---
+- Relativitas Newton
+- Transformasi Galileo
+- Teori Relativitas Khusus
+- Dilatasi Waktu, Kontraksi Panjang
+- Massa Relativistik, Momentum Relativistik, Energi Relativistik
+---
+### Relativitas
+- Relativitas merupakan salah satu dari beberapa teori mengenai gerak, yang dirancang untuk menjelaskan penyimpangan dari mekanika Newton yang timbul akibat gerak relatif yang sangat cepat. Teori ini telah mengubah pandangan kita mengenai ruang, waktu, massa, energi, gerak, dan gravitasi. 
+- Teori ini terdiri atas teori khusus dan teori umum, yang keduanya bertumpu pada dasar matematika yang kuat dan keduanya telah diuji dengan percobaan-percobaan dan pengamatan.
+---
+- Teori khusus, yang dikembangkan oleh Einstein pada tahun 1905, berkenaan dengan pembandingan pengukuran yang dilakukan dalam kerangka acuan inersia berbeda yang bergerak dengan kecepatan konstan relatif satu sama lain. 
+- Teori umum, yang dikemukakan tahun 1915, berkenaan dengan kerangka acuan dan gravitasi yang dipercepat. Pada bab ini pembahasan akan lebih terfokus pada teori relativitas khusus.
+---
+### Relativitas Newton
+- Teori relativitas muncul dari kebutuhan terhadap kerangka acuan, yaitu suatu patokan yang dapat digunakan ilmuwan untuk menganalisis hukum gerak. 
+- Pada waktu kelas X, kalian telah mempelajari Hukum Newton tentang gerak, di mana Hukum I Newton tidak membedakan antara partikel yang diam dan partikel yang bergerak dengan kecepatan konstan. 
+---
+- Jika tidak ada gaya luar yang bekerja, partikel tersebut akan tetap berada dalam keadaan awalnya, diam atau bergerak dengan kecepatan awalnya. Benda akan dikatakan bergerak apabila kedudukan benda tersebut berubah terhadap kerangka acuannya.
+- Kerangka acuan di mana Hukum Newton berlaku disebut kerangka acuan inersia. Jika kita memiliki dua kerangka acuan inersia yang bergerak dengan kecepatan konstan relatif terhadap yang lainnya, maka tidak dapat ditentukan bagian mana yang diam dan bagian mana yang bergerak
+atau keduanya bergerak. 
+---
+- Hal ini merupakan konsep Relativitas Newton, yang menyatakan “gerak mutlak tidak dapat dideteksi”.
+- Konsep ini dikenal oleh para ilmuwan pada abad ke-17. Tetapi, pada akhir abad ke-19 pemikiran ini berubah. Sejak saat itu konsep relativitas Newton tidak berlaku lagi dan gerak mutlak dideteksi dengan prinsip pengukuran kecepatan cahaya.
+---
+### Transformasi Galileo
+<img src="../resources/images/rel01.png" height="100%">
 
-		<title>Rangkaian Listrik Arus Searah</title>
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
-		<link rel="stylesheet" href="dist/custom.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div id="schauderhaft-footer" class="footer">
-			<span class="element" id="tgl">#cool-talk</span>
-			<span class="element"></span>
-			<span class="element"></span>
-		</div>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown data-auto-animate>
-				<textarea data-template>
-# Listrik Dinamis
+- Pada sudut pandang klasik atau Galileo, jika terdapat dua kerangka acuan *S* dan *S′* yang masing-masing dicirikan dengan sumbu koordinat yang ditunjukkan Gambar,
+Sumbu *x* dan *x'* saling berimpitan, dan diasumsikan kerangka *S′* bergerak ke kanan (arah x) dengan kecepatan *v* relatif terhadap *S*. 
+- Untuk menyederhanakan, diasumsikan bahwa acuan *O* dan *O'* dari kedua kerangka acuan saling berimpit pada *t=0*.
 ---
-- Arus Listrik, Hukum Ohm dan Hukum Kirchoff
-- Rangkaian Seri dan Paralel Resistor
-- Gaya Gerak Listrik (GGL) dan Tegangan Jepit
-- Energi dan Daya Listrik
-- Kapasitor dan Dielektrik
-- Rangkaian Seri dan Paralel Kapasitor
-- Energi Listrik dalam Kapasitor
+- Sekarang, dimisalkan terjadi sesuatu di titik **P** yang dinyatakan dalam koordinat *x'*, *y'*, *z'* dalam kerangka acuan *S'* pada saat *t'*. 
+- Bagaimana koordinat **P** di *S*? 
+- Perlu diketahui, karena *S* dan *S'* mula-mula berimpitan, setelah *t*, *S'* akan bergerak sejauh *vt'*. Sehingga pada saat *t'* akan berlaku:
 ---
-### Listrik Dinamis:
-- Listrik dinamis mempelajari tentang muatan-muatan listrik bergerak, yang menyebabkan munculnya arus listrik. 
-- Contoh penerapan listrik dinamis banyak dijumpai dalam kehidupan sehari-hari. 
-- Alat-alat elektronik yang biasa kita gunakan, misalnya radio, televisi, komputer, laptop, dll. merupakan penerapan dari listrik dinamis.
+**$$x=x'+vt'$$
+ $$y = y'$$
+ $$z = z'$$
+ $$t = t'$$**
 ---
-### Arus Listrik 
-- <a class="tooltip"><b>Arus listrik </b><span class="tooltiptext-t-4">Ketika konduktor dihubungkan dengan sumber listrik, muatan di dalamnya mengalami gaya listrik</span></a> adalah **muatan listrik positif** yang melalui kawat penghantar (konduktor) dari potensial listrik **tinggi** ke potensial listrik **rendah** dalam rangkaian **tertutup**.
-- Arah arus listrik **searah dengan aliran muatan listrik positif** (arus konvensional), berlawanan dengan arah aliran muatan listrik negatif (elektron). 
+#### Transformasi Galileo untuk Kecepatan
+- Titik **P** pada gambar menunjukkan sebuah benda yang bergerak. Komponen vektor kecepatannya di *S'* dimisalkan *u<sub>x</sub>'*, *u<sub>y</sub>'*, *u<sub>z</sub>'*. Diperoleh
+ *$$u_x'=\frac{{\mathrm {d}x'}}{{\mathrm {d}t'}}$$
+ $$u_y'=\frac{{\mathrm {d}y'}}{{\mathrm {d}t'}}$$
+ $$u_z'=\frac{{\mathrm {d}z'}}{{\mathrm {d}t'}}$$*
 ---
-### Arus Listrik 
-- **Potensial listrik** disebut juga tegangan listrik. Arus listrik bisa mengalir jika ada beda potensial listrik pada rangkaian tersebut. Beda potensial dihasilkan dari sumber tegangan listrik, misal baterai. Sumber tegangan listrik mempunyai dua kutub, yaitu kutub positif (+) dan kutub negatif (-). Arus listrik mengalir dari potensial listrik tinggi ke potensial listrik rendah.
-- **Rangkaian tertutup** = suatu rangkaian yang jalannya dimulai dari suatu titik dan akhirnya kembali lagi ke titik tersebut tanpa terputus.
+- Jika pada *t<sub>1</sub>'* partikel berada di *x<sub>1</sub>′* dan sesaat kemudian, *t<sub>2</sub>* berada di *x<sub>2</sub>′*, diperoleh:
+###### $$u_x'=\frac{\Delta x'}{\Delta t'}=\frac{x_2'-x_1'}{t_2'-t_1'}$$
+- Jadi, kecepatan P seperti terlihat dari S akan memiliki komponen *u<sub>x</sub>'*, *u<sub>y</sub>'*, dan *u<sub>z</sub>'*. Untuk komponen yang berhubungan dengan komponen kecepatan di *S'*, diperoleh:
 ---
-### Arus Listrik 
-- Besarnya arus listrik disebut dengan **kuat arus listrik**, yang didefinisikan sebagai **banyaknya muatan listrik** yang mengalir melalui suatu penampang **tiap detik**.
-###### $$I=\frac Q t$$
+$$\begin{split}u_x&=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}=\frac{(x_2'+vt_2')-(x_1'+vt_1')}{t_2'-t_1'}\cr &=\frac{(x_2'-x_1')+v(t_2'-t_1')}{t_2'-t_1'}\cr &=\frac{\Delta x'}{\Delta t'}+v \end{split}$$
+###### $$u_x=u_x'+v$$
+---
+Dapat disimpulkan bahwa:
+###### $$u_x=u_x' + v$$
+###### $$u_y=u_y'$$
+###### $$u_z=u_z'$$
+yang disebut persamaan **transformasi kecepatan Galileo**.
+---
+#### Transformasi Galileo untuk Percepatan
+###### $$a_x=\frac{{\mathrm {d}u_x}}{{\mathrm {d}t}}=\frac{{\mathrm {d}u_x'}}{{\mathrm {d}t'}}=\frac{{\mathrm {d}(u_x' + v)}}{{\mathrm {d}t'}}=a_x'$$
+###### $$a_y=\frac{{\mathrm {d}u_y}}{{\mathrm {d}t}}=\frac{{\mathrm {d}u_y'}}{{\mathrm {d}t'}}=a_y'$$
+###### $$a_z=\frac{{\mathrm {d}u_z}}{{\mathrm {d}t}}=\frac{{\mathrm {d}u_z'}}{{\mathrm {d}t'}}=a_z'$$
+---
+### Teori Relativitas Khusus
+- Albert Einstein (1879 - 1955) mendasarkan teorinya pada dua postulat, dan semua kesimpulan mengenai relativitas khusus diturunkan dari kedua postulat tersebut.
+---
+#### 1. Postulat Pertama
+- Postulat pertama menyatakan, *“hukum-hukum fisika adalah sama dalam semua kerangka inersia”*. Postulat ini merupakan perluasan prinsip relativitas Newton untuk mencakup semua jenis pengukuran fisis (tidak hanya pengukuran mekanis).
+---
+#### 1. Postulat Kedua
+- Postulat kedua berbunyi, *“kelajuan cahaya adalah sama dalam semua kerangka inersia”*. Postulat pertama dikemukakan karena tidak adanya acuan universal sebagai acuan mutlak. Sementara itu, postulat kedua memiliki implikasi yang sangat luas dengan kecepatan, panjang, waktu, dan massa benda yang semuanya bersifat relatif.
+---
+- Postulat kedua menguraikan sifat sekutu semua gelombang. Misalnya, kecepatan bunyi tidak tergantung pada gerak sumber bunyi. Apabila mobil yang datang mendekat
+membunyikan klaksonnya, frekuensi yang terdengar akan meningkat sesuai dengan efek Doppler yang telah Anda pelajari, tetapi kecepatan gelombang yang merambat melalui udara tidak tergantung pada kecepatan
+mobilnya. Kecepatan gelombang hanya tergantung pada sifat udara, misalnya temperatur.
+---
+### Transformasi Lorentz
+- Transformasi Galileo hanya berlaku jika kecepatan-kecepatan yang digunakan tidak bersifat relativistik, yaitu jauh lebih kecil dari kecepatan cahaya, *c*. 
+- Kita asumsikan transformasi bersifat linier dalam bentuk:
+---
+**$$x=\gamma(x'+vt')$$
+$$y = y'$$
+$$z = z'$$
+$$t = \gamma(t'+\frac{vx'}{c^2})$$**
 Keterangan:
-- *I* = Kuat arus listrik (A)			
-- *Q* = Muatan listrik yang mengalir melalui penghantar(C) 		
-- *t* = Selang waktu (s)
+- *γ* = tetapan transformasi
 ---
-### Hukum Ohm
->*arus listrik yang mengalir melalui sebuah penghantar berbanding lurus dengan beda potensial (V)*. $V\backsim I\$
-###### $$V=IR$$
-Keterangan:
-- *V* = beda potensial/tegangan listrik (Volt); 
-- *R* = hambatan (Ohm atau Ω)
+- Kita asumsikan bahwa *y* dan *z* tidak berubah karena diperkirakan tidak terjadi kontraksi panjang pada arah ini. Persamaan invers harus memiliki bentuk yang sama di mana *v* diganti dengan *-v*, sehingga diperoleh:
 ---
-### Hambatan Listrik
-- Setiap bahan, baik itu logam maupun non logam mempunyai hambatan tertentu. Perbedaan hambatan pada masing-masing bahan disebut dengan **hambatan jenis**.
-- Hambatan atau resistansi berguna untuk mengatur besarnya kuat arus listrik yang mengalir melalui suatu rangkaian listrik.
-- Alat yang digunakan sebagai hambatan listrik pada suatu rangkaian adalah resistor, dengan simbol <img src="../resources/images/re01.png" height="25px" style="margin:0"> atau <img src="../resources/images/re02.png" height="25px" style="margin:0"> 
+Invers dari persamaan di atas:
+**$$x'=\gamma(x-vt)$$
+$$y' = y$$
+$$z' = z$$
+$$t' = \gamma(t+\frac{vx}{c^2})$$**
 ---
-### Hambat Jenis
-- Hambatan suatu penghantar dipengaruhi oleh: hambat jenis penghantar, panjang penghantar, dan luas penampang penghantar.
-###### $$R=\rho \frac L A$$
-Keterangan:
-- *ρ* = hambat jenis (Ωm)
-- *L* = panjang penghantar (m)
-- *A* = Luas penampang penghantar (m<sup>2</sup>)
+| Transformasi | ¦ | Invers |
+| ---- | --- |  --- |
+| $$x=\gamma(x'+vt')$$ | ¦ | $$x'=\gamma(x-vt)$$ |
+| $$y = y'$$ | ¦ | $$y' = y$$ |
+| $$z = z'$$ | ¦ | $$z' = z$$ |
+| $$t = \gamma(t'+\frac{vx'}{c^2})$$ | ¦ | $$t' = \gamma(t-\frac{vx}{c^2})$$ |
 ---
-### Hukum Kirchoff
-#### Hukum I Kirchoff
->*"jumlah kuat arus yang masuk ke suatu titik cabang sama dengan jumlah kuat arus yang keluar dari titik cabang tersebut"*
+- Jika sebuah berkas cahaya meninggalkan titik acuan *S* dan *S'* pada *t* = *t'* = 0, setelah waktu *t* akan menempuh sumbu *x* sejauh
+**$x = ct$** (di *S*), atau **$x' = ct'$** (di *S'*). 
 ---
-<img src="../resources/images/HK01.png" height="600">
+| **$$x = ct$$** | ¦ | **$$x' = ct'$$**  |
+| ---- | --- |  --- |
+| **$$\gamma(x'+vt')=ct$$** | ¦ | **$$\gamma(x-vt)=ct'$$** |
+| **$$\gamma(ct'+vt')=ct$$** | ¦ | **$$\gamma(ct-vt)=ct'$$** |
+| **$$ct=\gamma t'(c+v)$$** | ¦ | **$$ct'=\gamma t(c-v)$$** |
+| **$$t=\frac{\gamma t'(c+v)}{c}$$** | ¦ | **$$t'=\frac{\gamma t(c-v)}{c}$$** |
 ---
-#### Hukum I Kirchoff (Kaidah Arus)
-$$\Sigma I=0$$
-$$\Sigma I_{masuk}-\Sigma I_{keluar}=0$$
-###### $$\Sigma I_{masuk}=\Sigma I_{keluar}$$
-$$I_1+I_2+I_3=I_4+I_5+I_6$$
+$$ct=\gamma t'(c+v)$$
+$$ct=\gamma (\frac{\gamma t(c-v)}{c})(c+v)$$
+$$1=\frac{\gamma^2 (c^2-v^2)}{c^2}$$
+$$\gamma^2=\frac{c^2}{c^2-v^2}$$
 ---
-#### Hukum II Kirchoff
->*"pada rangkaian listrik tertutup (loop), jumlah aljabar gaya gerak listrik (Σℰ) dan penurunan tegangan (*ΣV* atau *ΣIR*) sama dengan nol"*  
-<img src="../resources/images/HK02.png" height="50%">
+$$\gamma^2=\frac{c^2}{c^2-v^2}$$
+$$\gamma^2=\frac{1}{1-\frac{v^2}{c^2}}$$
+Nilai tetapan transformasi *γ*:
+###### $$\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 ---
-#### Hukum II Kirchoff (Kaidah Tegangan)
-$$\Sigma V=0$$
-$$\Sigma\mathcal{E}-\Sigma IR=0$$
-###### $$\Sigma\mathcal{E}=\Sigma IR$$
-$$V_S=V_1+V_2+V_3+V_4+V_5+V_6+V_7$$
+### Transformasi Lorentz untuk kecepatan
+$$\begin{split}u_x&=\frac{\Delta x}{\Delta t}=\frac{\gamma(\Delta x'+v\Delta t')}{\gamma(\Delta t'+\frac{v\Delta x'}{c^2})}\cr &=\frac{\frac{\Delta x'}{\Delta t'}+v}{1+(\frac{v}{c^2})(\frac{\Delta x'}{\Delta t'})}\end{split}$$
+###### $$u_x=\frac{u_x'+v}{1+\frac{u_x'v}{c^2}}$$
 ---
-### Rangkaian Seri Resistor
-- Rangkaian seri adalah rangkaian **tanpa percabangan**. Karenanya hanya ada satu jalur arus. 
-
-<img src="../resources/images/ci01.png" height="300px">
-
-$$I=I_1=I_2=I_3$$
----
-#### Rangkaian Seri Resistor
-
-<img src="../resources/images/ci02.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_1+V_2+V_3$$
-$$V_{DA}=V_{BA}+V_{CB}+V_{DC}$$
----
-#### Rangkaian Seri Resistor
-$$IR_{DA}=IR_{BA}+IR_{CB}+IR_{DC}$$
-$$R_{DA}=R_{BA}+R_{CB}+R_{DC}$$
-###### $$R_{S}=R_{1}+R_{2}+R_{3}$$
-- *R<sub>S</sub>* = Hambatan pengganti seri
----
-### Rangkaian Paralel Resistor
-- Rangkaian paralel adalah rangkaian **dengan percabangan**. Dalam rangkaian di bawah akan terdapat 4 jalur arus.
-
-<img src="../resources/images/ci03.png" height="300px">
-
-$$I=I_1+I_2+I_3$$
----
-#### Rangkaian Paralel Resistor
-
-<img src="../resources/images/ci04.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_{BA}$$
-$$V_{BA}=V_{1}=V_{2}=V_{3}$$
----
-#### Rangkaian Paralel Resistor
-$$I=I_1+I_2+I_3$$
-$$\frac {V_S}{R_P}=\frac {V_1}{R_1}+\frac {V_2}{R_2}+\frac {V_3}{R_3}$$
-###### $$\frac {1}{R_P}=\frac {1}{R_1}+\frac {1}{R_2}+\frac {1}{R_3}$$
-- *R<sub>P</sub>* = Hambatan pengganti paralel
----
-### Gaya Gerak Listrik (GGL) dan Tegangan Jepit
-- **GGL** (*ε*) adalah beda potensial antara kedua kutub baterai, sebelum baterai mengalirkan arus listrik (*I=0*).
-- **Tegangan jepit** (*V<sub>jepit</sub>*) adalah beda potensial antara kedua kutub baterai ketika baterai mengalirkan arus listrik (*I≠0*)
----
-- Ketika baterai dengan GGL (*ε*) mengalirkan arus listrik pada rangkaian maka terjadi penurunan tegangan di dalam baterai yang nilainya *Ir*. Penurunan tegangan ini disebabkan oleh hambatan dalam *r* pada baterai tersebut. 
-- Persamaan Tegangan Jepit:
-###### $$V_{jepit}=\mathcal{E}-Ir=IR$$
----
-Contoh:
-- Sebuah batu baterai AAA sebelum digunakan, jika diukur menggunakan voltmeter, tegangan antara kutub positif (+) dan kutub negatif (-) adalah 1,5 volt, maka nilai inilah yang disebut ggl (ε).
-Pada saat baterai sedang digunakan untuk menyalakan lampu, jika diukur menggunakan voltmeter, ternyata tegangan antara kutub positif (+) dan kutub negatif (-) adalah 1,2 volt, nilai inilah yang disebut tegangan jepit.
-Dari persamaan di atas, dapat ditentukan kuat arus listrik yang mengalir dalam rangkaian tertutup sederhana, yaitu:
----
-$$V_{jepit}=\mathcal{E}-Ir=IR$$
-$$\mathcal{E}=Ir+IR=I(R+r)$$
-Sehingga
-###### $$I=\frac{\mathcal{E}}{R+r}$$ 
-###### $$I=\frac{V_{jepit}}{R}$$
----
-Keterangan:
-- *V<sub>jepit</sub>* = tegangan jepit (V)
-- *ℰ* = GGL baterai (V)
-- *R* = hambatan luar (ohm)
-- *r* = hambatan dalam (ohm)
----
-#### Penggunaan Hukum Kirchoff dalam penyelesaian soal menggunakan loop
-
-<img src="../resources/images/ci05.png" height="300px">
----
-Langkah-langkah dalam menyelesaikan rangkaian dua loop atau lebih:
-1. Gambarlah rangkaian listrik majemuk tersebut.
-2. Tetapkan arah kuat arus untuk setiap cabang. Pada dasarnya pemilihan arah arus bebas.
-3. Tulislah persamaan-persamaan arus untuk tiap titik cabang menggunakan Hukum I Kirchoff. *$\Sigma I_{masuk}=\Sigma I_{keluar}$*.
-4. Tetapkan loop beserta arahnya pada setiap rangkaian tertutup. Pada dasarnya, pemilihan arah loop bebas. Untuk lebih mudahnya, diusahakan arah loop searah dengan arah arus.
----
-5. Tulislah persamaan-persamaan untuk setiap loop menggunakan Hukum II Kirchoff. 
-- Jika pada suatu cabang, arah loop searah dengan arah arus maka kuat arus bertanda positif, sedangkan jika ara loop berlawanan arah dengan arah arus maka kuat arus bertanda negatif.
-- Jika saat mengikuti arah loop, dijumpai dahulu kutub positif sumber tegangan maka GGL bertanda positif. Sebaliknya, jika dijumpai kutub negatif sumber tegangan maka GGL bertanda negatif.
----
-6. Hitung besaran-besaran yang ditanyakan menggunakan persamaan-persamaan pada langkah 5. *$\Sigma\mathcal{E}=\Sigma IR$*.
-
-<img src="../resources/images/ci05.png" height="100px">
-$$\mathcal{E}_1-\mathcal{E}_2+IR=0\implies-\mathcal{E}_1+\mathcal{E}_2=IR$$ 
-
-- *ℰ<sub>1</sub>* positif karena dijumpai dulu kutub positif. *ℰ<sub>2</sub>* negatif karena dijumpai dulu kutub negatif. *I* positif karena searah dengan loop.
-- <a href="../resources/images/loop.png" data-preview-link>Contoh  2 loop</a> dan <a href="../resources/images/loop2.png" data-preview-link>Contoh  3 loop</a>
----
-### Energi dan Daya Listrik
-#### Energi Listrik
-- **Energi listrik** adalah energi yang disebabkan oleh muatan listrik yang mengalir karena adanya beda potensial dalam suatu rangkaian listrik tertutup.
-- Besarnya energi listrik (W) yang mengalir pada sebuah penghantar dapat dirumuskan sebagai berikut:
-###### $$W=VIt=I^2Rt=\frac{V^2}{R}t$$
+$$\begin{split}u_x'&=\frac{\Delta x'}{\Delta t'}=\frac{\gamma(\Delta x-v\Delta t)}{\gamma(\Delta t-\frac{v\Delta x}{c^2})}\cr &=\frac{\frac{\Delta x}{\Delta t}-v}{1-(\frac{v}{c^2})(\frac{\Delta x}{\Delta t})}\end{split}$$
+###### $$u_x'=\frac{u_x-v}{1-\frac{u_xv}{c^2}}$$
 ---
 Keterangan:
-- *W* = energi listrik (Joule)
-- *V* = beda potensial/GGL/tegangan (volt)
-- *I* = arus listrik (Ampere)
-- *t* = waktu (s)
+- *u<sub>x</sub>* = kecepatan benda *P* terhadap kerangka acuan diam (*S*)
+- *u<sub>x</sub>'* = kecepatan benda *P* terhadap kerangka acuan bergerak (*S'*)
+- *v* = kecepatan kerangka acuan bergerak (*S'*) terhadap kerangka acuan diam (*S*)
+- *c* = kecepatan cahaya dalam ruang hampa = 3×10<sup>8</sup> m/s 
 ---
-#### Daya Listrik
-- **Daya listrik** adalah besarnya energi tiap satuan waktu.
-###### $$P=\frac{W}{t}=VI=I^2R=\frac{V^2}{R}$$
-- *P* = energi listrik (Watt)
-- 1 watt = 1 Volt Ampere = 1 Joule/sekon
+### Dilatasi Waktu
+- Akibat penting postulat Einstein dan transformasi Lorentz adalah bahwa selang waktu antara dua kejadian yang terjadi pada tempat yang sama dalam suatu kerangka
+acuan selalu lebih singkat daripada selang waktu antara kejadian sama yang diukur dalam kerangka acuan lain yang kejadiannya terjadi pada tempat yang berbeda.
 ---
-### Kapasitor dan Dielektrik
-- **Kapasitor** adalah salah satu komponen elektronika yang berfungsi untuk menyimpan muatan. Simbolnya<img src="../resources/images/ca01.png" height="25px" style="margin:0">
-- Kemampuan kapasitor untuk menyimpan muatan listrik disebut **kapasitas/kapasitans**
-###### $$C=\frac{Q}{V}$$
-Keterangan:
-- *C* = kapasitans (Farad = coulomb/volt)
-- *Q* = Muatan yang tersimpan dalam kapasitor (C)
+- Pada dua kejadian yang terjadi di *x<sub>0</sub>'* pada waktu *t<sub>1</sub>'* dan *t<sub>2</sub>'* dalam kerangka acuan *S'*, kita dapat menentukan waktu
+*t<sub>1</sub>* dan *t<sub>2</sub>* untuk kejadian ini dalam kerangka acuan *S* dari persamaan:
+| $$t_1 = \gamma(t_1'+\frac{{vx'}_0}{c^2})$$  | ¦ |  $$t_2 = \gamma(t_2'+\frac{{vx'}_0}{c^2})$$  |
+| ---- | --- |  --- |
 ---
-#### Kapasitor dan Dielektrik
-- Kapasitor adalah dua keping sejajar yang dipisahkan oleh medium. Maka, sesuai hukum Gauss, perbedaan potensial di antara kedua keping: 
-###### $$V=Ed$$
-Keterangan:
-- *V* = beda potensial (V)
-- *E* = Kuat medan Listrik (Wb)
-- *d* = jarak antar keping (m)
+Sehingga, dari kedua persamaan tersebut diperoleh:
+$$t_2-t_1 = \gamma(t_2'-t_1')$$
+- Waktu di antara kejadian yang terjadi pada tempat yang sama dalam suatu kerangka acuan disebut **waktu patut**, *t<sub>p</sub>*. Dalam hal ini, selang waktu $Δt_p = t_2' – t_1'$ yang
+diukur dalam kerangka *S'* adalah waktu patut. Selang waktu *Δt* yang diukur dalam kerangka sembarang lainnya selalu lebih lama dari waktu patut. 
 ---
-#### Kapasitor dan Dielektrik
-- Jika rapat muatan di setiap keping adalah 𝜎, maka E dapat ditulis sebagai: 
-$$E=\frac {\sigma}{\varepsilon_0}=\frac {Q}{\varepsilon_0 A}$$
-$$V=Ed$$
-$$\frac{Q}{C}=\frac {Q}{\varepsilon_0 A}d$$
----
-###### $$C=\frac {\varepsilon_0 A}{d}$$
-Keterangan:
-- *C* = kapasitans (Farad = coulomb/volt)
-- *A* = Luas keping (m<sup>2</sup>)
-- *d* = jarak antar keping (m)
-- *ε<sub>0</sub>* = permitivitas vakum 
----
-### Rangkaian Seri Kapasitor
-<img src="../resources/images/ci06.png" height="300px">
-
-$$I=I_1=I_2=I_3$$
-$$Q=Q_1=Q_2=Q_3$$
----
-#### Rangkaian Seri Kapasitor
-<img src="../resources/images/ci06.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_1+V_2+V_3$$
-$$V_{DA}=V_{BA}+V_{CB}+V_{DC}$$
----
-#### Rangkaian Seri Kapasitor
-$$\frac{Q_T}{C_S}=\frac{Q_1}{C_1}+\frac{Q_2}{C_2}+\frac{Q_3}{C_3}$$
-
-###### $$\frac{1}{C_S}=\frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}$$
-- *C<sub>S</sub>* = Kapasitor pengganti seri
----
-### Rangkaian Paralel Kapasitor
-<img src="../resources/images/ci07.png" height="300px">
-
-$$I=I_1+I_2+I_3$$
-$$Q=Q_1+Q_2+Q_3$$
----
-#### Rangkaian Paralel Kapasitor
-<img src="../resources/images/ci07.png" height="300px">
-
-$$\Sigma\mathcal{E}=\Sigma V\implies V_S=V_{BA}$$
-$$V_{BA}=V_{1}=V_{2}=V_{3}$$
----
-#### Rangkaian Paralel Kapasitor
-$$Q=Q_1+Q_2+Q_3$$
-$$C_PV_T=C_1V_1+C_2V_2+C_3V_3$$
-###### $$C_P=C_1+C_2+C_3$$
-- *C<sub>P</sub>* = Kapasitor pengganti paralel
----
-### Energi Listrik dalam Kapasitor
-- **Energi listrik** adalah Usaha yang disebabkan oleh muatan listrik yang mengalir karena adanya beda potensial dalam suatu rangkaian listrik tertutup.
-- Besarnya energi listrik (W) yang mengalir pada sebuah kapasitor dapat dirumuskan sebagai berikut:
-###### $$dW=VdQ$$
----
-$$\begin{split}W=\int dW&=\displaystyle\int_{0}^Q VdQ\cr &=\displaystyle\int_{0}^Q \frac{Q}{C}dQ\cr &=\frac 1 2 \frac{Q^2}C\displaystyle\bigg\vert_{0}^Q \end{split}$$
-###### $$W=\frac 1 2 \frac{Q^2}C=\frac 1 2 V^2C=\frac 1 2 QV$$
+- Pemekaran waktu ini disebut dilatasi waktu, yang besarnya:
+###### $$\Delta t = γ\Delta tp$$
+###### $$\Delta t = \frac{\Delta tp}{\sqrt{1-\frac{v^2}{c^2}}}$$
 ---
 Keterangan:
-- *W* = Energi yang tersimpan dalam kapasitor (J)
-- *C* = Kapasitans (Farad)
-- *V* = Beda potensial (V)
-- *Q* = Muatan yang tersimpan dalam kapasiotor (C)
-</textarea>
-</section>
-		</div>
-		</div>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/markdown/markdown.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/math/math.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js"></script>
-		<script type="text/javascript" src="js/canvas.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript" >
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+- *Δt* = Pemekaran/Dilatasi waktu
+- *Δt<sub>p</sub>* = waktu patut, selang waktu antara dua kejadian dalam suatu kerangka acuan 
+- *γ* = tetapan transformasi
+---
+### Kontraksi Panjang
+- Kontraksi panjang adalah penyusutan panjang suatu benda akibat gerak relatif pengamat atau benda yang bergerak mendekati cepat rambat cahaya.
+- Penyusutan panjang yang terjadi merupakan suatu fenomena yang berhubungan dengan pemekaran waktu. 
+- Panjang benda yang diukur dalam kerangka acuan di mana bendanya berada dalam keadaan diam disebut panjang patut (panjang benda menurut pengamat), *l*. 
+---
+<img src="../resources/images/rel03.png" height="100%">
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-			});
-		</script>
+- Kita tinjau sebatang tongkat dalam keadaan diam di *S'*  dengan satu ujung di *x<sub>2</sub>'* dan ujung lainnya di *x<sub>1</sub>'*, seperti pada gambar. 
+Panjang tongkat dalam kerangka ini adalah *$l = x_2' – x_1'$*.
+---
+- Untuk menentukan panjang tongkat di kerangka *S*, didefinisikan bahwa *$l = x_2 - x_1$*. Berdasarkan persamaan $x'=\gamma(x-vt)$ akan diperoleh:
+$$x_2'=γ(x_2–vt_2)$$
+dan
+$$x_1'=γ(x_1–vt_1)$$
+---
+- Karena waktu pengukuran *x<sub>1</sub>* sama dengan waktu pengukuran *x<sub>2</sub>*, maka *t<sub>1</sub>* = *t<sub>2</sub>*, sehingga,
+$$x_2'-x_1'=γ(x_2–vt)-γ(x_1–vt)=γ(x_2–x_1)$$
+$$x_2–x_1=\frac 1 γ (x_2'-x_1')$$
+$$x_2–x_1=\sqrt{1-\frac{v^2}{c^2}} (x_2'-x_1')$$
+###### $$l=\frac 1 γ l_0=\sqrt{1-\frac{v^2}{c^2}}l_0$$
+---
+Keterangan:
+- *l* = Kontraksi panjang (panjang benda menurut pengamat) 
+- *l<sub>0</sub>* = panjang benda sebenarnya
+- *v* = kecepatan benda
+---
+### Massa Relativistik
+- Menurut teori relativitas khusus, massa relativistik *m* dari sebuah partikel yang bergerak dengan laju *v* terhadap pengamat dinyatakan:
+###### $$m=\frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}$$
+Keterangan:
+- *m* = massa relativistik
+- *m<sub>0</sub>* = massa benda sebenarnya
+- *v* = kecepatan benda
+---
+### Momentum Relativistik
+- Berdasarkan hukum kekekalan momentum linier dalam relativitas umum, maka didefinisikan kembali momentum sebuah partikel yang massa diamnya *m<sub>0</sub>* dan lajunya *v* adalah:
+###### $$p=mv=\frac{m_0v}{\sqrt{1-\frac{v^2}{c^2}}}$$
+Keterangan:
+- *p* = momentum relativistik; 	 *m* = massa relativistik
+- *m<sub>0</sub>* = massa benda sebenarnya; 	*v* = kecepatan benda
+---
+### Energi Relativistik
+- Menurut teori relativitas khusus, Hukum Newton $F=ma$ hanya benar ketika ditulis sebagai $F=\frac{\mathrm d}{\mathrm d t}(mv)$. 
+- Ketika massa benda tidak berubah, maka persamaan itu akan menjadi 
+###### $$F=m\frac{\mathrm d v}{\mathrm d t}=ma$$
+---
+- Tetapi ketika massa benda bisa berubah (relativistik), maka persamaaan di atas menjadi
+###### $$F=\frac{\mathrm d}{\mathrm d t}(mv)=m\frac{\mathrm d v}{\mathrm d t}+v\frac{\mathrm d m}{\mathrm d t}$$
+- Energi kinetik dapat diturunkan dari definisinya sebagai usaha yang diperlukan untuk membuat benda yang tadinya diam menjadi bergerak, yakni besarnya gaya yang dikerjakan dikalikan dengan perpindahannya.
+###### $$EK =\int^s_0 F\space \mathrm d s$$
+---
+- Dengan $F=\frac{\mathrm d}{\mathrm d t}(mv)$, persamaan di atas menjadi:
+$$\begin{split}EK &=\int^s_0 \frac{\mathrm d (mv)}{\mathrm d t}\space \mathrm d s=\int^{mv}_0 v\space \mathrm d (mv)\cr &=\int^{mv}_0 v\space \mathrm d \bigg( \frac{m_0v}{\sqrt{1-\frac{v^2}{c^2}}}\bigg)\end{split}$$
+---
+- Persamaan di atas dapat diselesaikan dengan identitas turunan $\int x \space\mathrm d y=xy-\int y \space\mathrm d x$, menjadi
+$$\begin{split}EK &=\frac{m_0v^2}{\sqrt{1-\frac{v^2}{c^2}}}-m_0\int^v_0 \frac{v \space\mathrm d v}{\sqrt{1-\frac{v^2}{c^2}}}\cr &=\frac{m_0c^2}{\sqrt{1-\frac{v^2}{c^2}}}-m_0c^2\cr &=mc^2-m_0c^2\end{split}$$
+---
+- Keterangan:
+- *m* = massa relativistik
+- *m<sub>0</sub>* = massa benda sebenarnya
+- *v* = kecepatan benda
+		</textarea>
+		</section>
+	  </div>
+	</div>
 
-	</body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/dist/reveal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/notes/notes.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/markdown/markdown.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/math/math.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/highlight.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script >
+	  Reveal.initialize({
+		slideNumber: true,
+		hash: true,
+		katex: {
+		  version: 'latest',
+		  delimiters: [
+		    { left: '$$', right: '$$', display: true },
+			{ left: '$', right: '$', display: false },
+			],
+		  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+		  },
+		chalkboard: {
+		  chalkEffect: 0.5,
+		  background:  [ 'rgba(255,255,255,0)' ,'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/blackboard.png'],
+		  eraser: {src: 'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/sponge.png', radius: 50}
+		},
+		keyboard: {
+		  65: function() { RevealChalkboard.toggleNotesCanvas() }, // Annotate when 'a' is pressed
+		  66: function() { RevealChalkboard.toggleChalkboard() },	 // Toggle board when 'b' is pressed
+		  46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+		  8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide with 'BACKSPACE'
+		  68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
+		  88: function() { RevealChalkboard.colorNext() }, // cycle colors forward when 'x' is pressed
+		  90: function() { RevealChalkboard.colorPrev() }, // cycle colors backward when 'z' is pressed
+		},
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealCustomControls, RevealChalkboard]
+		});
+	</script>
+  </body>
 </html>

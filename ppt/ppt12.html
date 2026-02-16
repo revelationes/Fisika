@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Fluida Statis</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+	<link rel="stylesheet" href="dist/custom.css">
+  </head>
+  <div id="schauderhaft-footer" class="footer">
+	<span class="element" id="tgl">#cool-talk</span>
+	<span class="element"></span>
+	<span class="element"></span>
+  </div>
+  <body style="transition: transform 0.8s;">
+	<div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="fade">
+	  <div class="slides">
+		<section data-markdown data-transition="convex">
+		<textarea data-template>
+# Fluida Statis
+---
+- Sifat-sifat Fluida
+- Tekanan, Massa jenis
+- Tekanan Hidrostatis, Hukum Pascal, Hukum Archimedes
+---
+### Fluida 
+- Secara umum menunjuk pada benda/zat yang dapat mengalir. Dalam hal ini, fluida berarti meliputi zat cair dan gas.
+---
+### Sifat-sifat Fluida
+- **Kemampuan mengalir**: Fluida adalah zat yang dapat mengalir dan mengisi ruangan yang mewadahinya. 
+- **Tidak memiliki bentuk tetap**: Fluida menyesuaikan diri dengan bentuk wadah tempatnya.
+- **Kekentalan (viskositas)** Fluida yang berada dalam lapisan batas akan membentuk gradien kecepatan.
+- **Massa jenis**: Fluida memiliki massa jenis.
+---
+- **Kompresibilitas**: Fluida dapat termampatkan atau tidak termampatkan.
+- **Tegangan permukaan**: Fluida memiliki tegangan permukaan.
+- **Kapilaritas**: Fluida memiliki sifat kapilaritas.
+---
+### Tekanan
+- Secara umum, **tekanan** didefinisikan sebagai gaya normal per satuan luas. 
+- Secara matematis,
+###### $$P=\frac F A$$
+Keterangan:
+- *P* = Tekanan (Pa)
+- *F* = Gaya (N)
+- *A* = luas permukaan benda (m<sup>2</sup>)
+---
+- Satuan Internasional dari tekanan adalah *pascal* (disingkat Pa, 1 Pa = 1 N/m<sup>2</sup>). Satuan ini dinamai menurut nama ilmuwan Perancis, **Blaise Pascal**.
+- Satuan lain adalah **bar** (1 bar = 10<sup>5</sup> Pa), **lb/in<sup>2</sup>**, **atmosfer** (1 atm = 101,325 Pa), dan **mmHg** (760 mmHg = 1 atm)
+---
+### Massa jenis
+- Massa jenis adalah besaran yang menyatakan massa suatu benda per satuan volume. 
+- Secara matematis,
+###### $$\rho=\frac m V$$
+Keterangan:
+- *ρ* = massa jenis (kg/m<sup>3</sup>)
+- *m* = massa (kg)
+- *V* = volume benda (m<sup>3</sup>)
+---
+### Tekanan Hidrostatis
+- Tekanan adalah sama untuk titik dengan kedalaman/ketinggian yang sama. Tekanan *P* pada kedalaman *h* di bawah permukaan fluida **lebih besar** dari pada tekanan atmosfer (tekanan udara di permukaan bumi).
+- Secara matematis,
+###### $$P=P_0+\rho g h$$
+---
+Keterangan:
+- *P* = Tekanan (Pa) pada kedalaman tertentu
+- *P<sub>0</sub>* = Tekanan (Pa) oleh atmosfer
+- *ρ* = massa jenis (kg/m<sup>3</sup>)
+- *g* = percepatan gravitasi (m/s<sup>3</sup>)
+- *h* = kedalaman (h)
+---
+### Hukum Pascal
+- Blaise Pascal menemukan bahwa *tekanan yang diberikan kepada zat cair dalam ruangan tertutup akan diteruskan dengan sama besar ke segala arah*.
+ $$P=P_0+\rho g h$$
+ $$P-P_0=\rho g h$$
+###### $$\Delta P=\rho g \Delta h$$
+---
+### Hukum Archimedes
+- Sebuah benda yang seluruhnya atau sebagian tercelup di dalam fluida, akan mengalami gaya ke atas yang sama dengan berat fluida yang dipindahkan.
+###### $$F_A=W_f=m_f g=\rho_f V_f g$$
+---
+Keterangan:
+- *F<sub>A</sub>* = Gaya Archimedes (N)
+- *W<sub>f</sub>* = Berat fluida yang dipindahkan
+- *m<sub>f</sub>* = massa fluida yang dipindahkan
+- *g* = percepatan gravitasi (m/s<sup>3</sup>)
+- *ρ<sub>f</sub>* = massa jenis fluida (kg/m<sup>3</sup>)
+- *V<sub>f</sub>* = volume fluida yang dipindahkan
+
+		</textarea>
+		</section>
+	  </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/dist/reveal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/notes/notes.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/markdown/markdown.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/math/math.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/highlight.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script >
+	  Reveal.initialize({
+		slideNumber: true,
+		hash: true,
+		katex: {
+		  version: 'latest',
+		  delimiters: [
+		    { left: '$$', right: '$$', display: true },
+			{ left: '$', right: '$', display: false },
+			],
+		  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+		  },
+		chalkboard: {
+		  chalkEffect: 0.5,
+		  background:  [ 'rgba(255,255,255,0)' ,'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/blackboard.png'],
+		  eraser: {src: 'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/sponge.png', radius: 50}
+		},
+		keyboard: {
+		  65: function() { RevealChalkboard.toggleNotesCanvas() }, // Annotate when 'a' is pressed
+		  66: function() { RevealChalkboard.toggleChalkboard() },	 // Toggle board when 'b' is pressed
+		  46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+		  8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide with 'BACKSPACE'
+		  68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
+		  88: function() { RevealChalkboard.colorNext() }, // cycle colors forward when 'x' is pressed
+		  90: function() { RevealChalkboard.colorPrev() }, // cycle colors backward when 'z' is pressed
+		},
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealCustomControls, RevealChalkboard]
+		});
+	</script>
+  </body>
+</html>

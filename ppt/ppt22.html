@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Gelombang Elektromagnetik</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/night.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+	<link rel="stylesheet" href="dist/custom.css">
+  </head>
+  <div id="schauderhaft-footer" class="footer">
+	<span class="element" id="tgl">#cool-talk</span>
+	<span class="element"></span>
+	<span class="element"></span>
+  </div>
+  <body style="transition: transform 0.8s;">
+	<div class="reveal convex center" role="application" data-transition-speed="default" data-background-transition="fade">
+	  <div class="slides">
+		<section data-markdown data-transition="convex">
+		<textarea data-template>
+## Gelombang Elektromagnetik
+---
+- Teori Maxwell
+- Spektrum GEM, Manfaat dan Bahayanya
+---
+### Teori Maxwell
+- Pada 1864, fisikawan Inggris, James Clerk Maxwell, mengemukakan teori yang menyebutkan bahwa cahaya adalah rambatan gelombang yang dihasilkan oleh
+kombinasi medan listrik dan medan magnetik. Gelombang yang dihasilkan oleh medan listrik dan medan magnetik ini disebut *gelombang elektromagnetik*.
+---
+- Gelombang elektromagnetik merupakan gelombang transversal yang dapat merambat dalam ruang hampa. Hal inilah yang
+menyebabkan radiasi cahaya matahari dapat mencapai permukaan bumi.
+---
+- Maxwell menyadari bahwa jika suatu arus listrik dialirkan maju-mundur, arus itu dapat menimbulkan gelombang elektromagnetik yang berubah-ubah yang memancar keluar 
+dengan kecepatan yang sangat tinggi. Perhitungan-perhitungannya menunjukkan bahwa gelombang elektromagnetik itu memancar pada kecepatan cahaya. Berdasarkan hal ini,
+Maxwell menyimpulkan bahwa cahaya itu sendiri adalah bentuk gelombang elektromagnetik.
+---
+### Kecepatan Gelombang Elektromagnetik
+###### $$c=\frac{1}{\sqrt{\mu_0\varepsilon_0}}=3\times 10^8$$
+Keterangan:
+- *c* = kecepatan GEM 
+- *ε<sub>0</sub>* = permitivitas hampa
+- *μ<sub>0</sub>* = permeabilitas ruang hampa
+---
+sementara hubungan kecepatan, frekuensi dan panjang gelombang adalah 
+###### $$c=\lambda f$$
+Keterangan:
+- *c* = kecepatan GEM 
+- *λ<sub>0</sub>* = panjang gelombang (m)
+- *f* = frekuensi (Hz)
+---
+#### Spektrum GEM
+<img src="../resources/images/GEM.png" height="100%">
+---
+- Semakin besar panjang gelombang, semakin jauh daya jangkaunya
+- Semakin pendek panjang gelombang, semakin besar daya tembusnya.
+- Panjang gelombang cahaya tampak, antara 400-700 nm.
+---
+### Manfaat dan Bahaya GEM
+- Sinar Gamma: untuk pengobatan, dapat menyebabkan terpapar radiasi.
+- Sinar X: untuk rontgen, mendeteksi benda asing, dapat menyebabkan terpapar radiasi jika sering digunakan.
+- Sinar UV: fotosintesis, dapat menyebabkan kanker kulit.
+- Cahaya tampak: membantu penglihatan
+- Sinar Inframerah: untuk remote control.
+- Gelombang mikro: microwave
+- Gelombang radio: telekomunikasi
+---
+###### $$V_{ef}=\sqrt{\frac{{V_{maks}}^2}{2}}=\frac{V_{maks}}{\sqrt{2}}$$
+###### $$I_{ef}=\sqrt{\frac{{I_{maks}}^2 }{2}}=\frac{I_{maks}}{\sqrt{2}}$$
+Keterangan:
+- *V<sub>ef</sub>* = Tegangan efektif (V) 
+- *V<sub>maks</sub>* = Tegangan maksimum (V) 
+- *I<sub>ef</sub>* = Arus efektif (A) 
+- *I<sub>maks</sub>* = Arus maksimum (A) 
+---
+		</textarea>
+		</section>
+	  </div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/dist/reveal.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/notes/notes.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/markdown/markdown.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/math/math.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@latest/plugin/highlight/highlight.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script >
+	  Reveal.initialize({
+		slideNumber: true,
+		hash: true,
+		katex: {
+		  version: 'latest',
+		  delimiters: [
+		    { left: '$$', right: '$$', display: true },
+			{ left: '$', right: '$', display: false },
+			],
+		  ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+		  },
+		chalkboard: {
+		  chalkEffect: 0.5,
+		  background:  [ 'rgba(255,255,255,0)' ,'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/blackboard.png'],
+		  eraser: {src: 'https://rs-math.net/beamerkiller/reveal.js/plugin/chalkboard/img/sponge.png', radius: 50}
+		},
+		keyboard: {
+		  65: function() { RevealChalkboard.toggleNotesCanvas() }, // Annotate when 'a' is pressed
+		  66: function() { RevealChalkboard.toggleChalkboard() },	 // Toggle board when 'b' is pressed
+		  46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+		  8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide with 'BACKSPACE'
+		  68: function() { RevealChalkboard.download() },	// download recorded chalkboard drawing when 'd' is pressed
+		  88: function() { RevealChalkboard.colorNext() }, // cycle colors forward when 'x' is pressed
+		  90: function() { RevealChalkboard.colorPrev() }, // cycle colors backward when 'z' is pressed
+		},
+		plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealCustomControls, RevealChalkboard]
+		});
+	</script>
+  </body>
+</html>
