@@ -163,27 +163,89 @@ Keterangan:
 - *R* = hambatan luar (ohm)
 - *r* = hambatan dalam (ohm)
 ---
-#### Penggunaan Hukum Kirchoff dalam penyelesaian soal menggunakan loop
+#### Penggunaan Hukum Kirchoff dalam penyelesaian Rangkaian dua loop atau lebih:
 
 <img src="../resources/images/ci05.png" height="300px">
+
+- Ada tiga cara penyelesaian untuk rangkaian dengan dua loop
 ---
-Langkah-langkah dalam menyelesaikan rangkaian dua loop atau lebih:
+### 1. Cara Panjang
+- Langkah-langkah dalam menyelesaikan rangkaian dua loop atau lebih:
 1. Gambarlah rangkaian listrik majemuk tersebut.
 2. Tetapkan arah kuat arus untuk setiap cabang. Pada dasarnya pemilihan arah arus bebas.
 3. Tulislah persamaan-persamaan arus untuk tiap titik cabang menggunakan Hukum I Kirchoff. *$\Sigma I_{masuk}=\Sigma I_{keluar}$*.
-4. Tetapkan loop beserta arahnya pada setiap rangkaian tertutup. Pada dasarnya, pemilihan arah loop bebas. Untuk lebih mudahnya, diusahakan arah loop searah dengan arah arus.
 ---
+4. Tetapkan loop beserta arahnya pada setiap rangkaian tertutup. Pada dasarnya, pemilihan arah loop bebas. Untuk lebih mudahnya, diusahakan arah loop searah dengan arah arus.
 5. Tulislah persamaan-persamaan untuk setiap loop menggunakan Hukum II Kirchoff. 
 - Jika pada suatu cabang, arah loop searah dengan arah arus maka kuat arus bertanda positif, sedangkan jika ara loop berlawanan arah dengan arah arus maka kuat arus bertanda negatif.
-- Jika saat mengikuti arah loop, dijumpai dahulu kutub positif sumber tegangan maka GGL bertanda positif. Sebaliknya, jika dijumpai kutub negatif sumber tegangan maka GGL bertanda negatif.
 ---
+- Jika saat mengikuti arah loop, dijumpai dahulu kutub positif sumber tegangan maka GGL bertanda positif. Sebaliknya, jika dijumpai kutub negatif sumber tegangan maka GGL bertanda negatif.
 6. Hitung besaran-besaran yang ditanyakan menggunakan persamaan-persamaan pada langkah 5. *$\Sigma\mathcal{E}=\Sigma IR$*.
+---
+<img src="../resources/images/ci08.png" height="300px">
 
-<img src="../resources/images/ci05.png" height="100px">
-$$\mathcal{E}_1-\mathcal{E}_2+IR=0\implies-\mathcal{E}_1+\mathcal{E}_2=IR$$ 
+- Misalkan rangkaian dua loop deperti gambar di atas. Loop I dan II sama-sama searah jarum jam. Ketiga arus (*I<sub>1</sub>*, *I<sub>2</sub>* dan *I<sub>3</sub>*) sama-sama mengarah ke kiri (dari *A* ke *B*).
+---
+- didapatkan untuk Hukum Kirchoff I, **$I_1+I_2+I_3=0$** atau **$I_1=-I_2-I_3$** (i)
+- didapatkan untuk Hukum Kirchoff II pada Loop I,  **$\mathcal{E}_1-\mathcal{E}_2+I_1 R_1-I_2 R_2=0$** (ii)
+- Perhatikan bahwa *ε<sub>2</sub>* bernilai negatif karena dijumpai kutub negatifnya dulu. *I<sub>2</sub>* juga negatif karena berlawanan arah dengan arah loop.
+- didapatkan untuk Hukum Kirchoff II pada Loop II,  **$\mathcal{E}_2-\mathcal{E}_3+I_2 R_2-I_3 R_3=0$** (iii)
+---
+- dengan mensubstitusi persamaan (i) ke persamaan (ii) didapat **$\mathcal{E}_1-\mathcal{E}_2+(-I_2-I_3) R_1-I_2 R_2=0$**
+- **$\mathcal{E}_1-\mathcal{E}_2-I_2 R_1-I_3 R_1-I_2 R_2=0$** (ii)
+- untuk mengeliminasi *I<sub>3</sub>* persamaan (ii) dikalikan dengan *R<sub>3</sub>* dan persamaan (iii) dengan *R<sub>1</sub>*
+**$$(\mathcal{E}_1-\mathcal{E}_2)R_3-I_2 R_1 R_3-I_3 R_1 R_3-I_2 R_2 R_3=0\text{ (...ii)}$$** 
+**$$(\mathcal{E}_2-\mathcal{E}_3)R_1+I_2 R_2 R_1-I_3 R_3 R_1=0\text{ (...iii)}$$**
+---
+$$\begin{array}{rrcr}(\mathcal{E}_1-\mathcal{E}_2)R_3-I_2R_1R_3-I_3R_1R_3&-I_2R_2R_3&=0 \\\\ - \quad (-\mathcal{E}_3+\mathcal{E}_2)R_1+I_2R_1R_2-I_3R_1R_3&&=0 \\\\ \hline \end{array}$$
+$$(\mathcal{E}_1-\mathcal{E}_2)R_3+(\mathcal{E}_3-\mathcal{E}_2)R_1=I_2R_1R_3+I_2R_2R_3+I_2R_1R_2$$
+###### $$\text{Maka, }I_2=\frac{(\mathcal{E}_1-\mathcal{E}_2)R_3+(\mathcal{E}_3-\mathcal{E}_2)R_1}{R_1R_2+R_2R_3+R_1R_3}$$
+---
+- Demikian pula
+###### $$I_1=\frac{(\mathcal{E}_2-\mathcal{E}_1)R_3+(\mathcal{E}_3-\mathcal{E}_1)R_2}{R_1R_2+R_2R_3+R_1R_3}\text{ dan }\$$
+###### $$I_3=\frac{(\mathcal{E}_1-\mathcal{E}_3)R_2+(\mathcal{E}_2-\mathcal{E}_3)R_1}{R_1R_2+R_2R_3+R_1R_3}$$
+---
+### 2. Cara Agak Panjang
+<img src="../resources/images/ci08.png" height="200px">
 
-- *ℰ<sub>1</sub>* positif karena dijumpai dulu kutub positif. *ℰ<sub>2</sub>* negatif karena dijumpai dulu kutub negatif. *I* positif karena searah dengan loop.
+$$\begin{split}\frac{1}{R_{AB}}&=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3} \\\\ &=\frac{R_1R_2+R_2R_3+R_1R_3}{R_1R_2R_3}\end{split}$$
+---
+$$R_{AB}=\frac{R_1R_2R_3}{R_1R_2+R_2R_3+R_1R_3}$$
+$$\begin{split} V_{AB}&=I_{AB}R_{AB} \\\\ &=(I_1+I_2+I_3)R_{AB} \\\\ &=(\frac{\mathcal{E}\_1}{R_1}+\frac{\mathcal{E}\_2}{R_2}+\frac{\mathcal{E}\_3}{R_3})R_{AB} \end{split}$$
+---
+$$\text{Pada kawat atas, }V_{AB}=I_1R_1+\mathcal{E}\_1\text{ atau } I_1=\frac{V_{AB}-\mathcal{E}\_1}{R_1}$$
+$$\text{Pada kawat tengah, }V_{AB}=I_2R_2+\mathcal{E}\_2 \text{ atau } I_2=\frac{V_{AB}-\mathcal{E}\_2}{R_2}$$
+$$\text{Pada kawat bawah, }V_{AB}=I_3R_3+\mathcal{E}\_3 \text{ atau } I_3=\frac{V_{AB}-\mathcal{E}\_3}{R_3}$$
+---
+$$\begin{split}I_1&=\frac{V_{AB}-\mathcal{E}\_1}{R_1} \\\\ &=\frac{(\frac{\mathcal{E}\_1}{R_1}+\frac{\mathcal{E}\_2}{R_2}+\frac{\mathcal{E}\_3}{R_3})R_{AB}-\mathcal{E}\_1}{R_1} \\\\ &=\frac{(\frac{\mathcal{E}\_1}{R_1}+\frac{\mathcal{E}\_2}{R_2}+\frac{\mathcal{E}\_3}{R_3})\frac{R_1R_2R_3}{R_1R_2+R_2R_3+R_1R_3}-\mathcal{E}\_1(\frac{R_1R_2+R_2R_3+R_1R_3}{R_1R_2+R_2R_3+R_1R_3})}{R_1}\end{split}$$
+$$I_1=\frac{\frac{\xcancel{\mathcal{E}\_1R_2R_3}+\mathcal{E}\_2R_1R_3+\mathcal{E}\_3R_1R_2}{R_1R_2+R_2R_3+R_1R_3}-\frac{\mathcal{E}\_1R_1R_2+\xcancel{\mathcal{E}\_1R_2R_3}+\mathcal{E}\_1R_1R_3}{R_1R_2+R_2R_3+R_1R_3}}{R_1}$$
+---
+$$I_1=\frac{\frac{\mathcal{E}\_2\xcancel{R_1}R_3+\mathcal{E}\_3\xcancel{R_1}R_2}{R_1R_2+R_2R_3+R_1R_3}-\frac{\mathcal{E}\_1\xcancel{R_1}R_2+\mathcal{E}\_1\xcancel{R_1}R_3}{R_1R_2+R_2R_3+R_1R_3}}{\xcancel{R_1}}$$
+###### $$I_1=\frac{(\mathcal{E}\_2-\mathcal{E}\_1)R_3+(\mathcal{E}\_3-\mathcal{E}\_1)R_2}{R_1R_2+R_2R_3+R_1R_3}$$
+- Demikian pula
+###### $$I_2=\frac{(\mathcal{E}_1-\mathcal{E}_2)R_3+(\mathcal{E}_3-\mathcal{E}_2)R_1}{R_1R_2+R_2R_3+R_1R_3}\text{ dan }\$$
+###### $$I_3=\frac{(\mathcal{E}_1-\mathcal{E}_3)R_2+(\mathcal{E}_2-\mathcal{E}_3)R_1}{R_1R_2+R_2R_3+R_1R_3}$$
+---
+### 3. Cara Cepat
+<img src="../resources/images/ci08.png" height="200px">
+
+$$\text{Pada kawat atas, }V_{AB}=I_1R_1+\mathcal{E}\_1\text{ (...i) }$$
+$$\text{Pada kawat tengah, }V_{AB}=I_2R_2+\mathcal{E}\_2\text{ (...ii) }$$
+$$\text{Pada kawat bawah, }V_{AB}=I_3R_3+\mathcal{E}\_3\text{ (...iii) } $$
+---
+$$\begin{array}{rrcr} \text{(i)}\times R_2R_3&\quad V_{AB}R_2R_3=I_1R_1R_2R_3+\mathcal{E}\_1R_2R_3& \\\\ \text{(ii)}\times R_1R_3&\quad V_{AB}R_1R_3=I_2R_1R_2R_3+\mathcal{E}\_2R_1R_3& \\\\ \text{(iii)}\times R_1R_2&\quad V_{AB}R_1R_2=I_3R_1R_2R_3+\mathcal{E}\_3R_1R_2&\quad + \\\\ \hline \end{array}$$
+- karena **$I_1+I_2+I_3=0$**, *$V_{AB}(R_1R_2+R_2R_3+R_1R_3)=\mathcal{E}\_1R_2R_3+\mathcal{E}\_2R_1R_3+\mathcal{E}\_3R_1R_2$*
+$$V_{AB}=\frac{\mathcal{E}\_1R_2R_3+\mathcal{E}\_2R_1R_3+\mathcal{E}\_3R_1R_2}{R_1R_2+R_2R_3+R_1R_3}$$
+
+---
+- dengan cara yang sama seperti sebelumnya, didapatkan:
+###### $$I_1=\frac{(\mathcal{E}\_2-\mathcal{E}\_1)R_3+(\mathcal{E}\_3-\mathcal{E}\_1)R_2}{R_1R_2+R_2R_3+R_1R_3}$$
+###### $$I_2=\frac{(\mathcal{E}_1-\mathcal{E}_2)R_3+(\mathcal{E}_3-\mathcal{E}_2)R_1}{R_1R_2+R_2R_3+R_1R_3}\text{ dan }\$$
+###### $$I_3=\frac{(\mathcal{E}_1-\mathcal{E}_3)R_2+(\mathcal{E}_2-\mathcal{E}_3)R_1}{R_1R_2+R_2R_3+R_1R_3}$$
+---
 - <a href="../resources/images/loop.png" data-preview-link>Contoh  2 loop</a> dan <a href="../resources/images/loop2.png" data-preview-link>Contoh  3 loop</a>
+---
+
 ---
 ### Energi dan Daya Listrik
 #### Energi Listrik
