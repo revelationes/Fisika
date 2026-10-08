@@ -51,7 +51,6 @@ iframe {
   height:100%;
 }
 a .calendar-text { 
-  margin-left: 0.5px;
   font: 10px/20px "montserrat-bold", sans-serif;
   color:var(--white-color); 
 }
